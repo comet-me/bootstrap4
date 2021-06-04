@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!-- nav 1.1.0 -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -22,7 +24,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
-                        </li>                        
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Grid
@@ -104,11 +106,11 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Heading Container -->
     <div id="heading-container" class="container">
         <div class="text-center mb-4">
-            <h1 class="display-4 mt-4 pt-5">Containers 
+            <h1 class="display-4 mt-4 pt-5">Containers
                 <a href="https://getbootstrap.com/docs/4.0/layout/overview/" target="_blank" class="text-dark">
                     <span class="h1" title="See offical documentation">
                         <i class="fa fa-question-circle" aria-hidden="true"></i>
@@ -120,7 +122,7 @@
                     <h1>XS</h1>
                     <h5>Portrait Phones</h5>
                     <h6>&#60;576px</h6>
-                </div>                
+                </div>
                 <div class="d-none d-sm-block d-md-none">
                     <h1>SM</h1>
                     <h5>Landscape Phones</h5>
@@ -143,42 +145,88 @@
                 </div>
             </div>
         </div>
-    </div><!-- End Heading Container -->
-    
+    </div>
+    <!-- End Heading Container -->
+
 
     <!-- ############ START HERE ############ -->
     <div id="main-container" class="container">
-        
+
         <!-- ***** Container ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Container</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Container</a></h2>
             <code class="d-inline-block mb-1 aw-code">.container</code>
         </div>
-    </div><!-- End Main Container -->
-    
+    </div>
+    <!-- End Main Container -->
+
     <!-- # Code Example # -->
 
-    <!-- example 1 - Container -->
+    <!-- TODO: example 1 - Container -->
     <div class="container aw-bg-tan aw-height">
         .container
     </div>
-        
+
+    <!-- Modal -->
+    <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">.container</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <code>&lt;div class="container aw-bg-tan aw-height"&gt;</code>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+
+
     <!-- Secondary Container -->
     <div id="secondary-container" class="container">
         <!-- ***** Container Fluid ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Container Fluid</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example2">Container Fluid</a></h2>
             <code class="d-inline-block mb-1 aw-code">.container-fluid</code>
         </div>
-    </div><!-- End Secondary Container -->
+    </div>
+    <!-- End Secondary Container -->
 
     <!-- # Code Example # -->
 
-    <!-- example 1 - Container Fluid -->
+    <!-- TODO: example 1 - Container Fluid -->
     <div class="container-fluid aw-bg-tan aw-height">
         .container-fluid
     </div>
-    
+    <!-- Modal -->
+    <div class="modal" id="example2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">.container-fluid</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <code>&lt;div class="container-fluid aw-bg-tan aw-height"&gt;</code>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
 
     <footer class="my-5 py-5">
     </footer>
@@ -186,4 +234,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

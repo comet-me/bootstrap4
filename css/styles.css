@@ -1,3 +1,7 @@
+.coo a:hover {
+    cursor: pointer !important;
+}
+
 .aw-bg-tan {
     background-color: #fae3c4;
 }
@@ -11,11 +15,12 @@
     border-radius: .25rem;
 }
 
-.aw-grid > .col, .aw-grid [class^=col-] {
+.aw-grid>.col,
+.aw-grid [class^=col-] {
     padding-top: .75rem;
     padding-bottom: .75rem;
-    background-color: rgba(86,61,124,.15);
-    border: 1px solid rgba(86,61,124,.2);
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid rgba(86, 61, 124, .2);
 }
 
 .aw-height {
@@ -27,8 +32,8 @@
 }
 
 .aw-highlight {
-    background-color: rgba(86,61,124,.15);
-    border: 1px solid rgba(86,61,124,.2);
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid rgba(86, 61, 124, .2);
 }
 
 .aw-hr-white {
@@ -47,7 +52,7 @@
     height: 53px;
 }
 
-.aw-px{
+.aw-px {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
 }
@@ -72,8 +77,8 @@
 .aw-scrollspy-example {
     position: relative;
     height: 200px;
-    margin-top: .5rem; 
-    overflow-y: scroll; 
+    margin-top: .5rem;
+    overflow-y: scroll;
 }
 
 .aw-scrollspy-example-2 {
@@ -83,21 +88,21 @@
 }
 
 @media (min-width: 576px) {
-    .aw-px{
+    .aw-px {
         padding-left: 2.75rem !important;
-        padding-right: 2.75rem !important;        
-    }    
+        padding-right: 2.75rem !important;
+    }
 }
 
 @media (min-width: 768px) {
-    .aw-px{
+    .aw-px {
         padding-left: 4rem !important;
-        padding-right: 4rem !important;        
+        padding-right: 4rem !important;
     }
 }
 
 @media (min-width: 992px) {
-    .aw-px{
+    .aw-px {
         padding-left: 5rem !important;
         padding-right: 5rem !important;
     }
