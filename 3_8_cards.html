@@ -437,7 +437,7 @@
 
         <!-- ***** Text Alignment ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Text Alignment</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example20">Text Alignment</a></h2>
             <code class="d-inline-block mb-1 aw-code">.text-left</code> or
             <code class="d-inline-block mb-1 aw-code">.text-center</code> or
             <code class="d-inline-block mb-1 aw-code">.text-right</code>
@@ -470,7 +470,7 @@
 
         <!-- ***** Navigation ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Navigation</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example21">Navigation</a></h2>
             <code class="d-inline-block mb-1 aw-code">&lt;ul&gt;</code> &amp;
             <code class="d-inline-block mb-1 aw-code">.nav</code>
             <code class="d-inline-block mb-1 aw-code">.nav-tabs</code>
@@ -480,7 +480,7 @@
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Navigation -->
+        <!-- TODO: example 1 - Navigation -->
         <div class="card text-center mb-2">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
@@ -527,13 +527,13 @@
 
         <!-- ***** Image Caps ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Image Caps</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example22">Image Caps</a></h2>
             <code class="d-inline-block mb-1 aw-code">.card-img-top</code> or
             <code class="d-inline-block mb-1 aw-code">.card-img-bottom</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Image Caps -->
+        <!-- TODO: example 1 - Image Caps -->
         <div class="card mb-3">
             <img class="card-img-top" src="img/forrest-cavale-13484.jpg" alt="Card image cap" style="height: 12.5rem;">
             <div class="card-body">
@@ -543,7 +543,7 @@
             </div>
         </div>
 
-        <!-- example 2 - Image Caps -->
+        <!-- TODO: example 2 - Image Caps -->
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -556,12 +556,12 @@
 
         <!-- ***** Image Overlay ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Image Overlay</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example23">Image Overlay</a></h2>
             <code class="d-inline-block mb-1 aw-code">.card-img-overlay</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Image Overlay -->
+        <!-- TODO: example 1 - Image Overlay -->
         <div class="card bg-dark text-white">
             <img class="card-img" src="img/gordon-williams-257623.jpg" alt="Card image">
             <div class="card-img-overlay">
@@ -574,7 +574,7 @@
 
         <!-- ***** Background & Color ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Background &amp; Color</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example23">Background &amp; Color</a></h2>
             <code class="d-inline-block mb-1 aw-code">.text-white</code> &amp;
             <code class="d-inline-block mb-1 aw-code">.bg-{color}</code> =
             <code class="d-inline-block mb-1 aw-code">.bg-{primary, secondary, success, danger, warning, info, light, dark}</code>
@@ -584,7 +584,7 @@
 
         <div class="row">
             <div class="col-md-4">
-                <!-- example 1 - Background & Color -->
+                <!-- TODO: example 1 - Background & Color -->
                 <div class="card text-white bg-primary mb-3">
                     <div class="card-header">Header</div>
                     <div class="card-body">
@@ -594,7 +594,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <!-- example 2 - Background & Color -->
+                <!-- TODO: example 2 - Background & Color -->
                 <div class="card text-white bg-secondary mb-3">
                     <div class="card-header">Header</div>
                     <div class="card-body">
@@ -1404,6 +1404,595 @@
                     <code class="pl-4 text-muted">&lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;</code><br>
                     <code class="pl-2 text-warning">&lt;/div&gt;</code><br>
                     <code>&lt;/div&gt;</code>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal -->
+    <div class="modal" id="example20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example20">Text Alignment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                           <code>&lt;div class="card text-left mb-3" style="width: 20rem;"&gt;</code><br>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col offset-1">
+                           <code class="text-warning">&lt;div class="card-body"&gt;</code>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col offset-2">
+                        <code class="text-black">&lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;</code>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col offset-2">
+                           <code class="text-muted">&lt;p class="card-text">Some Text&lt;/p></code>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col offset-2">
+                           <code class="text-muted">&lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;</code>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col offset-1">
+                        <code class="text-warning">&lt/div&gt;</code>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col">
+                        <code>&lt/div&gt;</code>
+                       </div>
+                   </div>
+                   <hr>
+
+                   <div class="row">
+                       <div class="col">
+                           <code>&lt;div class="card text-center mb-3" style="width: 20rem;"&gt;</code>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col offset-1">
+                           <code class="text-warning">
+                                &lt;div class="card-body"&gt;
+                            </code>
+                        </div>
+                   </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;p class="card-text"&gt;Some Text&lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                        &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <hr>
+                   <div class="row">
+                       <div class="col"><code>
+                        &lt;div class="card text-right mb-3" style="width: 20rem;"&gt;
+                       </code></div>
+                   </div>                          
+                    
+                   <div class="row">
+                       <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="card-body"&gt;
+                       </code></div>
+                   </div>
+                
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;p class="card-text"&gt;Some Text&lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+                        </code></div>
+                    </div> 
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                        &lt;/div&gt;
+                        </code></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal -->
+    <div class="modal" id="example21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example21">Navigation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;div class="card text-center mb-2"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="card-header"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-warning">
+                            &lt;ul class="nav nav-tabs card-header-tabs"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;li class="nav-item"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-muted">
+                            &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;/li&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;li class="nav-item"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-muted">
+                            &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;/li&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;li class="nav-item"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-muted">
+                            &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;/li&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-warning">
+                            &lt;/ul&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="card-body"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;p class="card-text"&gt;Some Text&lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;div class="card text-center"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="card-header"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-warning">
+                            &lt;ul class="nav nav-pills card-header-pills"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;li class="nav-item"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-muted">
+                            &lt;a class="nav-link active" href="#"&gt;<span class="text-primary">Active</span>&lt;/a&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;/li&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;li class="nav-item"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-muted">
+                            &lt;a class="nav-link" href="#"&gt;<span class="text-primary">Link</span>&lt;/a&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;/li&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;li class="nav-item"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-muted">
+                            &lt;a class="nav-link disabled" href="#"&gt;<span class="text-primary">Disabled</span>&lt;/a&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;/li&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-warning">
+                            &lt;/ul&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="card-body"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;p class="card-text"&gt;Some Text&lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal -->
+    <div class="modal" id="example22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example22">Image Caps</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                      <div class="col"><code>
+                        &lt;div class="card mb-3"&gt;
+                      </code></div>
+                  </div> 
+                  <div class="row">
+                      <div class="col offset-1"><code>
+                        &lt;img class="card-img-top" src="img/image.jpg" alt="Card image cap" style="height: 12.5rem;"&gt;
+                      </code></div>
+                  </div> 
+                  <div class="row">
+                      <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="card-body"&gt;
+                      </code></div>
+                  </div> 
+                  <div class="row">
+                      <div class="col offset-2"><code class="text-dark">
+                        &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                      </code></div>
+                  </div> 
+                  <div class="row">
+                      <div class="col offset-3"><code class="text-muted">
+                        &lt;p class="card-text"&gt;Some Text&lt;/p&gt;
+                      </code></div>
+                  </div> 
+                  <div class="row">
+                      <div class="col offset-3"><code class="text-muted">
+                        &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                      </code></div>
+                  </div> 
+                  <div class="row">
+                      <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                      </code></div>
+                  </div> 
+                    
+                  <div class="row">
+                      <div class="col"><code>
+                        &lt;/div&gt;
+                      </code></div>
+                  </div> 
+                  <hr>
+                  <div class="row">
+                      <div class="col"><code>
+                        &lt;div class="card"&gt;
+                      </code></div>
+                  </div>
+                  <div class="row">
+                      <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="card-body"&gt;
+                      </code></div>
+                  </div>
+                  <div class="row">
+                      <div class="col offset-2"><code class="text-dark">
+                        &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                      </code></div>
+                  </div>
+                  <div class="row">
+                      <div class="col offset-2"><code class="text-muted">
+                        &lt;p class="card-text"&gt;Some Text&lt;/p&gt;
+                      </code></div>
+                  </div>
+                  <div class="row">
+                      <div class="col offset-2"><code class="text-muted">
+                        &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                      </code></div>
+                  </div>
+                  <div class="row">
+                      <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                      </code></div>
+                  </div>
+                  <div class="row">
+                      <div class="col offset-1"><code class="text-dark">
+                        &lt;img class="card-img-bottom" src="img/image.jpg" alt="Card image cap" style="height: 12.5rem;"&gt;
+                      </code></div>
+                  </div>
+                  <div class="row">
+                      <div class="col"><code>
+                        &lt;/div&gt;
+                      </code></div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal -->
+    <div class="modal" id="example24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example24">Image Overlay</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;div class="card bg-dark text-white"&gt;
+                        &lt;/div>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;img class="card-img" src="img/image.jpg" alt="Card image"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="card-img-overlay"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;p class="card-text"&gt;Some Text&lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;p class="card-text"&gt;Last updated 3 mins ago&lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal -->
+    <div class="modal" id="example23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example23">Background & Color</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;div class="col-md-4"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="card text-white bg-primary mb-3"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-warning">
+                            &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-warning">
+                            &lt;div class="card-body"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;h5 class="card-title"&gt;Primary card title&lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;p class="card-text"&gt;Some Text&lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                   
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
