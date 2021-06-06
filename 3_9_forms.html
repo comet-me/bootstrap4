@@ -151,13 +151,13 @@
         
         <!-- ***** Forms ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Forms</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Forms</a></h2>
             <code class="d-inline-block mb-1 aw-code">.form-group</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.form-control</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Forms -->
+        <!-- TODO: example 1 - Forms -->
         <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
@@ -180,7 +180,7 @@
 
         <!-- ***** Form Controls ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Form Controls</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example2">Form Controls</a></h2>
             <code class="d-inline-block mb-1 aw-code">&lt;input&gt;</code> or 
             <code class="d-inline-block mb-1 aw-code">&lt;select&gt;</code> or 
             <code class="d-inline-block mb-1 aw-code">&lt;textarea&gt;</code> &amp; 
@@ -188,7 +188,7 @@
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Form Controls -->
+        <!-- TODO: example 1 - Form Controls -->
         <form>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
@@ -223,12 +223,12 @@
 
         <!-- ***** File Input ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>File Input</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example3">File Input</a></h2>
             <code class="d-inline-block mb-1 aw-code">.form-control-file</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - File Input -->
+        <!-- TODO: example 1 - File Input -->
         <form>
             <div class="form-group">
                 <label for="exampleFormControlFile1">Example file input</label>
@@ -790,6 +790,475 @@
         
         
     </div><!-- End Main Container -->
+
+
+    <!-- Modal  [Forms]-->
+    <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Forms</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <code>&lt;form&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="exampleInputEmail1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Email address
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;small id="emailHelp" class="form-text text-muted"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            We'll never share your email with anyone else.
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/small&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="exampleInputPassword1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Password
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-check"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label class="form-check-label"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;input type="checkbox" class="form-check-input"&gt;
+                                Check me out
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;button type="submit" class="btn btn-primary"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Submit
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <code>&lt;/form&gt;</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [Forms Control]-->
+    <div class="modal" id="example2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example2">Forms Control</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;form&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="exampleFormControlInput1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Email address
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="exampleFormControlSelect1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Example select
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;select class="form-control" id="exampleFormControlSelect1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;1&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;2&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;3&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;4&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;5&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/select&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="exampleFormControlSelect2"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Example multiple select
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-warning">
+                            &lt;select multiple class="form-control" id="exampleFormControlSelect2"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;1&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;2&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;3&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;4&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;option&gt;5&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-warning">
+                            &lt;/select&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="exampleFormControlTextarea1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Example textarea
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;/form&gt;
+                        </code></div>
+                    </div>                       
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [File Inputs]-->
+    <div class="modal" id="example3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example3">File Inputs</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;form&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="exampleFormControlFile1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Example file input
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            &lt;input type="file" class="form-control-file" id="exampleFormControlFile1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;/form&gt;
+                        </code></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;div class="custom-file"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;input type="file" class="custom-file-input" id="validatedCustomFile" required&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="custom-file-label" for="validatedCustomFile"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Choose file...
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="invalid-feedback"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Example invalid custom file feedback
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+
+                    
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
 
     <footer class="my-5 py-5">
     </footer>
