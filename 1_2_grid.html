@@ -392,7 +392,7 @@
     </div>
     <!-- End Main Container -->
 
-    <!-- Modal -->
+    <!-- Modal [Equal Width Columns] -->
     <div class="modal" id="example3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -403,12 +403,21 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <code>&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
-                    <br>
-                    <hr>
-                    <code class="pl-4">&lt;div class="col"&gt;</code>
-                    <hr>
-                    <code>&lt;/div&gt;</code>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="col"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;/div&gt;</code>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -419,7 +428,7 @@
     </div>
     <!-- end of Modal -->
 
-    <!-- Modal -->
+    <!-- Modal [Equal Width Columns with divider] -->
     <div class="modal" id="example4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -430,16 +439,41 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <code>&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
-                    <br>
-                    <hr>
-                    <code class="d-flex block pl-4">&lt;div class="col"&gt;<span class="text-dark">1 of 4</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col"&gt;<span class="text-dark">2 of 4</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="w-100"&gt;&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col"&gt;<span class="text-dark">3 of 4</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col"&gt;<span class="text-dark">4 of 4</span>&lt/div&gt;</code>
-                    <hr>
-                    <code class="d-flex block">&lt;/div&gt;</code>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;div class="row mx-0 mb-2 aw-grid"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="col"&gt;<span class="text-dark">1 of 4</span>&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="col"&gt;<span class="text-dark">2 of 4</span>&lt/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="w-100"&gt;&lt/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="col"&gt;<span class="text-dark">3 of 4</span>&lt/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="col"&gt;<span class="text-dark">4 of 4</span>&lt/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -449,7 +483,7 @@
         </div>
     </div>
     <!-- end of Modal -->
-    <!-- Modal -->
+    <!-- Modal [One Wider Column]-->
     <div class="modal" id="example5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -460,14 +494,32 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <code>&lt;div class="row mx-0 aw-grid"&gt;</code>
-                    <br>
-                    <hr>
-                    <code class="d-flex block pl-4">&lt;div class="col"&gt;<span class="text-dark">1 of 3</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-5"&gt;<span class="text-dark">2 of 3 (wider)</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col"&gt;<span class="text-dark">3 of 3</span>&lt/div&gt;</code>
-                    <hr>
-                    <code class="d-flex block">&lt;/div&gt;</code>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;div class="row mx-0 aw-grid"&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col"&gt;<span class="text-dark">1 of 3</span>&lt;/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-5"&gt;<span class="text-dark">2 of 3 (wider)</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col"&gt;<span class="text-dark">3 of 3</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;/div&gt;</code>
+                        </div>
+                    </div>
+    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -477,7 +529,7 @@
         </div>
     </div>
     <!-- end of Modal -->
-    <!-- Modal -->
+    <!-- Modal [No gutters]-->
     <div class="modal" id="example6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -488,24 +540,41 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <code>&lt;div class="row no-gutters aw-grid"&gt;</code>
-                    <br>
-                    <hr>
-                    <code class="d-flex block pl-4">&lt;div class="col"&gt;<span class="text-dark">1 of 3</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-5"&gt;<span class="text-dark">2 of 3 (wider)</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col"&gt;<span class="text-dark">3 of 3</span>&lt/div&gt;</code>
-                    <hr>
-                    <code class="d-flex block">&lt;/div&gt;</code>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;div class="row no-gutters aw-grid"&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col"&gt;<span class="text-dark">1 of 3</span>&lt;/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-5"&gt;<span class="text-dark">2 of 3 (wider)</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col"&gt;<span class="text-dark">3 of 3</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;/div&gt;</code>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
     </div>
     <!-- end of Modal -->
-    <!-- Modal -->
+    <!-- Modal [Various Column Sizes]-->
     <div class="modal" id="example7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -516,45 +585,99 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <code>&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
-                    <br>
-                    <code class="d-flex block pl-4">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-8"&gt;<span class="text-dark">.col-8</span>&lt/div&gt;</code>
-                    <code class="d-flex block">&lt;/div&gt;</code>
-                    <br>
-                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt;/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-8"&gt;<span class="text-dark">.col-8</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;/div&gt;</code>
+                        </div>
+                    </div>
                     <hr>
-                    <code>&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
-                    <br>
-                    <code class="d-flex block pl-4">&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
-                    <code class="d-flex block">&lt;/div&gt;</code>
-                    <br>
-                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt;/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;/div&gt;</code>
+                        </div>
+                    </div>
                     <hr>
-                    <code>&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
-                    <br>
-                    <code class="d-flex block pl-4">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
-                    <code class="d-flex block">&lt;/div&gt;</code>
-                    <br>
-                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt;/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success" class="d-flex block">&lt;/div&gt;</code>
+                        </div>
+                    </div>
                     <hr>
-                    <code>&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
-                    <br>
-                    <code class="d-flex block pl-4">&lt;div class="col-12"&gt;<span class="text-dark">.col-12</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-12"&gt;<span class="text-dark">.col-12</span>&lt/div&gt;</code>
-                    <code class="d-flex block">&lt;/div&gt;</code>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-12"&gt;<span class="text-dark">.col-12</span>&lt;/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-12"&gt;<span class="text-dark">.col-12</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;/div&gt;</code>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
     </div>
     <!-- end of Modal -->
-    <!-- Modal -->
+    <!-- Modal [Column Wrapping]-->
     <div class="modal" id="example8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -565,24 +688,41 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <code>&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
-                    <br>
-                    <hr>
-                    <code class="d-flex block pl-4">&lt;div class="col-9"&gt;<span class="text-dark">.col-9</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
-                    <hr>
-                    <code class="d-flex block">&lt;/div&gt;</code>
+                    <div class="row">
+                        <div class="col"><code>
+                            <code class="text-success">&lt;div class="row mx-0 mb-2 aw-grid"&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-9"&gt;<span class="text-dark">.col-9</span>&lt;/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1">
+                            <code class="text-muted">&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            <code class="text-success">&lt;/div&gt;</code>
+                        </code></div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
     </div>
     <!-- end of Modal -->
-    <!-- Modal -->
+    <!-- Modal [One Row]-->
     <div class="modal" id="example9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -593,25 +733,67 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <code>&lt;div class="row mx-0 aw-grid"&gt;</code>
-                    <br>
-                    <hr>
-                    <code class="d-flex block pl-4">&lt;div class="col-2"&gt;<span class="text-dark">.col-2</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-2"&gt;<span class="text-dark">.col-2</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-2"&gt;<span class="text-dark">.col-2</span>&lt;/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
-                    <code class="d-flex block pl-4">&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
-                    <hr>
-                    <code class="d-flex block">&lt;/div&gt;</code>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;div class="row mx-0 aw-grid"&gt;</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            <code>&lt;div class="col-2"&gt;<span class="text-dark">.col-2</span>&lt;/div&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            <code>&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            <code>&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            <code>&lt;div class="col-2"&gt;<span class="text-dark">.col-2</span>&lt;/div&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            <code>&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            <code>&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            <code>&lt;div class="col-2"&gt;<span class="text-dark">.col-2</span>&lt;/div&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            <code>&lt;div class="col-4"&gt;<span class="text-dark">.col-4</span>&lt/div&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            <code>&lt;div class="col-6"&gt;<span class="text-dark">.col-6</span>&lt/div&gt;</code>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <code class="text-success">&lt;/div&gt;</code>
+                        </div>
+                    </div>
+                    
                 </div>
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
