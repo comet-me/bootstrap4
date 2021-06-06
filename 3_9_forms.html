@@ -246,18 +246,18 @@
 
         <!-- ***** Sizing ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Sizing</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example4">Sizing</a></h2>
             <code class="d-inline-block mb-1 aw-code">.form-control-lg</code> or 
             <code class="d-inline-block mb-1 aw-code">.form-control-sm</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Sizing -->
+        <!-- TODO: example 1 - Sizing -->
         <input class="mb-2 form-control form-control-lg" type="text" placeholder="Large Input">
         <input class="mb-2 form-control" type="text" placeholder="Default Input">
         <input class="mb-2 form-control form-control-sm" type="text" placeholder="Small Input">
 
-        <!-- example 2 - Sizing -->
+        <!-- TODO: example 2 - Sizing -->
         <hr>
         <select class="mb-2 form-control form-control-lg">
             <option>Large select</option>
@@ -272,16 +272,16 @@
         
         <!-- ***** Readonly ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Readonly</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example5">Readonly</a></h2>
             <code class="d-inline-block mb-1 aw-code">readonly</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.form-control-plaintext</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Readonly -->
+        <!-- TODO:example 1 - Readonly -->
         <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
 
-        <!-- example 2 - Readonly -->
+        <!-- TODO: example 2 - Readonly -->
         <hr>
         <form>
             <div class="form-group row">
@@ -315,7 +315,7 @@
 
         <!-- ***** Checkboxes & Radio Buttons ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Checkboxes &amp; Radio Buttons</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example6">Checkboxes &amp; Radio Buttons</a></h2>
             <code class="d-inline-block mb-1 aw-code">.form-check</code> 
             <code class="d-inline-block mb-1 aw-code">.disabled</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">type="checkbox"</code> or 
@@ -323,7 +323,7 @@
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Checkboxes & Radio Buttons -->
+        <!-- TODO:example 1 - Checkboxes & Radio Buttons -->
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
@@ -337,7 +337,7 @@
             </label>
         </div>
 
-        <!-- example 2 - Checkboxes & Radio Buttons -->
+        <!-- TODO: example 2 - Checkboxes & Radio Buttons -->
         <hr>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -361,13 +361,13 @@
 
         <!-- ***** Inline ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Inline</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example7">Inline</a></h2>
             <code class="d-inline-block mb-1 aw-code">.form-check</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.form-check-inline</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Inline -->
+        <!-- TODO: example 1 - Inline -->
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
             <label class="form-check-label" for="inlineCheckbox1">1</label>
@@ -381,7 +381,7 @@
             <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
         </div>
 
-        <!-- example 2 - Inline -->
+        <!-- TODO: example 2 - Inline -->
         <hr>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -1248,12 +1248,652 @@
                         </code></div>
                     </div>
 
-                    
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [Sizing]-->
+    <div class="modal" id="example4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example4">Sizing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+
+
+                    <div class="row">
+                        <div class="col"><code class="text-muted">
+                            &lt;input class="mb-2 <span class="text-primary">form-control form-control-lg</span>" type="text" placeholder="Large Input"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-muted">
+                            &lt;input class="mb-2 form-control" type="text" placeholder="Default Input"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-muted">
+                            &lt;input class="mb-2 <span class="text-primary">form-control form-control-sm</span>" type="text" placeholder="Small Input"&gt;
+                        </code></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;select class="mb-2 <span class="text-primary">form-control form-control-lg</span>"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;option&gt;Large select&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                        &lt;/select&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;select class="mb-2 form-control"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;option&gt;Default select&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                        &lt;/select&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;select class="mb-2 <span class="text-primary">form-control form-control-sm</span>"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;option&gt;Small select&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;/select&gt;
+                        </code></div>
+                    </div>
+                </div>    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [ReadOnly]-->
+    <div class="modal" id="example5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example5">ReadOnly</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;input class="form-control" type="text" placeholder="Readonly input here…" readonly&gt;
+                        </code></div>
+                    </div>
+                <hr>
+                <div class="row">
+                    <div class="col"><code class="text-success">
+                        &lt;form&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="form-group row"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;label for="staticEmail" class="col-sm-2 col-form-label"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        Email
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/label&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-warning">
+                        &lt;div class="col-sm-10"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="form-group row"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;label for="inputPassword" class="col-sm-2 col-form-label"&gt;Password&lt;/label&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-warning">
+                        &lt;div class="col-sm-10"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;input type="password" class="form-control" id="inputPassword" placeholder="Password"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                    &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code class="text-success">
+                        &lt;/form&gt;
+                    </code></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col"><code class="text-success">
+                        &lt;form class="form-inline mt-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="form-group"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-muted">
+                        &lt;label for="staticEmail2" class="sr-only"&gt;Email&lt;/label&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-muted">
+                        &lt;input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="form-group mx-sm-3"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;label for="inputPassword2" class="sr-only"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        Password
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/label&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-muted">
+                        &lt;input type="password" class="form-control" id="inputPassword2" placeholder="Password"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;button type="submit" class="btn btn-primary"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-muted">
+                        Confirm identity
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code class="text-success">
+                        &lt;/form&gt;
+                    </code></div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [Checkboxes]-->
+    <div class="modal" id="example6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example6">Checkboxes & Radio Buttons</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                        &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="defaultCheck1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">Default checkbox</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                        &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck2" <span class="text-danger">disabled</span>&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="defaultCheck2"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">Disabled checkbox</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <code class="text-dark">&lt;hr&gt;</code>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="exampleRadios1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">Default radio</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="exampleRadios2"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">Second default radio</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check disabled"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" <span class="text-danger">disabled</span>&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="exampleRadios3"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">Disabled radio</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [Checkboxes Inline]-->
+    <div class="modal" id="example7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example7">Inline</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check form-check-inline"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;input class="form-check-input" type="<span class="text-danger">checkbox</span>" id="inlineCheckbox1" value="option1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="inlineCheckbox1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">1</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check form-check-inline"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                        &lt;input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"&gt;  
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="inlineCheckbox2"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">2</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check form-check-inline"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="inlineCheckbox3"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">3 (disabled)</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+
+                    <code class="text-danger">&lt;hr&gt;</code>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check form-check-inline"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                        &lt;input class="form-check-input" type="<span class="text-danger">radio</span>>" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt;    
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="inlineRadio1"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">1</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check form-check-inline"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="inlineRadio2"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">2</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;div class="form-check form-check-inline"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;label class="form-check-label" for="inlineRadio3"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            <span class="text-primary">3 (disabled)</span>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
