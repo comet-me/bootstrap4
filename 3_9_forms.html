@@ -574,7 +574,7 @@
 
         <!-- ***** Horizontal Form: label sizing ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Horizontal Form: label sizing</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example12">Horizontal Form: label sizing</a></h2>
             <code class="d-inline-block mb-1 aw-code">.col-form-label-sm</code> or 
             <code class="d-inline-block mb-1 aw-code">.col-form-label-lg</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.form-control-sm</code> or 
@@ -582,7 +582,7 @@
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Horizontal Form: label sizing -->
+        <!-- TODO: example 1 - Horizontal Form: label sizing -->
         <form>
             <div class="form-group row">
                 <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
@@ -607,13 +607,13 @@
 
         <!-- ***** Column Sizing ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Column Sizing</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example13">Column Sizing</a></h2>
             <code class="d-inline-block mb-1 aw-code">.col-{size}</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.col</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Column Sizing -->
+        <!-- TODO: example 1 - Column Sizing -->
         <form>
             <div class="form-row">
                 <div class="col-7">
@@ -2123,7 +2123,7 @@
     </div>
     <!-- end of Modal -->
 
-    <!-- Modal  [Checkboxes Form Grid]-->
+    <!-- Modal  [Checkboxes Form Grid: Complex]-->
     <div class="modal" id="example10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -2781,9 +2781,244 @@
                             &lt;/form&gt;
                         </code></div>
                     </div>
-                                <!-- forth offset-3 -->
-                            <!-- third to the last row offset-2 -->
-                        <!-- second to the last row offset-1 -->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [Horizontal Form: label sizing]-->
+    <div class="modal" id="example12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example12">Horizontal Form: label sizing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;form&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group row"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Email
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="col-sm-10"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group row"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="colFormLabel" class="col-sm-2 col-form-label"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Email
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="col-sm-10"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group row"&gt;
+                        </code></div>
+                    </div>
+                    <!-- code here -->
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Email
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="col-sm-10"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;/form&gt;
+                        </code></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [Column Sizing]-->
+    <div class="modal" id="example13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example13">Column Sizing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;form&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-row"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="col-7"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;input type="text" class="form-control" placeholder="City"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="col"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;input type="text" class="form-control" placeholder="State"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="col"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;input type="text" class="form-control" placeholder="Zip"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;/form&gt;
+                        </code></div>
+                    </div>
 
 
 
