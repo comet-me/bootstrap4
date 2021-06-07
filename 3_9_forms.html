@@ -429,15 +429,15 @@
         <form>
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="First name">
+                    <input type="text" class="form-control" placeholder="First Name">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
+                    <input type="text" class="form-control" placeholder="Last Name">
                 </div>
             </div>
         </form>
 
-        <!-- example 2 - Form Grid -->
+        <!-- TODO: example 2 - Form Grid -->
         <form class="mt-3">
             <div class="form-row">
                 <div class="col">
@@ -730,12 +730,12 @@
 
         <!-- ***** Help Text ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Help Text</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example16">Help Text</a></h2>
             <code class="d-inline-block mb-1 aw-code">.form-text</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Help Text -->
+        <!-- TODO: example 1 - Help Text -->
         <label for="inputPassword5">Password</label>
         <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
         <small id="passwordHelpBlock" class="form-text text-muted">
@@ -756,16 +756,16 @@
 
         <!-- ***** Disabled Forms ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Disabled Forms</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example17">Disabled Forms</a></h2>
             <code class="d-inline-block mb-1 aw-code">disabled</code> &amp;
             <code class="d-inline-block mb-1 aw-code">&lt;fieldset&gt;</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Disabled Forms -->
+        <!-- TODO: example 1 - Disabled Forms -->
         <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
 
-        <!-- example 2 - Disabled Forms -->
+        <!-- TODO:  example 2 - Disabled Forms -->
         <hr>
         <form>
             <fieldset disabled>
@@ -810,7 +810,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="form-group"&gt;
+                            &lt;div class="<span class="text-primary">form-group</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -830,7 +830,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"&gt;
+                            &lt;input type="email" class="<span class="text-primary">form-control</span>" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -855,7 +855,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="form-group"&gt;
+                            &lt;div class="<span class="text-primary">form-group</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -875,7 +875,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-muted">
-                            &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+                            &lt;input type="password" class="<span class="text-primary">form-control</span>" id="exampleInputPassword1" placeholder="Password"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -932,7 +932,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
@@ -961,7 +961,7 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;label for="exampleFormControlInput1"&gt;
                         </code></div>
                     </div>
@@ -971,13 +971,13 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;/label&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"&gt;
+                            &lt;input type="email" class="<span class="text-primary">form-control</span>" id="exampleFormControlInput1" placeholder="name@example.com"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -991,7 +991,7 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;label for="exampleFormControlSelect1"&gt;
                         </code></div>
                     </div>
@@ -1001,13 +1001,13 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;/label&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;select class="form-control" id="exampleFormControlSelect1"&gt;
+                        <div class="col offset-2"><code class="text-danger">
+                            &lt;select class="<span class="text-primary">form-control</span>" id="exampleFormControlSelect1"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -1036,7 +1036,7 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;/select&gt;
                         </code></div>
                     </div>
@@ -1051,7 +1051,7 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;label for="exampleFormControlSelect2"&gt;
                         </code></div>
                     </div>
@@ -1061,13 +1061,13 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;/label&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-warning">
-                            &lt;select multiple class="form-control" id="exampleFormControlSelect2"&gt;
+                        <div class="col offset-2"><code class="text-danger">
+                            &lt;select multiple class="<span class="text-primary">form-control</span>>" id="exampleFormControlSelect2"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -1096,7 +1096,7 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-warning">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;/select&gt;
                         </code></div>
                     </div>
@@ -1111,7 +1111,7 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;label for="exampleFormControlTextarea1"&gt;
                         </code></div>
                     </div>
@@ -1121,13 +1121,13 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;/label&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-muted">
-                            &lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;textarea class="<span class="text-primary">form-control</span>>" id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -1172,7 +1172,7 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;label for="exampleFormControlFile1"&gt;
                         </code></div>
                     </div>
@@ -1182,13 +1182,13 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-danger">
                             &lt;/label&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-muted">
-                            &lt;input type="file" class="form-control-file" id="exampleFormControlFile1"&gt;
+                            &lt;input type="file" class="<span class="text-primary">form-control-file</span>" id="exampleFormControlFile1"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -1201,7 +1201,11 @@
                             &lt;/form&gt;
                         </code></div>
                     </div>
-                    <hr>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;hr&gt;
+                        </code></div>
+                    </div>
                     <div class="row">
                         <div class="col"><code>
                             &lt;div class="custom-file"&gt;
@@ -1209,11 +1213,11 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-muted">
-                            &lt;input type="file" class="custom-file-input" id="validatedCustomFile" required&gt;
+                            &lt;input type="file" class="<span class="text-primary">custom-file-input</span>" id="validatedCustomFile" required&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-warning">
                             &lt;label class="custom-file-label" for="validatedCustomFile"&gt;
                         </code></div>
                     </div>
@@ -1223,12 +1227,12 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-warning">
                             &lt;/label&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-warning">
                             &lt;div class="invalid-feedback"&gt;
                         </code></div>
                     </div>
@@ -1238,7 +1242,7 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-warning">
                             &lt;/div&gt;
                         </code></div>
                     </div>
@@ -1353,7 +1357,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col"><code>
-                            &lt;input class="form-control" type="text" placeholder="Readonly input here…" readonly&gt;
+                            &lt;input class="form-control" type="text" placeholder="Readonly input here…" <span class="text-primary">readonly</span>&gt;
                         </code></div>
                     </div>
                 <hr>
@@ -1389,7 +1393,7 @@
                 </div>
                 <div class="row">
                     <div class="col offset-3"><code class="text-muted">
-                        &lt;input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"&gt;
+                        &lt;input type="text" <span class="text-primary">readonly</span> class="<span class="text-primary">form-control-plaintext</span>" id="staticEmail" value="email@example.com"&gt;
                     </code></div>
                 </div>
                 <div class="row">
@@ -1455,7 +1459,7 @@
                 </div>
                 <div class="row">
                     <div class="col offset-2"><code class="text-muted">
-                        &lt;input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com"&gt;
+                        &lt;input type="text" <span class="text-primary">readonly</span> class="form-control-plaintext" id="staticEmail2" value="email@example.com"&gt;
                     </code></div>
                 </div>
                 <div class="row">
@@ -1522,7 +1526,7 @@
         </div>
     </div>
     <!-- end of Modal -->
-    <!-- Modal  [Checkboxes]-->
+    <!-- Modal  [Checkboxes & Radio Buttons]-->
     <div class="modal" id="example6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -1535,12 +1539,12 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col"><code class="text-warning">
-                            &lt;div class="form-check"&gt;
+                            &lt;div class="<span class="text-primary">form-check</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                        &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck1"&gt;
+                        &lt;input class="form-check-input" <span class="text-primary">type="checkbox"</span> value="" id="defaultCheck1"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -1550,7 +1554,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-muted">
-                            <span class="text-primary">Default checkbox</span>
+                            <span class="text-danger">Default checkbox</span>
                         </code></div>
                     </div>
                     <div class="row">
@@ -1565,12 +1569,12 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-warning">
-                            &lt;div class="form-check"&gt;
+                            &lt;div class="<span class="text-primary">form-check</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                        &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck2" <span class="text-danger">disabled</span>&gt;
+                        &lt;input class="form-check-input" <span class="text-primary">type="checkbox"</span> value="" id="defaultCheck2" <span class="text-primary">disabled</span>&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -1580,7 +1584,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-muted">
-                            <span class="text-primary">Disabled checkbox</span>
+                            <span class="text-danger">Disabled checkbox</span>
                         </code></div>
                     </div>
                     <div class="row">
@@ -1596,12 +1600,12 @@
                     <code class="text-dark">&lt;hr&gt;</code>
                     <div class="row">
                         <div class="col"><code class="text-success">
-                            &lt;div class="form-check"&gt;
+                            &lt;div class="<span class="text-primary">form-check</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked&gt;
+                            &lt;input class="form-check-input" <span class="text-primary">type="radio"</span> name="exampleRadios" id="exampleRadios1" value="option1" checked&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -1611,7 +1615,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-muted">
-                            <span class="text-primary">Default radio</span>
+                            <span class="text-danger">Default radio</span>
                         </code></div>
                     </div>
                     <div class="row">
@@ -1624,15 +1628,14 @@
                             &lt;/div&gt;
                         </code></div>
                     </div>
-
                     <div class="row">
                         <div class="col"><code class="text-success">
-                            &lt;div class="form-check"&gt;
+                            &lt;div class="<span class="text-primary">form-check</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"&gt;
+                            &lt;input class="form-check-input" <span class="text-primary">type="radio"</span> name="exampleRadios" id="exampleRadios2" value="option2"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -1642,7 +1645,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-muted">
-                            <span class="text-primary">Second default radio</span>
+                            <span class="text-danger">Second default radio</span>
                         </code></div>
                     </div>
                     <div class="row">
@@ -1657,12 +1660,12 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-success">
-                            &lt;div class="form-check disabled"&gt;
+                            &lt;div class="<span class="text-primary">form-check disabled</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" <span class="text-danger">disabled</span>&gt;
+                            &lt;input class="form-check-input" <span class="text-primary">type="radio"</span> name="exampleRadios" id="exampleRadios3" value="option3" <span class="text-primary">disabled</span>&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -1672,7 +1675,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-muted">
-                            <span class="text-primary">Disabled radio</span>
+                            <span class="text-danger">Disabled radio</span>
                         </code></div>
                     </div>
                     <div class="row">
@@ -1685,7 +1688,6 @@
                             &lt;/div&gt;
                         </code></div>
                     </div>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -1708,7 +1710,7 @@
                 <div class="modal-body">
                      <div class="row">
                          <div class="col"><code class="text-warning">
-                            &lt;div class="form-check form-check-inline"&gt;
+                            &lt;div class="<span class="text-primary">form-check form-check-inline</span>"&gt;
                          </code></div>
                      </div>
                      <div class="row">
@@ -1738,7 +1740,7 @@
                      </div>
                      <div class="row">
                          <div class="col"><code class="text-warning">
-                            &lt;div class="form-check form-check-inline"&gt;
+                            &lt;div class="<span class="text-primary">form-check form-check-inline</span>"&gt;
                          </code></div>
                      </div>
                      <div class="row">
@@ -1769,7 +1771,7 @@
                      </div>
                      <div class="row">
                          <div class="col"><code class="text-warning">
-                            &lt;div class="form-check form-check-inline"&gt;
+                            &lt;div class="<span class="text-primary">form-check form-check-inline</span>"&gt;
                          </code></div>
                      </div>
                      <div class="row">
@@ -1804,7 +1806,7 @@
                      </div>
                      <div class="row">
                          <div class="col"><code class="text-success">
-                            &lt;div class="form-check form-check-inline"&gt;
+                            &lt;div class="<span class="text-primary">form-check form-check-inline</span>"&gt;
                          </code></div>
                      </div>
                      <div class="row">
@@ -1834,7 +1836,7 @@
                      </div>
                      <div class="row">
                          <div class="col"><code class="text-success">
-                    &lt;div class="form-check form-check-inline"&gt;  
+                    &lt;div class="<span class="text-primary">form-check form-check-inline</span>"&gt;  
                          </code></div>
                      </div>
                      <div class="row">
@@ -1864,7 +1866,7 @@
                      </div>
                      <div class="row">
                          <div class="col"><code class="text-success">
-                            &lt;div class="form-check form-check-inline"&gt;
+                            &lt;div class="<span class="text-primary">form-check form-check-inline</span>"&gt;
                          </code></div>
                      </div>
                      <div class="row">
@@ -1912,7 +1914,6 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
-                
                 <div class="modal-body">
                    <div class="row">
                        <div class="col"><code>
@@ -1921,7 +1922,7 @@
                    </div>
                    <div class="row">
                        <div class="col offset-1"><code class="text-warning">
-                        &lt;div class="form-group"&gt;
+                        &lt;div class="<span class="text-primary">form-group</span>"&gt;
                        </code></div>
                    </div>
                    <div class="row">
@@ -1951,7 +1952,7 @@
                    </div>
                    <div class="row">
                        <div class="col offset-1"><code class="text-warning">
-                        &lt;div class="form-group"&gt;
+                        &lt;div class="<span class="text-primary">form-group</span>"&gt;
                        </code></div>
                    </div>
                    <div class="row">
@@ -2005,7 +2006,6 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
-                
                 <div class="modal-body">
                     <div class="row">
                         <div class="col"><code class="text-success">
@@ -2014,17 +2014,17 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="row"&gt;
+                            &lt;div class="<span class="text-primary">row</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col"&gt;
+                            &lt;div class="<span class="text-primary">col</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-3"><code class="text-muted">
-                            &lt;input type="text" class="form-control" placeholder="First name"&gt;
+                            &lt;input type="text" class="form-control" placeholder="First Name"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2033,18 +2033,18 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="<span class="text-primary">col</span>"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;input type="text" class="form-control" placeholder="Last Name"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
                             &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="col"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-muted">
-                            &lt;input type="text" class="form-control" placeholder="Last name"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2064,12 +2064,12 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="form-row"&gt;
+                            &lt;div class="<span class="text-primary">form-row</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col"&gt;
+                            &lt;div class="<span class="text-primary">col</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2084,7 +2084,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col"&gt;
+                            &lt;div class="<span class="text-primary">col</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2141,7 +2141,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="form-row"&gt;
+                            &lt;div class="<span class="text-primary">form-row</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2261,7 +2261,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="form-row"&gt;
+                            &lt;div class="<span class="text-primary">form-row</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2431,10 +2431,6 @@
                             &lt;/form&gt;
                         </code></div>
                     </div>
-
-
-
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -2462,7 +2458,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-warning">
-                        &lt;div class="form-group row"&gt;
+                        &lt;div class="<span class="text-primary">form-group row</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2502,7 +2498,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;div class="form-group row"&gt;
+                            &lt;div class="form-group <span class="text-primary">row</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2547,7 +2543,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code>
-                            &lt;div class="row"&gt;
+                            &lt;div class="<span class="text-primary">row</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2834,7 +2830,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-3"><code class="text-muted">
-                            &lt;input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"&gt;
+                            &lt;input type="email" class="form-control <span class="text-primary">form-control-sm</span>" id="colFormLabelSm" placeholder="col-form-label-sm"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2854,7 +2850,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;label for="colFormLabel" class="col-sm-2 col-form-label"&gt;
+                            &lt;label for="colFormLabel" class="col-sm-2 <span class="text-primary">col-form-label</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2895,7 +2891,7 @@
                     <!-- code here -->
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg"&gt;
+                            &lt;label for="colFormLabelLg" class="col-sm-2 <span class="text-primary">col-form-label col-form-label-lg</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2915,7 +2911,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-3"><code class="text-muted">
-                            &lt;input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg"&gt;
+                            &lt;input type="email" class="form-control <span class="text-primary">form-control-lg</span>" id="colFormLabelLg" placeholder="col-form-label-lg"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2966,7 +2962,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col-7"&gt;
+                            &lt;div class="<span class="text-primary">col-7</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2981,7 +2977,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col"&gt;
+                            &lt;div class="<span class="text-primary">col</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2996,7 +2992,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col"&gt;
+                            &lt;div class="<span class="text-primary">col</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3051,7 +3047,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col-auto"&gt;
+                            &lt;div class="<span class="text-primary">col-auto</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3081,7 +3077,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col-auto"&gt;
+                            &lt;div class="<span class="text-primary">col-auto</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3146,7 +3142,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col-auto"&gt;
+                            &lt;div class="<span class="text-primary">col-auto</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3186,7 +3182,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-dark">
-                            &lt;div class="col-auto"&gt;
+                            &lt;div class="<span class="text-primary">col-auto</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3297,7 +3293,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-warning">
-                            &lt;div class="col-auto"&gt;
+                            &lt;div class="<span class="text-primary">col-auto</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3337,7 +3333,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-2"><code class="text-warning">
-                            &lt;div class="col-auto"&gt;
+                            &lt;div class="<span class="text-primary">col-auto</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3514,9 +3510,269 @@
                             &lt;/form&gt;
                         </code></div>
                     </div>
-                        
-                        
-                        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [Help Text]-->
+    <div class="modal" id="example16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example16">Help Text</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;label for="inputPassword5">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            Password
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;small id="passwordHelpBlock" class="<span class="text-primary">form-text</span> text-muted"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;/small&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;form class="form-inline mt-4"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;label for="inputPassword6"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Password
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;small id="passwordHelpInline" class="text-muted"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Must be 8-20 characters long.
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/small&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/form&gt;
+                        </code></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [Disabled Forms]-->
+    <div class="modal" id="example17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example17">Disabled Forms</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            <hr>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;form&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;fieldset disabled&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;label for="disabledTextInput"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            Disabled input
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3 code text-dark">
+                            &lt;/label&gt;
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            &lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="form-group"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;label for="disabledSelect"&gt;Disabled select menu&lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;select id="disabledSelect" class="form-control"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-muted">
+                            &lt;option&gt;Disabled select&lt;/option&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;/select&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="form-check"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;label class="form-check-label"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;input class="form-check-input" type="checkbox"&gt; Can't check this
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-dark">
+                            &lt;/label&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;button type="submit" class="btn btn-primary"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-muted">
+                            Submit
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/fieldset&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;/form&gt;
+                        </code></div>
+                    </div>
+
+
+
 
                 </div>
                 <div class="modal-footer">
