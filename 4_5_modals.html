@@ -154,7 +154,7 @@
 
         <!-- ***** Modals ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Modals</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Modals</a></h2>
             <code class="d-inline-block mb-1 aw-code">.modal</code>
             <code class="d-inline-block mb-1 aw-code">.fade</code> |
             <code class="d-inline-block mb-1 aw-code">.modal-dialog</code> |
@@ -200,7 +200,7 @@
 
         <!-- ***** Modals with Long Content ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Modals with Long Content</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example2">Modals with Long Content</a></h2>
             <code class="d-inline-block mb-1 aw-code">.modal</code>
             <code class="d-inline-block mb-1 aw-code">.fade</code> |
             <code class="d-inline-block mb-1 aw-code">.modal-dialog</code> |
@@ -437,6 +437,375 @@
 
     </div>
     <!-- End Main Container -->
+
+
+    <!-- Modal  [Modal]-->
+      <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><code>
+                          &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"&gt;  
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                        Launch demo modal
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;div class="<span class="text-primary">modal</span>" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="<span class="text-primary">modal-dialog</span>" role="document"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code>
+                            &lt;div class="<span class="text-primary">modal-content</span>"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-warning">
+                            &lt;div class="<span class="text-primary">modal-header</span>"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;h5 class="<span class="text-primary">modal-title</span>" id="exampleModalLabel"&gt;Modal title&lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;button type="button" class="<span class="text-primary">close</span>" data-dismiss="modal" aria-label="Close"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-warning">
+                            &lt;div class="<span class="text-primary">modal-body</span>"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-muted">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-warning">
+                            &lt;div class="<span class="text-primary">modal-footer</span>"&gt;        
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            Close
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-muted">
+                            &lt;button type="button" class="btn btn-primary"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            Save changes
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code>
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;/div>
+                        </code></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal  [Modal with Long Content]-->
+      <div class="modal" id="example2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example2">Modal with long content</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;button type="button" class="btn btn-primary" <span class="text-primary">data-toggle="modal"</span> <span class="text-primary">data-target="#exampleModalLong"</span>&gt; 
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            Launch long demo modal
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code>
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;div class="<span class="text-primary">modal fade</span>" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;div class="<span class="text-primary">modal-dialog</span>" role="document"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;div class="<span class="text-primary">modal-content</span>"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code>
+                            &lt;div class="<span class="text-primary">modal-header</span>"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;h5 class="" id="exampleModalLongTitle"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            <h5>Modal title</h5>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;button type="button" class="<span class="text-primary">close</span>" data-dismiss="modal" aria-label="Close"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code>
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code>
+                            &lt;div class="<span class="text-primary">modal-body</span>"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            Some Text
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                         Some Text
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            Some Text
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            Some Text
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/p&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code>
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code>
+                            &lt;div class="modal-footer"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            Close
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;button type="button" class="btn btn-primary"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-5"><code class="text-muted">
+                            Save changes
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-4"><code class="text-dark">
+                            &lt;/button&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-3"><code>
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-warning">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-success">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
 
     <footer class="my-5 py-5">
     </footer>
