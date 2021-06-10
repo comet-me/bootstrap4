@@ -10,33 +10,37 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-    <input type="text" value="Hello World" id="myInput">
-    <input type="text" placeholder="Paste it here">
-
-    <div class="row" id="contentt">
-        <div class="col"><code class="text-warning">
-            &lt;p&gt; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, cum?&lt;/p&gt;
+    <div class="container text-center" id="contentt">
+    <div class="row">
+        <div class="col mt-3"><code>
+            &lt;p&gt; Lorem ipsum dolor sit amet. &lt;/p&gt;
         </code></div>
     </div>
-
-<!-- The button used to copy the text -->
-<button onclick="myFunction()">Copy text</button>
-<script>
-    function myFunction() {
-  /* Get the text field */
-  var copyText = document.getElementById("contentt");
-
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
-}
-</script>
+    <div class="row">
+        <div class="col offset-1"><code>
+            <h5>Title: Modal</h5>
+        </code></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <textarea name="" id="" cols="60" rows="20"></textarea>
+        </div>
+    </div>
+    
+    </div>
+    <div class="text-center">
+        <a href="#" onclick="CopyToClipboard('contentt');return false;">Copy Text</a>
+    </div>
+    <script>
+        function CopyToClipboard(contentt)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+        </script>
 </body>
 </html>
