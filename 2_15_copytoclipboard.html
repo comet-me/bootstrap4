@@ -110,7 +110,7 @@
     <div id="heading-container" class="container">
         <div class="text-center mb-4">
             <h1 class="display-4 mt-4 pt-5">Guide
-                <a href="https://getbootstrap.com/docs/4.0/components/tooltips/" target="_blank" class="text-dark">
+                <a href="https://comet-me.github.io/rom/" target="_blank" class="text-dark">
                     <span class="h1" title="See offical documentation">
                         <i class="fa fa-question-circle" aria-hidden="true"></i>
                     </span>
@@ -152,46 +152,120 @@
         <h5>Here are the Steps:</h5>
         <p>1. Create a div and add ID, in this example I use the name <b>contentt</b> for the div ID</p>
         <p>2 Create a button outside that DIV you made from the first step, here is the sample below this line</p>
-        <p class="bg-dark">
+        <p id="p3" class="bg-dark">
             <code class="text-white">
                 &lt;button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-primary" data-dismiss="modal">Copy&lt;/button>
             </code>
         </p>
-        <p>3. Copy the script below this line:</p>
-        <code>
-            <p>
-                &lt;script&gt;
-            </p>
-        <p>
-            function CopyToClipboard(contentt)
-        </p> 
-        <p>
-            {
-        </p>   
-        <p>
-            var r = document.createRange();
+        <p class="text-center">
+            <button type="button" onclick="CopyToClipboard('p3');return false;" class="btn btn-primary" data-dismiss="modal">Click here to copy code above</button>
         </p>
-        <p>
-            r.selectNode(document.getElementById(contentt));
-        </p>
-        <p>
-            window.getSelection().removeAllRanges();
-        </p>
-        <p>
-            window.getSelection().addRange(r);
-        </p>
-        <p>
-            document.execCommand('copy');
-        </p>
-        <p>
-            window.getSelection().removeAllRanges();
-        </p>
-        <p>
-        }
-        </p>
-            &lt;/script&gt;
-        </code>
 
+        <p>3. Copy the script below this line:</p>
+        <div id="scriptt" class="bg-dark text-white">
+            <div class="row">
+                <div class="col">
+                    <code class="text-light">
+                        &lt;script&gt;</div>
+                    </code>
+            </div>
+            <div class="row">
+                <div class="col offset-1">
+                    <code class="text-light">
+                        function CopyToClipboard<span class="text-danger">(</span><span class="text-success">contentt</span><span class="text-danger">)</span>
+                    </code>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-2">
+                    <code>
+                        <span class="text-warning">{</span>
+                    </code>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-3">
+                    <code class="text-light">
+                        var r = document.createRange<span class="text-danger">()</span>;
+                    </code>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-3">
+                    <code class="text-light">
+                        r.selectNode<span class="text-danger">(</span>document.getElementById<span class="text-danger">(</span><span class="text-success">contentt</span><span class="text-danger">))</span>;
+                    </code>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-3">
+                    <code class="text-light">
+                        window.getSelection<span class="text-danger">()</span>.removeAllRanges<span class="text-danger">()</span>;
+                    </code>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-3">
+                    <code class="text-light">
+                        window.getSelection<span class="text-danger">()</span>.addRange(<span class="text-success">r</span><span class="text-danger">)</span>;
+                    </code>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-3">
+                    <code class="text-light">
+                        document.execCommand<span class="text-danger">(</span>'<span class="text-success">copy</span>'<span class="text-danger">)</span>;
+                    </code>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-3">
+                    <code class="text-light">
+                        window.getSelection<span class="text-danger">()</span>.removeAllRanges<span class="text-danger">()</span>;
+                    </code>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-2">
+                    <span class="text-warning">}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <code class="text-light">
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-3">
+            <button type="button" onclick="CopyToClipboard2('scriptt');return false;" class="btn btn-primary" data-dismiss="modal">Click here to copy code above</button>
+        </p>
+        <h6 class="text-center">That's all folks!</h6>
+
+        <script>
+
+            function CopyToClipboard(p3)
+            {
+            var r = document.createRange();
+            r.selectNode(document.getElementById(p3));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(r);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            alert('Copied');
+            }
+            function CopyToClipboard2(scriptt)
+            {
+            var r = document.createRange();
+            r.selectNode(document.getElementById(scriptt));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(r);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            alert('Copied')
+            }
+            </script>
     </div><!-- End Main Container -->
 
     <footer class="my-5 py-5">

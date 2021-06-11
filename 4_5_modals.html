@@ -64,6 +64,7 @@
                                 <a class="dropdown-item" href="2_12_float.html">12. Float</a>
                                 <a class="dropdown-item" href="2_13_clearfix.html">13. Clearfix</a>
                                 <a class="dropdown-item" href="2_14_screenreaders.html">14. Screenreaders</a>
+                                <a class="dropdown-item" href="2_15_copytoclipboard.html">15. Copy Text to Clipboard</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -643,7 +644,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div id="contentt">
+                    <div id="contentt2">
                         <div class="row">
                             <div class="col"><code>
                                 &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"&gt;
@@ -940,7 +941,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                    <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
+                    <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
                 </div>
             </div>
         </div>
@@ -957,215 +958,219 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col"><code>
-                            &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            Launch tooltips &amp; popovers demo modal
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><code>
-                            &lt;/button&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><code>
-                            &lt;div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="modal-dialog" role="document"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code>
-                            &lt;div class="modal-content"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-3"><code class="text-warning">
-                            &lt;div class="modal-header"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;h5 class="modal-title" id="exampleModal2Label"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-5"><code class="text-muted">
-                            <h5>Modal title</h5>
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;/h5&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-5"><code class="text-muted">
-                            &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;/button&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-3"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-3"><code class="text-warning">
-                            &lt;div class="modal-body"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;h5&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-5"><code class="text-muted">
-                            <h5>Popover in a modal</h5>
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;/h5&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;p&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-5"><code class="text-muted">
-                            This &lt;a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title"
-                            data-content="Popover body content is set in this attribute." data-toggle="popover" data-placement="right" data-trigger="hover"&gt;
-                            button&lt;/a&gt; triggers a popover on click.
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;/p&gt;
-                        </code></div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;hr&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;h5&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-5"><code class="text-muted">
-                            <h5>Tooltips in a modal</h5>
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;/h5&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;p&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-5"><code class="text-muted">
-                            &lt;a href="#" class="tooltip-test" title="Tooltip" data-toggle="tooltip"
-                            data-placement="top"&gt;This link&lt;/a&gt; and &lt;a href="#" class="tooltip-test" title="Tooltip"
-                            data-toggle="tooltip" data-placement="top"&gt;that link&lt;/a&gt; have tooltips
-                            on hover.
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;/p&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-3"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-3"><code class="text-warning">
-                            &lt;div class="modal-footer"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-muted">
-                            &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-5"><code class="text-muted">
-                            Close
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;/button&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;button type="button" class="btn btn-primary"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-5"><code class="text-muted">
-                            Save changes
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-4"><code class="text-dark">
-                            &lt;/button&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-3"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code>
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><code>
-                            &lt;/div&gt;
-                        </code></div>
+                    <div id="contentt3">
+                        
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Launch tooltips &amp; popovers demo modal
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="modal-dialog" role="document"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code>
+                                &lt;div class="modal-content"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-warning">
+                                &lt;div class="modal-header"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;h5 class="modal-title" id="exampleModal2Label"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-muted">
+                                <h5>Modal title</h5>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-muted">
+                                &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-warning">
+                                &lt;div class="modal-body"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-muted">
+                                <h5>Popover in a modal</h5>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-muted">
+                                This &lt;a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title"
+                                data-content="Popover body content is set in this attribute." data-toggle="popover" data-placement="right" data-trigger="hover"&gt;
+                                button&lt;/a&gt; triggers a popover on click.
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;/p&gt;
+                            </code></div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;hr&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-muted">
+                                <h5>Tooltips in a modal</h5>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-muted">
+                                &lt;a href="#" class="tooltip-test" title="Tooltip" data-toggle="tooltip"
+                                data-placement="top"&gt;This link&lt;/a&gt; and &lt;a href="#" class="tooltip-test" title="Tooltip"
+                                data-toggle="tooltip" data-placement="top"&gt;that link&lt;/a&gt; have tooltips
+                                on hover.
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-warning">
+                                &lt;div class="modal-footer"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-muted">
+                                Close
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-primary"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-muted">
+                                Save changes
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
                     <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
@@ -1905,6 +1910,25 @@
         {
         var r = document.createRange();
         r.selectNode(document.getElementById(contentt));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+
+        function CopyToClipboard2(contentt2)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt2));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+        function CopyToClipboard3(contentt3)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt3));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
