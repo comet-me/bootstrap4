@@ -999,42 +999,45 @@
                 </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col">
-                            <code>&lt;div class="card" style="width: 20rem;"&gt;</code>
+                    <div id="contentt">
+                        <div class="row">
+                            <div class="col">
+                                <code>&lt;div class="card" style="width: 20rem;"&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-dark">&lt;img class="card-img-top" src="img/image.jpg" alt="Card image cap"&gt;</code>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-dark">&lt;img class="card-img-top" src="img/image.jpg" alt="Card image cap"&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;div class="card-body"&gt;</code>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;div class="card-body"&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-dark">&lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;</code>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-dark">&lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-dark">&lt;p class="card-text "&gt;Some text&lt;/p&gt;</code><br>
-                            <code class="text-dark">&lt;a href="# " class="btn btn-primary "&gt;Go somewhere&lt;/a&gt;</code>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-dark">&lt;p class="card-text "&gt;Some text&lt;/p&gt;</code><br>
+                                <code class="text-dark">&lt;a href="# " class="btn btn-primary "&gt;Go somewhere&lt;/a&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col offset-1 ">
-                            <code class="text-warning">&lt;/div&gt;</code>
+                        <div class="row ">
+                            <div class="col offset-1 ">
+                                <code class="text-warning">&lt;/div&gt;</code>
+                            </div>
                         </div>
+                        <code>&lt;/div&gt;</code>
                     </div>
-                    <code>&lt;/div&gt;</code>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
                 </div>
             </div>
         </div>
@@ -1050,37 +1053,40 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col"><code class="text-success">
-                            &lt;div class="card"&gt;
-                        </code></div>
+                <div id="contentt1">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col"><code class="text-success">
+                                &lt;div class="card"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="card-body"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                Some Text
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-success">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        
                     </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="card-body"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-muted">
-                            Some Text
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><code class="text-success">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
                 </div>
             </div>
         </div>
@@ -1097,56 +1103,59 @@
                 </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col"><code class="text-success">
-                            &lt;div class="card" style="width: 20rem;"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;div class="card-body"&gt;</code>
+                    <div id="contentt5">
+                        <div class="row">
+                            <div class="col"><code class="text-success">
+                                &lt;div class="card" style="width: 20rem;"&gt;
+                            </code></div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-dark">&lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;</code>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;div class="card-body"&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;h6 class="card-subtitle mb-2 text-muted"&gt;Card subtitle&lt;/h6&gt;</code>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-dark">&lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;p class="card-text"&gt;Some Text&lt;/p&gt;</code>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;h6 class="card-subtitle mb-2 text-muted"&gt;Card subtitle&lt;/h6&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;a href="#" class="card-link"&gt;Card Link&lt;/a&gt;</code>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;p class="card-text"&gt;Some Text&lt;/p&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;a href="#" class="card-link"&gt;Another Link&lt;/a&gt;</code>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;a href="#" class="card-link"&gt;Card Link&lt;/a&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;/div&gt;</code>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;a href="#" class="card-link"&gt;Another Link&lt;/a&gt;</code>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-success">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        
                     </div>
-                    <div class="row">
-                        <div class="col"><code class="text-success">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
                 </div>
             </div>
         </div>
@@ -1163,41 +1172,44 @@
                 </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col">
-                            <code class="text-success">&lt;div class="card" style="width: 20rem;"&gt;</code>
+                    <div id="contentt3">
+                        <div class="row">
+                            <div class="col">
+                                <code class="text-success">&lt;div class="card" style="width: 20rem;"&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-dark">&lt;img class="card-img-top" src="img/images.jpg" alt="Card image cap"&gt;</code>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-dark">&lt;img class="<span class="text-primary">card-img-top</span>" src="img/images.jpg" alt="Card image cap"&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;div class="card-body"&gt;</code>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;div class="<span class="text-primary">card-body</span>"&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;p class="card-text"&gt;Some Text&lt;/p&gt;</code>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;p class="<span class="text-primary">card-text</span>"&gt;Some Text&lt;/p&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;/div&gt;</code>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;/div&gt;</code>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <code class="text-success">&lt;/div&gt;</code>
+                        <div class="row">
+                            <div class="col">
+                                <code class="text-success">&lt;/div&gt;</code>
+                            </div>
                         </div>
+                                            
                     </div>
-                                        
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
                 </div>
             </div>
         </div>
@@ -1214,97 +1226,100 @@
                 </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col">
-                            <code class="text-success">&lt;div class="card mb-3" style="width: 20rem;"&gt;</code>
+                    <div id="contentt4">
+                        <div class="row">
+                            <div class="col">
+                                <code class="text-success">&lt;div class="card mb-3" style="width: 20rem;"&gt;</code>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;ul class="list-group list-group-flush"&gt;</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;/ul&gt;</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <code class="text-success">&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <code class="text-success">&lt;div class="card mb-3" style="width: 20rem;"&gt;</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;div class="card-header"&gt;</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">Featured</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;ul class="list-group list-group-flush"&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;/ul&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <code class="text-success">&lt;/div&gt;</code>
+                            </div>
+                        </div>                   
+                        
                     </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;ul class="list-group list-group-flush"&gt;</code>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;/ul&gt;</code>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <code class="text-success">&lt;/div&gt;</code>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col">
-                            <code class="text-success">&lt;div class="card mb-3" style="width: 20rem;"&gt;</code>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;div class="card-header"&gt;</code>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">Featured</code>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;/div&gt;</code>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;ul class="list-group list-group-flush"&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;/ul&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <code class="text-success">&lt;/div&gt;</code>
-                        </div>
-                    </div>                   
-                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
                 </div>
             </div>
         </div>
@@ -1321,91 +1336,94 @@
                 </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col">
-                            <code>&lt;div class="card" style="width: 20rem;"&gt;</code><br>
+                    <div id="contentt2">
+                        <div class="row">
+                            <div class="col">
+                                <code>&lt;div class="card" style="width: 20rem;"&gt;</code><br>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-dark">&lt;img class="card-img-top" src="img/imagxes.jpg" alt="Card image cap"&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;div class="card-body"&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;h5 class="card-title"&gt;Card title&lt/h5&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;p class="card-text"&gt;Some Text&lt;/&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;/div&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;ul class="list-group list-group-flush"&gt;</code> <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;/ul&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;div class="card-body"&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2">
+                                <code class="text-muted">&lt;a href="#" class="card-link"&gt;Another link&lt;/a&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1">
+                                <code class="text-warning">&lt;/div&gt;</code><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <code>&lt;/div&gt;</code>
+                            </div>
+                        </div>                   
+    
                     </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-dark">&lt;img class="card-img-top" src="img/images.jpg" alt="Card image cap"&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;div class="card-body"&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;h5 class="card-title"&gt;Card title&lt/h5&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;p class="card-text"&gt;Some Text&lt;/&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;/div&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;ul class="list-group list-group-flush"&gt;</code> <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;li class="list-group-item"&gt;Some Text&lt;/li&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;/ul&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;div class="card-body"&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2">
-                            <code class="text-muted">&lt;a href="#" class="card-link"&gt;Another link&lt;/a&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1">
-                            <code class="text-warning">&lt;/div&gt;</code><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <code>&lt;/div&gt;</code>
-                        </div>
-                    </div>                   
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
                 </div>
             </div>
         </div>
@@ -3859,7 +3877,7 @@
             </div>
         </div>
         <!-- end of Modal -->
-    <!-- Modal -->
+    <!-- Modal Cards Decks -->
     <div class="modal" id="example27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -4087,7 +4105,7 @@
         </div>
     </div>
     <!-- end of Modal -->
-    <!-- Modal -->
+    <!-- Modal [Cards Columns] -->
     <div class="modal" id="example28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -4599,6 +4617,62 @@
 
     <footer class="my-5 py-5 ">
     </footer>
+    <script>
+        function CopyToClipboard(contentt)
+            {
+                var r = document.createRange();
+                r.selectNode(document.getElementById(contentt));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(r);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+            }
+        function CopyToClipboard1(contentt1)
+            {
+                var r = document.createRange();
+                r.selectNode(document.getElementById(contentt1));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(r);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+            }
+        function CopyToClipboard3(contentt3)
+            {
+                var r = document.createRange();
+                r.selectNode(document.getElementById(contentt3));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(r);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+            }
+        function CopyToClipboard4(contentt4)
+            {
+                var r = document.createRange();
+                r.selectNode(document.getElementById(contentt4));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(r);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+            }
+        function CopyToClipboard5(contentt5)
+            {
+                var r = document.createRange();
+                r.selectNode(document.getElementById(contentt5));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(r);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+            }
+        function CopyToClipboard2(contentt2)
+            {
+                var r = document.createRange();
+                r.selectNode(document.getElementById(contentt2));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(r);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+            }
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 " crossorigin="anonymous "></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
