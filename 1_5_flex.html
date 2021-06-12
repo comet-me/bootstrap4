@@ -151,7 +151,7 @@
         
         <!-- ***** Enable Flex Behaviors ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Enable Flex Behaviors</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Enable Flex Behaviors</a></h2>
             <code class="d-inline-block mb-1 aw-code">d-flex</code> or 
             <code class="d-inline-block mb-1 aw-code">d-inline-flex</code>
             <div id="flexBehaviorsAccordion" class="mt-2" data-children=".item">
@@ -192,7 +192,7 @@
 
         <!-- ***** Flex Horizontal Direction ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Flex Horizontal Direction</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example2">Flex Horizontal Direction</a></h2>
             <code class="d-inline-block mb-1 aw-code">.flex-row</code> or 
             <code class="d-inline-block mb-1 aw-code">flex-row-reverse</code>            
             <div id="flexHorizontalAccordion" class="mt-2" data-children=".item">
@@ -864,8 +864,201 @@
         
     </div><!-- End Main Container -->
 
+     <!-- Modal  [Enable Flex Behaviors-->
+     <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Enable Flex Behaviors</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+               <div id="contentt">
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;div class="aw-highlight mb-2 p-2 d-flex"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                        I'm a flexbox container!
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                        &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;div class="aw-highlight mb-2 p-2 d-inline-flex"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            I'm an inline flexbox container!
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                        &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;div class="aw-highlight mb-2 p-2 d-lg-inline-flex"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            I'm d-flex and d-inline-flex at different breakpoints
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                        &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    
+               </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end of Modal -->
+     <!-- Modal  [Flex Horizontal Direction-->
+     <div class="modal" id="example2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example2">Flex Horizontal Direction</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+               <div id="contentt1">
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;div class="aw-highlight mb-2 d-flex flex-row"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="aw-highlight p-2"&gt;Flex item 1&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="aw-highlight p-2"&gt;Flex item 2&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="aw-highlight p-2"&gt;Flex item 3&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;div class="aw-highlight mb-2 d-flex flex-row-reverse"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="aw-highlight p-2"&gt;Flex item 1&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="aw-highlight p-2"&gt;Flex item 2&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="aw-highlight p-2"&gt;Flex item 3&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>  
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;div class="row aw-highlight mx-0 d-flex flex-row-reverse"&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="col aw-highlight p-2"&gt;Flex item 1&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="col aw-highlight p-2"&gt;Flex item 2&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="col aw-highlight p-2"&gt;Flex item 3&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-muted">
+                            &lt;div class="col aw-highlight p-2"&gt;Flex item 4&lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end of Modal -->
+
     <footer class="my-5 py-5">
     </footer>
+    <script>
+        function CopyToClipboard(contentt)
+            {
+                var r = document.createRange();
+                r.selectNode(document.getElementById(contentt));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(r);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+            }
+        function CopyToClipboard1(contentt1)
+            {
+                var r = document.createRange();
+                r.selectNode(document.getElementById(contentt1));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(r);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+            }
+        </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
