@@ -151,7 +151,7 @@
         
         <!-- ***** Buttons ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Buttons</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Buttons</a></h2>
             <code class="d-inline-block mb-1 aw-code">&lt;button&gt;</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.btn</code>
             <code class="d-inline-block mb-1 aw-code">.btn-{color}</code> = 
@@ -173,7 +173,7 @@
 
         <!-- ***** Buttons Tags ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Buttons Tags</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example2">Buttons Tags</a></h2>
             <code class="d-inline-block mb-1 aw-code">&lt;button&gt;</code> or 
             <code class="d-inline-block mb-1 aw-code">&lt;a&gt;</code> or 
             <code class="d-inline-block mb-1 aw-code">&lt;input&gt;</code> &amp; 
@@ -192,7 +192,7 @@
 
         <!-- ***** Button Outline ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Button Outline</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example3">Button Outline</a></h2>
             <code class="d-inline-block mb-1 aw-code">&lt;button&gt;</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.btn</code>
             <code class="d-inline-block mb-1 aw-code">.btn-outline-{color}</code> = 
@@ -213,7 +213,7 @@
 
         <!-- ***** Button Sizes ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Button Sizes</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example4">Button Sizes</a></h2>
             <code class="d-inline-block mb-1 aw-code">.btn</code>
             <code class="d-inline-block mb-1 aw-code">.btn-{color}</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.btn-lg</code> or 
@@ -237,8 +237,8 @@
 
         <!-- ***** Active & Disabled ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Active &amp; Disabled</h2>
-            <code class="d-inline-block mb-1 aw-code">.acitve</code> or 
+            <h2 class="coo"><a data-toggle="modal" data-target="#example5">Active &amp; Disabled</a></h2>
+            <code class="d-inline-block mb-1 aw-code">.active</code> or 
             <code class="d-inline-block mb-1 aw-code">.disabled</code> or 
             <code class="d-inline-block mb-1 aw-code">disabled</code>
         </div>
@@ -259,7 +259,7 @@
         
         <!-- ***** Button Toggle States ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Button Toggle States</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example6">Button Toggle States</a></h2>
             <code class="d-inline-block mb-1 aw-code">data-toggle="button"</code>
         </div>
         <!-- # Code Examples # -->
@@ -272,14 +272,14 @@
         
         <!-- ***** Checkbox & Radio Buttons ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Checkbox &amp; Radio Buttons</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example7">Checkbox &amp; Radio Buttons</a></h2>
             <code class="d-inline-block mb-1 aw-code">data-toggle="buttons"</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.btn-group</code>
             <code class="d-inline-block mb-1 aw-code">.btn-group-toggle</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Checkbox & Radio Buttons -->
+        <!-- TODO: example 1 - Checkbox & Radio Buttons -->
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-secondary active">
                 <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
@@ -292,7 +292,7 @@
             </label>
         </div>
         
-        <!-- example 2 - Checkbox & Radio Buttons -->
+        <!-- TODO: example 2 - Checkbox & Radio Buttons -->
         <span class="d-block mt-2"></span>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-secondary active">
@@ -305,13 +305,962 @@
                 <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
             </label>
         </div>
-        
+
+
+         <!-- ***** Create Button Group ***** -->
+         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo"><a data-toggle="modal" data-target="#example8">Create a Group Buttons</a></h2>
+            <code class="d-inline-block mb-1 aw-code">role="group"</code> &amp; 
+            <code class="d-inline-block mb-1 aw-code">.btn-group</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - three group of buttons -->
+        <div class="col-12">
+            <div class="btn-group" role="group">
+                <a href="#" class="btn btn-primary"><i class="fa fa-phone"></i> Call</a>
+                <a href="#" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                <a href="mailto:meteorites86@gmail.com" class="btn btn-success"><i class="fa fa-envelope-o"></i> Email</a>
+            </div>
+        </div>
 
         
     </div><!-- End Main Container -->
 
+    <!-- Modal [Buttons]-->
+    <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Buttons</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt1">
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-primary mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-primary">Primary</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-secondary mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-secondary">Secondary</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-success mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-success">Success</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-danger mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-danger">Danger</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-warning mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-warning">Warning</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-info mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-info">Info</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-light mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-light">Light</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-dark mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-dark">Dark</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;        
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-link mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-link">Link</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Buttons Tags]-->
+    <div class="modal" id="example2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example2">Buttons Tags</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt2">
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;<span class="text-primary">a</span> class="btn btn-primary mb-2" href="#" role="button"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;<span class="text-primary">button</span> class="btn btn-primary mb-2" type="submit"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Button
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;<span class="text-primary">input</span> class="btn btn-primary mb-2" type="button" value="Input"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;<span class="text-primary">input</span> class="btn btn-primary mb-2" type="submit" value="Submit"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;<span class="text-primary">input</span> class="<span class="text-primary">btn</span> <span class="text-primary">btn-primary</span> mb-2" type="reset" value="Reset"&gt;
+                            </code></div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Button Outline]-->
+    <div class="modal" id="example3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example3">Button Outline</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt3">
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn <span class="text-primary">btn-outline-primary</span> mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-primary">Primary</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="<span class="text-primary">button</span>" class="<span class="text-primary">btn</span> btn-outline-secondary mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-secondary">Secondary</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-outline-success mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-success">Success</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-outline-danger mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-danger">Danger</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-outline-warning mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-warning">Warning</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-outline-info mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-info">Info</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-outline-light mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-light">Light</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-outline-dark mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-dark">Dark</span>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Button Sizes]-->
+    <div class="modal" id="example4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example4">Button Sizes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt4">
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn <span class="text-primary">btn-primary</span> <span class="text-primary">btn-lg</span> mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Large button
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn <span class="text-primary">btn-secondary</span> <span class="text-primary">btn-lg</span> mb-2"&gt;Large button&lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn <span class="text-primary">btn-primary btn-sm</span> mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Small button
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn <span class="text-primary">btn-secondary btn-sm</span> mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Small button
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn <span class="text-primary">btn-primary btn-lg</span> <span class="text-primary">btn-block</span> mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Block level button
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn <span class="text-primary">btn-secondary btn-lg btn-block</span> mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Block level button
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Active & Disabled]-->
+    <div class="modal" id="example5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example5">Active & Disabled</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt5">
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;a href="#" class="btn btn-primary btn-lg <span class="text-primary">active</span> mb-2" role="button" aria-pressed="true"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Primary link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;a href="#" class="btn btn-secondary btn-lg <span class="text-primary">active</span> mb-2" role="button" aria-pressed="true"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">Link</code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-primary btn-lg mb-2" <span class="text-primary">disabled</span>&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Primary button
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-secondary btn-lg mb-2" <span class="text-primary">disabled</span>&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Button
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">&lt;/button&gt;</code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;a href="#" class="btn btn-primary btn-lg <span class="text-primary">disabled</span> mb-2" role="button" aria-disabled="true"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Primary link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;a href="#" class="btn btn-secondary btn-lg <span class="text-primary">disabled</span> mb-2" role="button" aria-disabled="true"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Button Toggle States]-->
+    <div class="modal" id="example6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example6">Button Toggle States</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt6">
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-primary" <span class="text-primary">data-toggle="button"</span> aria-pressed="false" autocomplete="off"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Single toggle
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard6('contentt6');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Checkbox & Radio Buttons]-->
+    <div class="modal" id="example7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example7">Checkbox & Radio Buttons</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt7">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div <span class="text-primary">class="btn-group btn-group-toggle" data-toggle="buttons"</span>&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;label class="btn btn-secondary active"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                &lt;input type="checkbox" checked autocomplete="off"&gt; Checkbox 1 (pre-checked)
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/label&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;label class="btn btn-secondary"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                &lt;input type="checkbox" autocomplete="off"&gt; Checkbox 2
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/label&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;label class="btn btn-secondary"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                &lt;input type="checkbox" autocomplete="off"&gt; Checkbox 3
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/label&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;span class="d-block mt-2"&gt;&lt;/span&gt;
+                            </code></div>
+                        </div>    
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div <span class="text-primary">class="btn-group btn-group-toggle" data-toggle="buttons"</span>&gt;
+                            </code></div>
+                        </div> 
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;label class="btn btn-secondary active"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                &lt;input type="radio" name="options" id="option1" autocomplete="off" checked&gt; Radio 1 (preselected)
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/label&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;label class="btn btn-secondary"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                &lt;input type="radio" name="options" id="option2" autocomplete="off"&gt; Radio 2
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/label&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;label class="btn btn-secondary"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                &lt;input type="radio" name="options" id="option3" autocomplete="off"&gt; Radio 3
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/label&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard7('contentt7');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Create Button Group]-->
+    <div class="modal" id="example8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example8">Create Button Group</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt8">
+                        <div class="row">
+                            <div class="col"><code class="text-success">
+                                &lt;div class="col-12"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div <span class="text-primary">class="btn-group" role="group"</span>&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a href="#" class="btn btn-primary"&gt;&lt;i class="fa fa-phone"&gt;&lt;/i&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                Call
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a href="#" class="btn btn-info"&gt;&lt;i class="fa fa-skype"&gt;&lt;/i&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                Skype
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a href="mailto:meteorites86@gmail.com" class="btn btn-success"&gt;&lt;i class="fa fa-envelope-o"&gt;&lt;/i&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                Email
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-success">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard8('contentt8');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+
     <footer class="my-5 py-5">
     </footer>
+    <script>
+
+        function CopyToClipboard(contentt1)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt1));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard2(contentt2)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt2));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard3(contentt3)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt3));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard4(contentt4)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt4));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard5(contentt5)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt5));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard6(contentt6)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt6));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard7(contentt7)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt7));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard8(contentt8)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt8));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
