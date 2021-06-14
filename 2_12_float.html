@@ -151,12 +151,12 @@
         
         <!-- ***** Float ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Float</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Float</a></h2>
             <code class="d-inline-block mb-1 aw-code">float-{left, right, none}</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Float -->
+        <!-- TODO: example 1 - Float -->
         <div class="float-left">Float left on all viewport sizes</div><br>
         <div class="float-right">Float right on all viewport sizes</div><br>
         <div class="float-none">Don't float on all viewport sizes</div>
@@ -164,20 +164,164 @@
 
         <!-- ***** Float ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Float &amp; Breakpoints</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example2">Float &amp; Breakpoints</a></h2>
             <code class="d-inline-block mb-1 aw-code">float-{breakpoint}-{left, right, none}</code> = 
             <code class="d-inline-block mb-1 aw-code">float-{sm, md, lg, xl}-{left, right, none}</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Float -->
+        <!-- TODO: example 1 - Float -->
         <div class="float-sm-left float-md-right">.float-sm-left .float-md-right</div><br>
         <div class="float-md-right float-xl-none">.float-md-right .float-xl-none</div><br>
         
     </div><!-- End Main Container -->
 
+    <!-- Modal [Float]-->
+    <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Float</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt1">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="float-left"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Float left on all viewport sizes
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;&lt;br&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="float-right"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Float right on all viewport sizes
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;&lt;br&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="float-none"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Don't float on all viewport sizes
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Float &amp; Breakpoints]-->
+    <div class="modal" id="example2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example2">Float &amp; Breakpoints</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt2">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="float-sm-left float-md-right"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                .float-sm-left .float-md-right
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;&lt;br&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="<span class="text-primary">float-md-right</span> float-xl-none"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                <span class="text-primary">.float-md-right</span> .float-xl-none
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;&lt;br&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+
     <footer class="my-5 py-5">
     </footer>
+    <script>
+        function CopyToClipboard(contentt1)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt1));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard2(contentt2)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt2));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
