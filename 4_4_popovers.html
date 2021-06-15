@@ -151,14 +151,14 @@
 
         <!-- ***** Popovers ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Popovers</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Popovers</a></h2>
             <code class="d-inline-block mb-1 aw-code">data-toggle="popover"</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">data-content="Body of the Popover"</code> &amp;
             <code class="d-inline-block mb-1 aw-code">data-placement="{top, right, bottom, left}"</code> 
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Popovers -->
+        <!-- TODO: example 1 - Popovers -->
         <button type="button" class="btn btn-secondary mb-2"  data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             Popover on top
         </button>
@@ -178,28 +178,28 @@
 
         <!-- ***** Advanced Popovers ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Advanced Popovers</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example2">Advanced Popovers</a></h2>
             <code class="d-inline-block mb-1 aw-code">data-toggle="popover"</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">title="Popover Title"</code>
             <code class="d-inline-block mb-1 aw-code">data-content="Body of the Popover"</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Advanced Popovers -->
+        <!-- TODO: example 1 - Advanced Popovers -->
         <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
             Click to toggle popover
         </button>
 
         <!-- ***** Dismissible Popovers ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Dismissible Popovers</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example3">Dismissible Popovers</a></h2>
             <code class="d-inline-block mb-1 aw-code">data-trigger="{click, hover, focus, manual}"</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Dismissible Popovers -->
+        <!-- TODO: example 1 - Dismissible Popovers -->
         <div class="mb-2">
-            <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focu" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+            <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
                 Dismissible popover (focus)
             </a>
         </div>
@@ -224,9 +224,267 @@
         
         
     </div><!-- End Main Container -->
+    <!-- Modal [Popovers]-->
+    <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Popovers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt1">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;button type="button" class="btn btn-secondary mb-2"  <span class="text-primary">data-toggle="popover" data-placement</span>="<span class="text-success">top</span>" <span class="text-primary">data-content</span>="<span class="text-success">Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</span>"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Popover on top
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;button type="button" class="btn btn-secondary mb-2"  <span class="text-primary">data-toggle="popover" data-placement</span>="right" <span class="text-primary">data-content</span>="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Popover on right
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;button type="button" class="btn btn-secondary mb-2"  <span class="text-primary">data-toggle="popover" data-placement</span>="bottom" <span class="text-primary">data-content</span>="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Popover on bottom
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;button type="button" class="btn btn-secondary mb-2"  <span class="text-primary">data-toggle="popover" data-placement</span>="left" <span class="text-primary">data-content</span>="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Popover on left
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Advanced Popovers]-->
+    <div class="modal" id="example2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example2">Advanced Popovers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt2">
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-lg btn-danger" <span class="text-primary">data-toggle="popover" title</span>="Popover title" <span class="text-primary">data-content</span>="And here's some amazing content. It's very engaging. Right?"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Click to toggle popover
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Dismissible Popovers]-->
+    <div class="modal" id="example3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example3">Dismissible Popovers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt3">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-dark">
+                                &lt;a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" <span class="text-primary">data-trigger</span>="<span class="text-success">focus</span>" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                Dismissible popover (focus)
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;button type="button" class="btn btn-secondary mb-2" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." <span class="text-primary">data-trigger</span>="<span class="text-success">click</span>"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Popover on top &amp; Dismissible (click)
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;button type="button" class="btn btn-secondary mb-2" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." <span class="text-primary">data-trigger</span>="<span class="text-success">hover</span>"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Popover on right &amp; Dismissible (hover)
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;button type="button" class="btn btn-secondary mb-2" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Popover on bottom &amp; Dismissible (focus)
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;button type="button" class="btn btn-secondary mb-2" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus hover"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Popover on left &amp; Dismissible (multiple)
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
 
     <footer class="my-5 py-5">
     </footer>
+    <script>
+        function CopyToClipboard(contentt1)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt1));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+        function CopyToClipboard2(contentt2)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt2));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+        function CopyToClipboard3(contentt3)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt3));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+        </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
