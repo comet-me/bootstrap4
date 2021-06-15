@@ -115,7 +115,7 @@
                     </span>
                 </a>
             </h1>
-            <div class="container">
+            <div class="container" id="top">
                 <div class="d-sm-none">
                     <h1>XS</h1>
                     <h5>Portrait Phones</h5>
@@ -862,10 +862,16 @@
             <div class="aw-highlight p-2 w-100 order-3">originally # 6</div>
         </div>
         
-    </div><!-- End Main Container -->
-    <div id="main-container" class="container">
+        <!-- Back to TOP -->
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa fa-arrow-up"></i>
+        </button>
         
-    </div>
+
+    </div><!-- End Main Container -->
+
+
+
      <!-- Modal  [Enable Flex Behaviors-->
      <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1278,7 +1284,7 @@
                    </div>
                    <div class="row">
                        <div class="col offset-1"><code class="text-muted">
-                        &lt;div class="aw-highlight p-2 mr-auto"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="aw-highlight p-2 <span class="text-primary">mr-auto</span>"&gt;Flex item&lt;/div&gt;
                        </code></div>
                    </div>
                    <div class="row">
@@ -1313,7 +1319,7 @@
                    </div>
                    <div class="row">
                        <div class="col offset-1"><code class="text-muted">
-                        &lt;div class="aw-highlight p-2 ml-auto"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="aw-highlight p-2 <span class="text-primary">ml-auto</span>"&gt;Flex item&lt;/div&gt;
                        </code></div>
                    </div>
                    <div class="row">
@@ -1345,12 +1351,22 @@
             <div class="modal-body">
                <div id="contentt5">
                    <div class="row">
-                       <div class="col"><code class="text-dark">
-                        &lt;h5 class="mb-2 ml-1">Align Items Start&lt;/h5&gt;
+                       <div class="col"><code class="text-warning">
+                        &lt;h5 class="mb-2 ml-1">
                        </code></div>
                    </div>
                    <div class="row">
-                       <div class="col"><code class="text-dark">
+                       <div class="col offset-1"><code class="text-muted">
+                        <h5>Align Items Start</h5>
+                       </code></div>
+                   </div>
+                   <div class="row">
+                       <div class="col"><code class="text-warning">
+                        &lt;/h5&gt;
+                       </code></div>
+                   </div>
+                   <div class="row">
+                       <div class="col"><code class="text-warning">
                         &lt;div class="aw-highlight aw-height mb-2 d-flex align-items-start"&gt;
                        </code></div>
                    </div>
@@ -1370,12 +1386,12 @@
                        </code></div>
                    </div>
                    <div class="row">
-                       <div class="col"><code class="text-dark">
+                       <div class="col"><code class="text-warning">
                         &lt;/div&gt;
                        </code></div>
                    </div>
                    <div class="row">
-                       <div class="col"><code class="text-dark">
+                       <div class="col"><code class="text-warning">
                         &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex align-items-start"&gt;
                        </code></div>
                    </div>
@@ -1395,17 +1411,27 @@
                        </code></div>
                    </div>
                    <div class="row">
-                       <div class="col"><code class="text-dark">
+                       <div class="col"><code class="text-warning">
                         &lt;/div&gt;
                        </code></div>
                    </div>
                    <div class="row">
-                       <div class="col"><code class="text-dark">
-                        &lt;h5 class="mb-2 ml-1"&gt;Align Items End&lt;/h5&gt;
+                       <div class="col"><code class="text-warning">
+                        &lt;h5 class="mb-2 ml-1"&gt;
                        </code></div>
                    </div>
                    <div class="row">
-                       <div class="col"><code class="text-dark">
+                       <div class="col offset-1"><code class="text-muted">
+                           <h5>Align Items End</h5>
+                       </code></div>
+                   </div>
+                   <div class="row">
+                       <div class="col"><code class="text-warning">
+                        &lt;/h5&gt;
+                       </code></div>
+                   </div>
+                   <div class="row">
+                       <div class="col"><code class="text-warning">
                         &lt;div class="aw-highlight aw-height mb-2 d-flex align-items-end"&gt;
                        </code></div>
                    </div>
@@ -1425,12 +1451,12 @@
                        </code></div>
                    </div>
                    <div class="row">
-                       <div class="col"><code class="text-dark">
+                       <div class="col"><code class="text-warning">
                         &lt;/div&gt;
                        </code></div>
                    </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex align-items-end"&gt;
                         </code></div>
                     </div>
@@ -1450,17 +1476,27 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
-                            &lt;h5 class="mb-2 ml-1"&gt;Align Items Center&lt;/h5&gt;
+                        <div class="col"><code class="text-warning">
+                            &lt;h5 class="mb-2 ml-1"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-muted">
+                            <h5>Align Items Center</h5>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="aw-highlight aw-height mb-2 d-flex align-items-center"&gt;
                         </code></div>
                     </div>
@@ -1480,12 +1516,12 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex align-items-center"&gt;
                         </code></div>
                     </div>
@@ -1505,17 +1541,27 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
-                            &lt;h5 class="mb-2 ml-1"&gt;Align Items Baseline&lt;/h5&gt;
+                        <div class="col"><code class="text-warning">
+                            &lt;h5 class="mb-2 ml-1"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-muted">
+                            <h5>Align Items Baseline</h5>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="aw-highlight aw-height mb-2 d-flex align-items-baseline"&gt;
                         </code></div>
                     </div>
@@ -1535,12 +1581,12 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex align-items-baseline"&gt;
                         </code></div>
                     </div>
@@ -1560,17 +1606,27 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
-                            &lt;h5 class="mb-2 ml-1"&gt;Align Items Stetch&lt;/h5&gt;
+                        <div class="col"><code class="text-warning">
+                            &lt;h5 class="mb-2 ml-1"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-muted">
+                            <h5>Align Items Stetch</h5>
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
+                            &lt;/h5&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="aw-highlight aw-height mb-2 d-flex align-items-stretch"&gt;
                         </code></div>
                     </div>
@@ -1590,12 +1646,12 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex align-items-stretch"&gt;
                         </code></div>
                     </div>
@@ -1615,7 +1671,7 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/div&gt;
                         </code></div>
                     </div>
@@ -1644,12 +1700,12 @@
                <div id="contentt6">
                    <div class="row">
                        <div class="col"><code class="text-dark">
-                        &lt;div class="aw-highlight aw-height-tall mb-2 d-flex align-items-start flex-column"&gt;
+                        &lt;div class="aw-highlight aw-height-tall mb-2 d-flex <span class="text-success">align-items-start</span> <span class="text-primary">flex-column</span>"&gt;
                        </code></div>
                    </div>
                    <div class="row">
                        <div class="col offset-1"><code class="text-muted">
-                        &lt;div class="aw-highlight p-2 mb-auto"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="aw-highlight p-2 <span class="text-primary">mb-auto</span>"&gt;Flex item&lt;/div&gt;
                        </code></div>
                    </div>
                    <div class="row">
@@ -1669,7 +1725,7 @@
                    </div>
                    <div class="row">
                        <div class="col"><code class="text-dark">
-                        &lt;div class="aw-highlight aw-height-tall mb-2 d-flex align-items-end flex-column"&gt;
+                        &lt;div class="aw-highlight aw-height-tall mb-2 d-flex <span class="text-success">align-items-end</span> <span class="text-primary">flex-column</span>"&gt;
                        </code></div>
                    </div>
                    <div class="row">
@@ -1684,7 +1740,7 @@
                    </div>
                    <div class="row">
                        <div class="col offset-1"><code class="text-muted">
-                        &lt;div class="aw-highlight p-2 mt-auto"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="aw-highlight p-2 <span class="text-primary">mt-auto</span>"&gt;Flex item&lt;/div&gt;
                        </code></div>
                    </div>
                    <div class="row">
@@ -1717,7 +1773,7 @@
             <div class="modal-body">
                 <div id="contentt7">
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;h5 class="mb-2 ml-1">
                         </code></div>
                     </div>
@@ -1729,257 +1785,497 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/h5&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="aw-highlight aw-height mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2 align-self-start">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2 <span class="text-primary">align-self-start</span>">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2 align-self-start">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2 <span class="text-primary">align-self-start</span>">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;h5 class="mb-2 ml-1">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
+                        <div class="col offset-1"><code class="text-dark">
                             <h5>Align Self End</h5>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/h5&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="aw-highlight aw-height mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2 align-self-end">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2 <span class="text-primary">align-self-end</span>">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2 align-self-end">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2 <span class="text-primary">align-self-end</span>">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;h5 class="mb-2 ml-1">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
+                        <div class="col offset-1"><code class="text-dark">
                             <h5>Align Self Center</h5>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/h5&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="aw-highlight aw-height mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2 align-self-center">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2 <span class="text-primary">align-self-center</span>">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                            &lt;div class="col aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;div class="col aw-highlight p-2 align-self-center">Aligned flex item&lt;/div&gt;
+                            &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                            &lt;div class="col aw-highlight p-2 <span class="text-primary">align-self-center</span>">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;h5 class="mb-2 ml-1">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
+                        <div class="col offset-1"><code class="text-dark">
                             <h5>Align Self Baseline</h5>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/h5&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="aw-highlight aw-height mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2 align-self-baseline">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2 <span class="text-primary">align-self-baseline</span>">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2 align-self-baseline">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2 <span class="text-primary">align-self-baseline</span>">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;h5 class="mb-2 ml-1">
                         </code></div>
                     </div>
@@ -1989,57 +2285,117 @@
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;/h5&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="aw-highlight aw-height mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2 align-self-stretch">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2 <span class="text-primary">align-self-stretch</span>">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col"><code class="text-warning">
                             &lt;div class="row aw-highlight aw-height no-gutters mb-2 d-flex"&gt;
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div>
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2">
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2 align-self-stretch">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col offset-1"><code class="text-muted">
-                            &lt;div class="col aw-highlight p-2">Aligned flex item&lt;/div&gt;
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div>
                         </code></div>
                     </div>
                     <div class="row">
-                        <div class="col"><code class="text-dark">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2 <span class="text-primary">align-self-stretch</span>">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;div class="col aw-highlight p-2">
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-2"><code class="text-muted">
+                            Aligned flex item
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col offset-1"><code class="text-dark">
+                            &lt;/div&gt;
+                        </code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><code class="text-warning">
                             &lt;/div&gt;
                         </code></div>
                     </div>
@@ -2068,7 +2424,7 @@
                 <div id="contentt8">
                     <div class="row">
                         <div class="col"><code class="text-dark">
-                            &lt;div class="aw-highlight mb-2 d-flex flex-nowrap"&gt;
+                            &lt;div class="aw-highlight mb-2 d-flex <span class="text-primary">flex-nowrap</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2143,7 +2499,7 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-dark">
-                            &lt;div class="aw-highlight mb-2 d-flex flex-wrap"&gt;
+                            &lt;div class="aw-highlight mb-2 d-flex <span class="text-primary">flex-wrap</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2253,7 +2609,7 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-dark">
-                            &lt;div class="aw-highlight mb-2 d-flex flex-wrap-reverse"&gt;
+                            &lt;div class="aw-highlight mb-2 d-flex <span class="text-primary">flex-wrap-reverse</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2401,7 +2757,7 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-dark">
-                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap align-content-start"&gt;
+                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap <span class="text-primary">align-content-start</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2526,7 +2882,7 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-dark">
-                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap align-content-end"&gt;
+                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap <span class="text-primary">align-content-end</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2646,7 +3002,7 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-dark">
-                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap align-content-center"&gt;
+                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap <span class="text-primary">align-content-center</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2769,7 +3125,7 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-dark">
-                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap align-content-between"&gt;
+                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap <span class="text-primary">align-content-between</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -2894,7 +3250,7 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-dark">
-                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap align-content-around"&gt;
+                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap <span class="text-primary">align-content-around</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3019,7 +3375,7 @@
                     </div>
                     <div class="row">
                         <div class="col"><code class="text-dark">
-                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap align-content-stretch"&gt;
+                            &lt;div class="aw-highlight aw-height-tall mb-2 d-flex flex-wrap <span class="text-primary">align-content-stretch</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3157,7 +3513,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;div class="aw-highlight p-2 order-3"&gt;
+                            &lt;div class="aw-highlight p-2 <span class="text-primary">order-3</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3172,7 +3528,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;div class="aw-highlight p-2 order-2"&gt;
+                            &lt;div class="aw-highlight p-2 <span class="text-primary">order-2</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3187,7 +3543,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code class="text-dark">
-                            &lt;div class="aw-highlight p-2 order-1"&gt;
+                            &lt;div class="aw-highlight p-2 <span class="text-primary">order-1</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3212,7 +3568,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code>
-                            &lt;div class="aw-highlight p-2 w-100 order-5"&gt;
+                            &lt;div class="aw-highlight p-2 w-100 <span class="text-primary">order-5</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3227,7 +3583,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code>
-                            &lt;div class="aw-highlight p-2 w-100 order-2"&gt;
+                            &lt;div class="aw-highlight p-2 w-100 <span class="text-primary">order-2</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3242,7 +3598,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code>
-                            &lt;div class="aw-highlight p-2 w-100 order-1"&gt;
+                            &lt;div class="aw-highlight p-2 w-100 <span class="text-primary">order-1</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3257,7 +3613,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code>
-                            &lt;div class="aw-highlight p-2 w-100 order-6"&gt;
+                            &lt;div class="aw-highlight p-2 w-100 <span class="text-primary">order-6</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3272,7 +3628,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code>
-                            &lt;div class="aw-highlight p-2 w-100 order-4"&gt;
+                            &lt;div class="aw-highlight p-2 w-100 <span class="text-primary">order-4</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3287,7 +3643,7 @@
                     </div>
                     <div class="row">
                         <div class="col offset-1"><code>
-                            &lt;div class="aw-highlight p-2 w-100 order-3"&gt;
+                            &lt;div class="aw-highlight p-2 w-100 <span class="text-primary">order-3</span>"&gt;
                         </code></div>
                     </div>
                     <div class="row">
@@ -3319,7 +3675,36 @@
 
     <footer class="my-5 py-5">
     </footer>
+    
     <script>
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
         function CopyToClipboard(contentt)
             {
                 var r = document.createRange();
