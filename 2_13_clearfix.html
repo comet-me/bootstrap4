@@ -151,18 +151,87 @@
         
         <!-- ***** Clearfix ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Clearfix</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Clearfix</a></h2>
             <code class="d-inline-block mb-1 aw-code">.clearfix</code>
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Clearfix -->
+        <!-- TODO: example 1 - Clearfix -->
         <div class="bg-info clearfix">
             <button class="btn btn-secondary float-left">Button floated left</button>
             <button class="btn btn-secondary float-right">Button floated right</button>
         </div>
+        <div class="row mt-5">
+            <div class="col">
+                <p style="font-style: font-italic;">Quickly and easily clear floated content within a container by adding a clearfix utility.</p>
+            </div>
+        </div>
         
     </div><!-- End Main Container -->
+
+     <!-- Modal [Clearfix]-->
+     <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Clearfix</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt1">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="bg-info <span class="text-primary">clearfix</span>"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-dark">
+                                &lt;button class="btn btn-secondary float-left"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                Button floated left
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-dark">
+                                &lt;button class="btn btn-secondary float-right"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-muted">
+                                Button floated right
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
 
     <footer class="my-5 py-5">
     </footer>
