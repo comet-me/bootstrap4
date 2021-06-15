@@ -526,7 +526,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                    <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
+                    <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
                 </div>
             </div>
         </div>
@@ -550,36 +550,6 @@
         {
         var r = document.createRange();
         r.selectNode(document.getElementById(contentt2));
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(r);
-        document.execCommand('copy');
-        window.getSelection().removeAllRanges();
-        alert('Copied');
-        }
-        function CopyToClipboard3(contentt3)
-        {
-        var r = document.createRange();
-        r.selectNode(document.getElementById(contentt3));
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(r);
-        document.execCommand('copy');
-        window.getSelection().removeAllRanges();
-        alert('Copied');
-        }
-        function CopyToClipboard4(contentt4)
-        {
-        var r = document.createRange();
-        r.selectNode(document.getElementById(contentt4));
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(r);
-        document.execCommand('copy');
-        window.getSelection().removeAllRanges();
-        alert('Copied');
-        }
-        function CopyToClipboard5(contentt5)
-        {
-        var r = document.createRange();
-        r.selectNode(document.getElementById(contentt5));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
