@@ -58,6 +58,7 @@
                                 <a class="dropdown-item" href="2_12_float.html">12. Float</a>
                                 <a class="dropdown-item" href="2_13_clearfix.html">13. Clearfix</a>
                                 <a class="dropdown-item" href="2_14_screenreaders.html">14. Screenreaders</a>
+                                <a class="dropdown-item" href="2_15_copytoclipboard.html">15. Copy Text to Clipboard</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -151,7 +152,7 @@
         
         <!-- ***** Scrollspy ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Scrollspy</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Scrollspy</a></h2>
             <code class="d-inline-block mb-1 aw-code">.nav</code> 
             <code class="d-inline-block mb-1 aw-code">.nav-pills</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">data-spy="scroll"</code> 
@@ -159,7 +160,7 @@
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Scrollspy -->
+        <!-- TODO: example 1 - Scrollspy -->
         <nav id="navbar-example" class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
             <ul class="nav nav-pills">
@@ -205,7 +206,7 @@
 
         <!-- ***** Nested Nav ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Nested Nav</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example2">Nested Nav</a></h2>
             <code class="d-inline-block mb-1 aw-code">.nav</code> 
             <code class="d-inline-block mb-1 aw-code">.nav-pills</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">data-spy="scroll"</code> 
@@ -213,7 +214,7 @@
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Nested Nav -->
+        <!-- TODO: example 1 - Nested Nav -->
         <div class="row">
             <div class="col-6 col-sm-4 col-md-3 col-xl-2">
                 <nav id="navbar-example2" class="navbar navbar-light bg-light">                
@@ -308,8 +309,666 @@
 
     </div><!-- End Main Container -->
 
+    <!-- Modal [Scrollspy]-->
+    <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Scrollspy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt1">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;nav id="navbar-example" class="<span class="text-primary">navbar</span> navbar-light bg-light"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;ul class="nav <span class="text-primary">nav-pills</span>"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;li class="nav-item"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;a class="nav-link" href="#fat"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                @fat
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/li&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;li class="nav-item"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;a class="nav-link active" href="#mdo"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                @mdo
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/li&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;li class="nav-item dropdown"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                Dropdown
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;div class="dropdown-menu"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;a class="dropdown-item" href="#one"&gt;one&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;a class="dropdown-item" href="#two"&gt;two&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;div role="separator" class="dropdown-divider"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;a class="dropdown-item" href="#three"&gt;three&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/li&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/ul&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/nav&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div <span class="text-primary">data-spy</span>="<span class="text-success">scroll</span>" <span class="text-primary">data-target</span>="#navbar-example" data-offset="0" class="aw-scrollspy-example"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1 code text-warning">
+                                &lt;h4 id="fat"&gt;@fat&lt;/h4&gt;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1 code text-warning">
+                                &lt;p&gt;Some Text&lt;/p&gt;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1 code text-warning">
+                                &lt;h4 id="mdo"&gt;@mdo&lt;/h4&gt;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1 code text-warning">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1 code text-warning">
+                                &lt;h4 id="one"&gt;one&lt;/h4&gt;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1 code text-warning">
+                                &lt;p&gt;Some Text&lt;/p&gt;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;h4 id="two"&gt;two&lt;/h4&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;h4 id="three"&gt;three&lt;/h4&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="mt-4"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;a href="4_6_scrollspy2.html" target="_blank"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;h4&gt;Full Page Example&lt;/h4&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                            
+                            
+
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Nested Nav]-->
+    <div class="modal" id="example2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example2">Nested Nav</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt2">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="row"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="col-6 col-sm-4 col-md-3 col-xl-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;nav id="<span class="text-success">navbar-example2</span>" class="<span class="text-primary">navbar</span> navbar-light bg-light"&gt;                
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;nav class="<span class="text-primary">nav nav-pills</span> flex-column"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;a class="navbar-brand" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                Navbar
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;a class="nav-link" href="#item-1"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                Item 1
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;nav class="<span class="text-primary">nav nav-pills</span> flex-column"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                &lt;a class="nav-link ml-3 my-1" href="#item-1-1"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-6"><code class="text-success">
+                                Item 1-1
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                &lt;a class="nav-link ml-3 my-1" href="#item-1-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-6"><code class="text-success">
+                                Item 1-2
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;/nav&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;a class="nav-link" href="#item-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                Item 2
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;a class="nav-link" href="#item-3"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                Item 3
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;nav class="<span class="text-primary">nav nav-pills</span> flex-column"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                &lt;a class="nav-link ml-3 my-1" href="#item-3-1"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-6"><code class="text-success">
+                                Item 3-1
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                &lt;a class="nav-link ml-3 my-1" href="#item-3-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-6"><code class="text-success">
+                                Item 3-2
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-5"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                &lt;/nav&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;/nav&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/nav&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="col-6 col-sm-8 col-md-9 col-xl-10"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;div <span class="text-primary">data-spy="scroll"</span> <span class="text-primary">data-target</span>="<span class="text-success">#navbar-example2</span>" data-offset="0" class="aw-scrollspy-example-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;h4 id="item-1"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                Item 1
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;/h4&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;h5 id="item-1-1"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                Item 1-1
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;h5 id="item-1-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                Item 2-2
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;h4 id="item-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                Item 2
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;/h4&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;h4 id="item-3"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                Item 3
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;/h4&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;h5 id="item-3-1"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                Item 3-1
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;h5 id="item-3-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code>
+                                Item 3-2
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;p&gt;Some Text.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="mt-4"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;a href="4_6_scrollspy3.html" target="_blank"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;h4&gt;Full Page Example&lt;/h4&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+
     <footer class="my-5 py-5">
     </footer>
+    <script>
+        function CopyToClipboard(contentt)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+        function CopyToClipboard2(contentt2)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt2));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+        </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
