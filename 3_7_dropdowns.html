@@ -151,7 +151,7 @@
         
         <!-- ***** Dropdowns ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Dropdowns</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Dropdowns</a></h2>
             <code class="d-inline-block mb-1 aw-code">.dropdown</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.dropdown-toggle</code>
             <code class="d-inline-block mb-1 aw-code">.dropdown-menu</code>
@@ -159,7 +159,7 @@
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Dropdowns -->
+        <!-- TODO: example 1 - Dropdowns -->
         <div class="dropdown mb-2">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown button
@@ -186,7 +186,7 @@
 
         <!-- ***** Dropdown Button Group ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Dropdown Button Group</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example2">Dropdown Button Group</a></h2>
             <code class="d-inline-block mb-1 aw-code">.btn-group</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.btn-group</code> 
             <code class="d-inline-block mb-1 aw-code">.dropdown-toggle</code>
@@ -195,7 +195,7 @@
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Dropdown Button Group -->
+        <!-- TODO: example 1 - Dropdown Button Group -->
         <div class="btn-group mb-2">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Primary
@@ -221,7 +221,7 @@
             </div>
         </div>
 
-        <!-- example 2 - Dropdown Button Group -->
+        <!-- TODO: example 2 - Dropdown Button Group -->
         <div class="btn-group">
             <div class="btn-group">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -783,9 +783,997 @@
 
         
     </div><!-- End Main Container -->
+    <!-- Modal [Dropdowns]-->
+    <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Dropdowns</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt1">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="<span class="text-primary">dropdown</span> mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;button class="btn btn-secondary <span class="text-primary">dropdown-toggle</span>" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                Dropdown button
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="<span class="text-primary">dropdown-menu</span>" aria-labelledby="dropdownMenuButton"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="<span class="text-primary">dropdown-item</span>" href="#"&gt;Action&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="<span class="text-primary">dropdown-item</span>" href="#"&gt;Another action&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="<span class="text-primary">dropdown-item</span>" href="#"&gt;Something else here&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="<span class="text-primary">dropdown</span> mb-2 show"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                Dropdown link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/a&gt;  
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="<span class="text-primary">dropdown-menu</span>" aria-labelledby="dropdownMenuLink"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="<span class="text-primary">dropdown-item</span>" href="#"&gt;Action&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="<span class="text-primary">dropdown-item</span>" href="#"&gt;Another action&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="<span class="text-primary">dropdown-item</span>" href="#"&gt;Something else here&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Dropdown Button Group]-->
+    <div class="modal" id="example2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example2">Dropdown Button Group</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt2">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="btn-group mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                Primary
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="dropdown-menu"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2 code text-dark">
+                                &lt;/a&gt;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Another action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Something else here
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Separated link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="btn-group mb-2"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                secondary
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="dropdown-menu"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Another action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Something else here
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                 &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;div class="btn-group"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="btn-group"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Primary
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;div class="dropdown-menu"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Another action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Something else here
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Separated link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="btn-group"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Secondary
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;div class="dropdown-menu"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                    Action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                    Another action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                    Something else here
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                    Separated link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="btn-group"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Success
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;div class="dropdown-menu"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                    Action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                    Another action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                    Something else here
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                    Separated link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="btn-group"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Info
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;div class="dropdown-menu"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                Action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                Another action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                Something else here
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-dark">
+                                Separated link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="btn-group"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Warning
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;div class="dropdown-menu"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Another action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Something else here
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="btn-group"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                Danger
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;div class="dropdown-menu"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Another action
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Something else here
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;a class="dropdown-item" href="#"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-4"><code class="text-muted">
+                                Separated link
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-danger">
+                                &lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
 
     <footer class="my-5 py-5">
     </footer>
+    <script>
+        function CopyToClipboard(contentt1)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt1));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard2(contentt2)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt2));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard3(contentt3)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt3));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard4(contentt4)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt4));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+        function CopyToClipboard5(contentt5)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt5));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Copied');
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
