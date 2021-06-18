@@ -4,94 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Purposes Only</title>
+    <title>TeleworkPH Time IN/OUT</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
    <div id="main-container" class="container">
-    <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-        <h2 class="coo"><a data-toggle="modal" data-target="#example3">Accordion</a></h2>
-        <code class="d-inline-block mb-1 aw-code">.collapse</code> &amp; 
-        <code class="d-inline-block mb-1 aw-code">.collapsed</code>
-        <code class="d-inline-block mb-1 aw-code">data-parent="#ContainerID"</code>
-        <code class="d-inline-block mb-1 aw-code">data-toggle="collapse"</code>
-    </div>
-    
-<div class="row">
-    <div class="col">
-        <div class="mb-2 d-flex flex-column text-center">
-            <div id="contentt1" class="bg-secondary">
-                <p>start of period <span id="datetime"></span></p>
-            </div>
-            <button id="datetime2" type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-secondary border-top-0">Copy</button>
-            <div id="contentt" class="bg-warning mt-2">
-                <p>first break <span id="first"></span></p>
-            </div>
-            <button id="first2" type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-warning">Copy</button>
-            <div id="contentt2" class="bg-secondary mt-2">
-                <p>back from first break <span id="backf"></span></p>
-            </div>
-            <button id="backf2" type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-secondary">Copy</button>
-            <div id="contentt3" class="bg-warning mt-2">
-                    <p>half-time break <span id="htb"></span></p>
-            </div>
-            <button id="htb2" type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-warning">Copy</button>
-            
-        </div>
-    </div>
-    <div class="col">
-        <div class="mb-2 d-flex flex-column text-center">
-            <div id="contentt4" class="bg-success">
-                <p> back from lunch break <span id="backflb"></span></p>
-            </div>
-            <button id="backflb2" type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary">Copy</button>
-            <div id="contentt5">
-                <p>second break <span id="second"></span></p>
-            </div>
-            <button id="second2" type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-outline-primary">Copy</button>
-            <div id="contentt6">
-                <p>back from second break <span id="backs"></span></p>
-            </div>
-            <button id="backs2" type="button" onclick="CopyToClipboard6('contentt6');return false;" class="btn btn-outline-primary">Copy</button>
-            <div id="contentt7">
-                <p>end of period <span id="dateend"></span></p>
-            </div>
-            <button id="dateend2" type="button" onclick="CopyToClipboard7('contentt7');return false;" class="btn btn-outline-primary">Copy</button>
-        </div>
-    </div>
-</div>
-
-        
- 
-        <!-- Modal [Accordion]-->
-    <div class="modal" id="example3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="example3">Spy</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div id="contentt">
-                        <p id="date"></p>
-                        <script>
-                        document.getElementById("date").innerHTML = Date();
-                        </script>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                    <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
-                </div>
-            </div>
-        </div>
-    </>
-    <!-- end of Modal -->
+    <img class="card-img-top mt-4" src="img/telelogo.png" alt="Card image cap" style="height: 50px; width: 200px;">
+       <h2 class="text-center m-5" style="line-height: 2px; letter-spacing: 13px; word-spacing: 25px;">Time Keeper</h2>
+       <div class="row">
+           <div class="col">
+               <div class="mb-2 d-flex flex-column text-center">
+                   <div id="contentt1" class="bg-secondary">
+                       <p>start of period <span id="datetime"></span></p>
+                   </div>
+                   <button id="datetime2" type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-secondary border-top-0">Copy</button>
+                   <div id="contentt" class="bg-danger mt-2">
+                       <p>first break <span id="first"></span></p>
+                   </div>
+                   <button id="first2" type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-danger">Copy</button>
+                   <div id="contentt2" class="bg-success mt-2">
+                       <p>back from first break <span id="backf"></span></p>
+                   </div>
+                   <button id="backf2" type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-success">Copy</button>
+                   <div id="contentt3" class="bg-danger mt-2">
+                           <p>half-time break <span id="htb"></span></p>
+                   </div>
+                   <button id="htb2" type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-danger">Copy</button>
+                   
+               </div>
+           </div>
+           <div class="col">
+               <div class="mb-2 d-flex flex-column text-center">
+                   <div id="contentt4" class="bg-success">
+                       <p> back from lunch break <span id="backflb"></span></p>
+                   </div>
+                   <button id="backflb2" type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-success">Copy</button>
+                   <div id="contentt5" class="bg-danger mt-2">
+                       <p>second break <span id="second"></span></p>
+                   </div>
+                   <button id="second2" type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-outline-danger">Copy</button>
+                   <div id="contentt6" class="bg-success mt-2">
+                       <p>back from second break <span id="backs"></span></p>
+                   </div>
+                   <button id="backs2" type="button" onclick="CopyToClipboard6('contentt6');return false;" class="btn btn-outline-success">Copy</button>
+                   <div id="contentt7" class="bg-secondary mt-2">
+                       <p>end of period <span id="dateend"></span></p>
+                   </div>
+                   <button id="dateend2" type="button" onclick="CopyToClipboard7('contentt7');return false;" class="btn btn-outline-secondary">Copy</button>
+               </div>
+           </div>
+       </div>
    </div>
     <script>
         var dt = new Date();
