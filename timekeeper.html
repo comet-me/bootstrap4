@@ -13,47 +13,63 @@
 <body>
    <div id="main-container" class="container">
     <img class="card-img-top mt-4" src="img/telelogo.png" alt="Card image cap" style="height: 50px; width: 200px;">
-       <h2 class="text-center m-5" style="line-height: 2px; letter-spacing: 13px; word-spacing: 25px;">Time Keeper</h2>
+       <h2 class="text-center m-5" style="line-height: 1.5rem; letter-spacing: 1rem; word-spacing: 2rem;">Time Keeper</h2>
        <div class="row">
-           <div class="col">
-               <div class="mb-2 d-flex flex-column text-center">
-                   <div id="contentt1" class="bg-secondary">
-                       <p>start of period <span id="datetime"></span></p>
+           <div class="col border-right">
+               <div class="d-flex flex-column text-center">
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt1" class="rounded-right p-2">
+                           <p><code class="text-dark font-weight-bold">start of period <span class="text-muted" id="datetime"></span></code></p>
+                       </div>
+                       <button id="datetime2" type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
-                   <button id="datetime2" type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-secondary border-top-0">Copy</button>
-                   <div id="contentt" class="bg-danger mt-2">
-                       <p>first break <span id="first"></span></p>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt" class="rounded-right p-2">
+                           <p><code class="text-danger">first break <span class="text-muted" id="first"></span></code></p>
+                       </div>
+                       <button id="first2" type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
-                   <button id="first2" type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-danger">Copy</button>
-                   <div id="contentt2" class="bg-success mt-2">
-                       <p>back from first break <span id="backf"></span></p>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt2" class="rounded-right p-2">
+                           <p><code class="text-success">back from first break <span class="text-muted" id="backf"></span></code></p>
+                       </div>
+                       <button id="backf2" type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
-                   <button id="backf2" type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-success">Copy</button>
-                   <div id="contentt3" class="bg-danger mt-2">
-                           <p>half-time break <span id="htb"></span></p>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt3" class="rounded-right p-2">
+                               <p><code class="text-danger">half-time break <span class="text-muted" id="htb"></span></code></p>
+                       </div>
+                       <button id="htb2" type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
-                   <button id="htb2" type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-danger">Copy</button>
                    
                </div>
            </div>
            <div class="col">
                <div class="mb-2 d-flex flex-column text-center">
-                   <div id="contentt4" class="bg-success">
-                       <p> back from lunch break <span id="backflb"></span></p>
+                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                        <div id="contentt4" class="rounded-right p-2">
+                            <p><code class="text-success">back from lunch break <span class="text-muted" id="backflb"></span></code></p>
+                        </div>
+                        <button id="backflb2" type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                    </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt5" class="rounded-right p-2">
+                           <p><code class="text-danger">second break <span class="text-muted" id="second"></span></code></p>
+                       </div>
+                       <button id="second2" type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
-                   <button id="backflb2" type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-success">Copy</button>
-                   <div id="contentt5" class="bg-danger mt-2">
-                       <p>second break <span id="second"></span></p>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt6" class="rounded-right p-2">
+                           <p><code class="text-success">back from second break <span class="text-muted" id="backs"></span></code></p>
+                       </div>
+                       <button id="backs2" type="button" onclick="CopyToClipboard6('contentt6');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
-                   <button id="second2" type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-outline-danger">Copy</button>
-                   <div id="contentt6" class="bg-success mt-2">
-                       <p>back from second break <span id="backs"></span></p>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom border-bottom">
+                       <div id="contentt7" class="rounded-right p-2">
+                           <p><code class="text-dark font-weight-bold">end of period <span class="text-muted" id="dateend"></span></code></p>
+                       </div>
+                       <button id="dateend2" type="button" onclick="CopyToClipboard7('contentt7');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
-                   <button id="backs2" type="button" onclick="CopyToClipboard6('contentt6');return false;" class="btn btn-outline-success">Copy</button>
-                   <div id="contentt7" class="bg-secondary mt-2">
-                       <p>end of period <span id="dateend"></span></p>
-                   </div>
-                   <button id="dateend2" type="button" onclick="CopyToClipboard7('contentt7');return false;" class="btn btn-outline-secondary">Copy</button>
                </div>
            </div>
        </div>
