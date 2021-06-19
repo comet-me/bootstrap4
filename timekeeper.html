@@ -73,11 +73,51 @@
                </div>
            </div>
        </div>
+
+       <div class="dropdown-divider mt-5 pt-5"></div>
+       <div class="col-12 text-center mt-5">
+        <div class="btn-group" role="group">
+        <a href="tel:+639081869909" class="btn btn-primary"><i class="fa fa-phone"></i>
+        Call
+        </a>
+        <a href="skype:romeo08099?call" class="btn btn-info"><i class="fa fa-skype"></i>
+        Skype
+        </a>
+        <a href="mailto:meteorites86@gmail.com" class="btn btn-success"><i class="fa fa-envelope-o"></i>
+        Email
+        </a>
+        </div>
+        </div>
        <footer class="text-center mt-5">
            © Copyright Reserve <span id="futer"></span>
        </footer>
+       <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        </button>
    </div>
     <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+        function scrollFunction() {
+        if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+        ) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
         var dt = new Date();
         var dt1 = dt.getFullYear();
             document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
