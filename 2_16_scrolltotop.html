@@ -232,7 +232,7 @@
         </div> <!-- End of First Col -->
         <!-- * Copy button -->
         <div class="container text-center mb-2">
-            <button type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+            <button id="htmlc" type="button" onclick="CopyToClipboard('contentt1');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
         </div>
         
         
@@ -273,7 +273,7 @@
             </div>
             <!-- * Copy Button -->
             <div class="container text-center mb-2">
-                <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                <button id="cssc" type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
             </div>
         </div> <!-- End CSS CODE -->
         <!-- For JavaScript CODE -->
@@ -394,7 +394,7 @@
         </div> <!-- End JS CODE -->
         <!-- * Copy Button -->
         <div class="container text-center">
-            <button type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+            <button id="scroll2top" type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
         </div>
 
         </div><!-- End Main Container -->
@@ -411,6 +411,7 @@
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        document.getElementById('htmlc').innerHTML = "Copied";
         }
         function CopyToClipboard2(contentt2)
         {
@@ -420,6 +421,7 @@
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        document.getElementById('cssc').innerHTML = "Copied";
         }
         function CopyToClipboard3(contentt3)
         {
@@ -429,6 +431,7 @@
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        document.getElementById('scroll2top').innerHTML = "Copied";
         }
         </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
