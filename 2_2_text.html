@@ -241,8 +241,35 @@
         <p class="font-weight-bold">Bold text.</p>
         <p class="font-weight-normal">Normal weight text. No emphasis</p>
         <p class="font-italic">Italic text.</p>
+
+        <!-- ***** Letter spacing ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo"><a data-toggle="modal" data-target="#example7">Letter Spacing</a></h2>
+            <code class="d-inline-block mb-1 aw-code">.text-lowercase</code> or 
+            <code class="d-inline-block mb-1 aw-code">.text-uppercase</code> or 
+            <code class="d-inline-block mb-1 aw-code">.text-capitalize</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- TODO: example 1 - Letter Spacing -->
+        <p style="letter-spacing: 1rem;">Text Lowercase</p>
+        <p style="letter-spacing: 2rem;">text uppercase</p>
+
+         <!-- ***** Word Spacing ***** -->
+         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo"><a data-toggle="modal" data-target="#example8">Word Spacing</a></h2>
+            <code class="d-inline-block mb-1 aw-code">style="word-spacing: #unit</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- TODO: example 1 - Word Spacing -->
+        <p style="word-spacing: 1rem;">Text Lowercase</p>
+        <p style="word-spacing: 2rem;">text uppercase</p>
         
     </div><!-- End Main Container -->
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
 
     <!-- Modal [Text Justify]-->
     <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -671,11 +698,143 @@
         </div>
     </div>
     <!-- end of Modal -->
+    <!-- Modal [letter spacing]-->
+    <div class="modal" id="example7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example7">letter spacing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt7">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;p style="letter-spacing: 1rem;">
+                            </code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Text Lowercase
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;p style="letter-spacing: 2rem;"&gt;
+                            </code>
+                            </div>
+                        </div>        
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                text uppercase
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/p&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard7('contentt7');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [word spacing]-->
+    <div class="modal" id="example8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example8">word spacing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt8">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;p style="word-spacing: 1rem;">
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                Text Lowercase
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;p style="word-spacing: 2rem;"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-muted">
+                                text uppercase
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/p&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard7('contentt7');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
 
 
     <footer class="my-5 py-5">
     </footer>
     <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+        function scrollFunction() {
+        if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+        ) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
         function CopyToClipboard(contentt1)
         {
         var r = document.createRange();
