@@ -73,18 +73,23 @@
                </div>
            </div>
        </div>
+       <footer class="text-center mt-5">
+           © Copyright Reserve <span id="futer"></span>
+       </footer>
    </div>
     <script>
         var dt = new Date();
-        var dt1 = new Date();
+        var dt1 = dt.getFullYear();
             document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("dateend").innerHTML = (("0"+(dt1.getMonth()+1)).slice(-2)) +"/"+(("0"+dt1.getDate()).slice(-2))+" "+ (("0"+dt1.getHours()).slice(-2)) +":"+ (("0"+dt1.getMinutes()).slice(-2));
-            document.getElementById("first").innerHTML = (("0"+(dt1.getMonth()+1)).slice(-2)) +"/"+(("0"+dt1.getDate()).slice(-2))+" "+ (("0"+dt1.getHours()).slice(-2)) +":"+ (("0"+dt1.getMinutes()).slice(-2));
-            document.getElementById("second").innerHTML = (("0"+(dt1.getMonth()+1)).slice(-2)) +"/"+(("0"+dt1.getDate()).slice(-2))+" "+ (("0"+dt1.getHours()).slice(-2)) +":"+ (("0"+dt1.getMinutes()).slice(-2));
-            document.getElementById("backf").innerHTML = (("0"+(dt1.getMonth()+1)).slice(-2)) +"/"+(("0"+dt1.getDate()).slice(-2))+" "+ (("0"+dt1.getHours()).slice(-2)) +":"+ (("0"+dt1.getMinutes()).slice(-2));
-            document.getElementById("backs").innerHTML = (("0"+(dt1.getMonth()+1)).slice(-2)) +"/"+(("0"+dt1.getDate()).slice(-2))+" "+ (("0"+dt1.getHours()).slice(-2)) +":"+ (("0"+dt1.getMinutes()).slice(-2));
-            document.getElementById("htb").innerHTML = (("0"+(dt1.getMonth()+1)).slice(-2)) +"/"+(("0"+dt1.getDate()).slice(-2))+" "+ (("0"+dt1.getHours()).slice(-2)) +":"+ (("0"+dt1.getMinutes()).slice(-2));
-            document.getElementById("backflb").innerHTML = (("0"+(dt1.getMonth()+1)).slice(-2)) +"/"+(("0"+dt1.getDate()).slice(-2))+" "+ (("0"+dt1.getHours()).slice(-2)) +":"+ (("0"+dt1.getMinutes()).slice(-2));
+            document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("dateend").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("first").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("second").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("backf").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("backs").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("htb").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("backflb").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("futer").innerHTML = dt1;
 
         function CopyToClipboard(contentt)
         {
