@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- nav 1.1.0 -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <!-- nav 1.1.0 -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">Bootstrap Playground</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#playgroundsNavbar" aria-controls="playgroundsNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,72 +117,137 @@
             </div>
         </div>
     </nav>
+    <p></p>
     
-    <!-- Heading Container -->
-    <div class="container text-center pt-5">
-        <h1 class="display-4 mt-4">Getting Started</h1>
+    <div class="container pt-4">
+         <!-- ***** meta tags,link rel and script ***** -->
+         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">meta tags,link rel and script</a></h2>
+            <code class="d-inline-block mb-1 aw-code">link rel</code> &amp; 
+            <code class="d-inline-block mb-1 aw-code">meta</code>
+            <code class="d-inline-block mb-1 aw-code">script</code>
+        </div>
+    </div>
 
-        <h4 class="mt-4">Get Bootstrap</h4>
-        <div class="d-block">
-            <a href="https://getbootstrap.com/" target="_blank">Bootstrap Docs</a>
+    <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Clean Template</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt">
+                        <div class="row">
+                            <div class="col"><code class="text-primary">
+                                &lt;!DOCTYPE <span class="text-warning">html</span>&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-primary">
+                                &lt;html <span class="text-warning">lang=</span>"en"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-primary">
+                                &lt;head&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-primary">
+                                &lt;meta <span class="text-warning"><span class="text-warning">charset=</span>"UTF-8"</span>&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-primary">
+                                &lt;meta <span class="text-warning">name=</span>"viewport" <span class="text-warning">content=</span>"width=device-width, initial-scale=1.0"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-primary">
+                                &lt;meta <span class="text-warning">http-equiv=</span>"X-UA-Compatible" <span class="text-warning">content=</span>"ie=edge"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-primary">
+                                &lt;title&gt;<span class="text-dark">document title</span>&lt;/title&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-primary">
+                                &lt;link <span class="text-warning">rel=</span><span class="text-success">"stylesheet"</span> <span class="text-warning">href=</span><span class="text-success">"vendor/bootstrap/css/bootstrap.min.css"</span>&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-primary">
+                                &lt;link <span class="text-warning">rel=</span><span class="text-success">"stylesheet"</span> <span class="text-warning">href=</span><span class="text-success">"vendor/font-awesome/css/font-awesome.min.css"</span>&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-primary">
+                                &lt;link <span class="text-warning">rel=</span><span class="text-success">"stylesheet"</span> <span class="text-warning">href=</span><span class="text-success">"css/styles.css"</span>&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-primary">
+                                &lt;/head&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-primary">
+                                &lt;body&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-primary">
+                                &lt;script <span class="text-warning">src=</span><span class="text-success">"node_modules/jquery/dist/jquery.slim.min.js"</span>&gt;&lt;/script&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-primary">
+                                &lt;script <span class="text-warning">src=</span><span class="text-success">"node_modules/popper.js/dist/umd/popper.min.js"</span>&gt;&lt;/script&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-primary">
+                                &lt;script <span class="text-warning">src=</span><span class="text-success">"node_modules/bootstrap/dist/js/bootstrap.min.js"</span>&gt;&lt;/script&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-primary">
+                                &lt;/body&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code class="text-primary">
+                                &lt;/html&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
         </div>
-
-        <h4 class="mt-4">Visual Studio Code</h4>
-        <div class="d-block">
-            <a href="https://code.visualstudio.com/Download" target="_blank">VS Code Software</a>
-        </div>
-
-        <h4 class="mt-4">Visual Studio Code Extensions</h4>
-        <div class="d-block">
-            <a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css" target="_blank">HTML CSS Support</a>
-        </div>
-        <div class="d-block">
-            <a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion" target="_blank">IntelliSense for CSS class names</a>
-        </div>
-        <div class="d-block">
-            <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a>
-        </div>
-        <div class="d-block">
-            <a href="https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete" target="_blank">Path Autocomplete</a>
-        </div>
-
-
-        <h1 class="display-4 mt-4">Resources</h1>
-
-        <h4 class="mt-4">Tools</h4>
-        <div>
-            <a href="https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/" target="_blank" class="text-danger">Bootstrap Cheatsheet</a>
-        </div>
-        <div>
-            <a href="https://offroadcode.com/rem-calculator" target="_blank">REM Calculator</a>
-        </div>
-
-        <h4 class="mt-4">Visual Studio Code (VS Code)</h4>
-        <div>
-            <a href="https://code.visualstudio.com/Download" target="_blank">VS Code Software</a>
-        </div>
-        <h6 class="mt-4">Keyboard Shortcuts (cloud)</h6>
-        <div>
-            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank">Mac Keyboard Shortcuts (cloud)</a>
-        </div>
-        <div>
-            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank">Windows Keyboard Shortcuts (cloud)</a>
-        </div>
-        <h6 class="mt-4">Keyboard Shortcuts (local)</h6>
-        <div>
-            <a href="resources/docs/keyboard-shortcuts-macos.pdf" target="_blank">Mac Keyboard Shortcuts (local)</a>
-        </div>
-        <div>
-            <a href="resources/docs/keyboard-shortcuts-windows.pdf" target="_blank">Windows Keyboard Shortcuts (local)</a>
-        </div>
-        <footer class="card-footer mt-4">
-            <small>Author: Romeo Bulalacao Jr.</small>
-        </footer>
-
-    </div><!-- End Container -->
-  
-    <footer class="my-5 py-5">
-    </footer>
+    </div>
+    <!-- end of Modal -->
+    
+    <script>
+        function CopyToClipboard(contentt)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+</script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

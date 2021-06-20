@@ -158,7 +158,7 @@
             </code>
         </p>
         <p class="text-center">
-            <button type="button" onclick="CopyToClipboard('p3');return false;" class="btn btn-primary" data-dismiss="modal">Click here to copy</button>
+            <button id="copied1" type="button" onclick="CopyToClipboard('p3');return false;" class="btn btn-outline-primary" data-dismiss="modal">Click here to copy</button>
         </p>
 
         <p>3. Copy the script below this line:</p>
@@ -239,7 +239,7 @@
             </div>
         </div>
         <p class="text-center mt-3">
-            <button type="button" onclick="CopyToClipboard2('scriptt');return false;" class="btn btn-primary" data-dismiss="modal">Click here to copy</button>
+            <button id="copied2" type="button" onclick="CopyToClipboard2('scriptt');return false;" class="btn btn-outline-primary" data-dismiss="modal">Click here to copy</button>
         </p>
         <h6 class="text-center">That's all folks!</h6>
         <script>
@@ -252,7 +252,7 @@
             window.getSelection().addRange(r);
             document.execCommand('copy');
             window.getSelection().removeAllRanges();
-            alert('Copied');
+            document.getElementById('copied1').innerHTML = "Copied";
             }
             function CopyToClipboard2(scriptt)
             {
@@ -262,7 +262,7 @@
             window.getSelection().addRange(r);
             document.execCommand('copy');
             window.getSelection().removeAllRanges();
-            alert('Copied')
+            document.getElementById('copied2').innerHTML = "Copied"
             }
             </script>
     </div><!-- End Main Container -->
