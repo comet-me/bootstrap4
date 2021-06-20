@@ -117,9 +117,7 @@
             </div>
         </div>
     </nav>
-    <p></p>
-    
-    <div class="container pt-4">
+    <div class="container pt-5">
          <!-- ***** meta tags,link rel and script ***** -->
          <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
             <h2 class="coo"><a data-toggle="modal" data-target="#example1">meta tags,link rel and script</a></h2>
@@ -127,7 +125,41 @@
             <code class="d-inline-block mb-1 aw-code">meta</code>
             <code class="d-inline-block mb-1 aw-code">script</code>
         </div>
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <h2>Insert this inside the head tags</h2>
+            </div>
+            <div id="linkrel" class="col-10 bg-dark">
+                <p><code class="text-light">
+                    &lt;link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"&gt; <br>
+                    &lt;link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css"&gt; <br>
+                    &lt;link rel="stylesheet" href="css/styles.css"&gt;
+                </code></p>
+            </div>
+            <div class="col-2 bg-dark text-center d-flex align-items-center justify-content-center">
+                <button id="copybut" type="button" onclick="CopyToClipboard('linkrel');return false;" class="btn btn-outline-light">Copy</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <h2>Insert this right before closing body tags</h2>
+            </div>
+            <div id="copyscript" class="col-10 bg-dark">
+                <p><code class="text-success">
+                    &lt;!-- jQuery first, then Popper.js, then Bootstrap JS. --&gt;
+                </code></p>
+                <p><code class="text-light">
+                    &lt;script src="node_modules/jquery/dist/jquery.slim.min.js"&gt;&lt;/script&gt; <br>
+                    &lt;script src="node_modules/popper.js/dist/umd/popper.min.js"&gt;&lt;/script&gt; <br>
+                    &lt;script src="node_modules/bootstrap/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;                    
+                </code></p>
+            </div>
+            <div class="col-2 bg-dark text-center d-flex align-items-center justify-content-center">
+                <button id="copyscripts" type="button" onclick="CopyToClipboard2('copyscript');return false;" class="btn btn-outline-light">Copy</button>
+            </div>
+        </div>
     </div>
+
 
     <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -238,14 +270,25 @@
     <!-- end of Modal -->
     
     <script>
-        function CopyToClipboard(contentt)
+        function CopyToClipboard(linkrel)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt));
+        r.selectNode(document.getElementById(linkrel));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        document.getElementById('copybut').innerHTML = "Copied";
+        }
+        function CopyToClipboard2(copyscript)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(copyscript));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById('copyscripts').innerHTML = "Copied";
         }
 </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
