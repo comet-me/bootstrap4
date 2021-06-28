@@ -151,7 +151,7 @@
         
         <!-- ***** Pagination ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2>Pagination</h2>
+            <h2 class="coo"><a data-toggle="modal" data-target="#example1">Pagination</a></h2>
             <code class="d-inline-block mb-1 aw-code">&lt;nav&gt;</code> 
             <code class="d-inline-block mb-1 aw-code">&lt;ul&gt;</code> &amp; 
             <code class="d-inline-block mb-1 aw-code">.pagination</code> 
@@ -160,7 +160,7 @@
         </div>
         <!-- # Code Examples # -->
 
-        <!-- example 1 - Pagination -->
+        <!-- TODO: example 1 - Pagination -->
         <nav aria-label="Page navigation example">
             <ul class="pagination">
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -344,6 +344,125 @@
         </nav>
         
     </div><!-- End Main Container -->
+
+    <!-- Modal [Pagination]-->
+    <div class="modal" id="example1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example1">Pagination</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="contentt">
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;nav aria-label="Page navigation example"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;ul class="pagination"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;li class="page-item"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/li&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;li class="page-item"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;a class="page-link" href="#"&gt;1&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/li&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;li class="page-item"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;a class="page-link" href="#"&gt;2&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/li&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;li class="page-item"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;a class="page-link" href="#"&gt;3&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/li&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;li class="page-item"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                &lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/li&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/ul&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/nav&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-primary" data-dismiss="modal">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
 
     <footer class="my-5 py-5">
     </footer>
