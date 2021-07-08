@@ -138,7 +138,23 @@
     <!-- Heading Container -->
     <div class="container text-center pt-5">
         <h1 class="display-4 mt-4">Getting Started</h1>
-        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iure rerum pariatur. Dolor illo tempore ipsum quas natus libero! Nobis odio laborum non repellat quas similique voluptas ab deleniti ratione ut, nesciunt, perferendis eveniet, rem qui natus itaque consequatur accusantium quam minima fugiat obcaecati modi ipsum cupiditate! Facilis dolor veniam pariatur provident. At repellat vel commodi voluptates non quo soluta, sit corrupti harum fuga consequatur culpa? Eos culpa aperiam cumque recusandae ab esse itaque provident praesentium repellat officiis, tempora, quos modi doloremque voluptate! Id officiis mollitia nihil repellat, ullam error distinctio saepe autem quisquam cumque sint, quas, veritatis minima modi iusto placeat maxime corrupti delectus. Quasi fugiat ex possimus magnam dolor vero in iusto atque officiis, pariatur voluptas, consectetur neque aliquid nisi ea consequuntur quaerat inventore. Perspiciatis consectetur expedita, corporis iusto cupiditate nulla recusandae, molestiae fugiat illo laudantium eum modi ipsum quisquam ut omnis delectus fugit debitis culpa commodi rem, at soluta ducimus? Ut iste maxime accusamus. Saepe deserunt aut corporis laborum fugit eius amet soluta fuga possimus suscipit, voluptates fugiat, recusandae cumque aliquam nulla, tenetur dicta. Quos necessitatibus adipisci perspiciatis sequi fuga eum harum voluptate eveniet, ipsam sed facere maxime et ex itaque veritatis doloremque qui dolorem commodi. Quaerat nisi molestias eveniet eos cupiditate, adipisci nihil quos magni facere amet deleniti velit fugit sunt non quia nemo beatae possimus soluta autem reprehenderit eligendi incidunt aspernatur repellendus vero. Earum quia illum modi commodi. Aut tenetur vitae quisquam eos rerum in deserunt sunt commodi blanditiis eum tempora, tempore iste error optio nostrum? Inventore cupiditate ullam voluptas facilis fuga officia, illo architecto aspernatur ad pariatur obcaecati tempore laborum nam et id veritatis aut veniam? Temporibus reiciendis, suscipit beatae optio nobis, tempore distinctio nisi provident incidunt ipsam enim unde ad dolorum animi fugiat minus vitae rem excepturi eveniet quas? Natus ipsa corporis architecto doloremque dolore maxime iusto quam aperiam mollitia voluptatum cupiditate debitis reiciendis, quaerat quia veritatis vero alias pariatur qui eligendi nemo? Itaque minima aperiam dolore commodi magnam porro quo quidem impedit nesciunt? Quia, fugit quo. Asperiores fugit id, accusamus quam itaque, beatae autem reiciendis tempora a repellat nulla, dolorum earum delectus ab corporis facilis! Repudiandae eum iste sequi cupiditate sint temporibus qui officia. Excepturi cupiditate atque voluptas facilis, animi temporibus quibusdam dolorem reiciendis quo sed, beatae repellendus rerum hic! Dignissimos asperiores perspiciatis nobis sapiente accusantium. Tempore officiis suscipit in placeat sint alias consectetur dolores optio at voluptatum nesciunt, sit saepe porro dolorem rerum repudiandae beatae ipsam? Quod, quam? Inventore culpa tempore eligendi nam esse nihil temporibus id eum ipsa, omnis voluptates aut nulla tenetur eaque accusantium explicabo expedita facilis quo. Ut tenetur maiores nesciunt sit, fugit, modi distinctio accusamus, minima officia voluptate reiciendis! Vero, recusandae dolorem iusto quos sed repellendus id cupiditate eius aperiam consectetur nam praesentium consequuntur obcaecati dicta explicabo omnis, voluptatibus dolorum eos? Consectetur distinctio ullam aspernatur eveniet quasi natus, saepe, culpa mollitia accusantium eius atque quis? Odio expedita quibusdam tempore. Repellat quae, veritatis adipisci sint earum, delectus vero aut voluptate, quia a culpa dolorem numquam rem iusto laborum.</p>
+        <p>Time-in and Time-out</p>
+        <p><a href="https://comet-me.github.io/rom/timekeeper.html" target="_blank">TELEWORKPH TIMe LOG</a></p>
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span class="titleafb">AFB flow-chart [Type of Play]</span>
+            </a>
+            <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Button with data-target
+            </button> -->
+            </p>
+            <div class="collapse" id="collapseExample">
+            <div class="card card-body mb-2">
+                <div class="container">
+                    <img src="/img/fb.png" alt="" style="width: 35rem; height: 35rem;">
+                </div>
+            </div>
+            </div>
 
         <div class="col-12">
             <div class="btn-group" role="group">
@@ -156,11 +172,39 @@
         <footer class="card-footer mt-4">
             <small>Author: Romeo Bulalacao Jr.</small>
         </footer>
-
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <span title="Click here to go to top">
+                <i class="fa fa-arrow-up"></i>
+            </span>
+        </button>
     </div><!-- End Container -->
   
     <footer class="my-5 py-5">
     </footer>
+    <script>
+        //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

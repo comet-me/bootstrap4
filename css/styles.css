@@ -1,3 +1,7 @@
+.titleafb {
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+}
 /* Scroll bar start here */
 ::-webkit-scrollbar {
   width: 4px;
