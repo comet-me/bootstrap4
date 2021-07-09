@@ -4,120 +4,350 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pass</title>
+    <title>4_6_scrollspy</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body data-spy="scroll" data-target="#list-example" data-offset="0">
-    <div class="aw-scrollspy-container">
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+    <div class="container-fluid mb-4">
         <div class="row">
-            <div class="col-4 col-sm-1 fixed-top px-0 mx-sm-0">
-                <div id="list-example" class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#list-item-1">Pass</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-2">Complete</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-3">Incomplete</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-5">Item 5</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-6">Item 6</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-7">Item 7</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-8">Item 8</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-9">Item 9</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-10">Item 10</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-11">Item 11</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-12">Item 12</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-12">Item 13</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-12">Item 14</a>
-                </div>
+            <div class="col-5 col-sm-3 col-md-2 bg-dark">
+                <nav id="navbar-example3" class="navbar navbar-light aw-scrollspy-fixed">                
+                    <nav class="nav nav-pills flex-column">
+                        <a class="navbar-brand text-light" href="#">Play Type</a>
+                        <a class="nav-link font-weight-bold" href="#item-1">K.O</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-1-1">K.O</a>
+                            <a class="nav-link ml-3 my-1" href="#item-1-2">K.O receive</a>
+                        </nav>
+                        <a class="nav-link font-weight-bold" href="#item-2">run & pass</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-2-1">Run</a>
+                            <a class="nav-link ml-3 my-1" href="#item-2-2">Pass</a>
+                        </nav>
+                        <a class="nav-link font-weight-bold" href="#item-3">Punt</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-3-1">Punt</a>
+                            <a class="nav-link ml-3 my-1" href="#item-3-2">Punt Receive</a>
+                        </nav>
+                    </nav>
+                </nav>
             </div>
-            <div class="col-8 col-sm-11 pl-4 ml-sm-5">
-                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="aw-scrollspy-example-4">
-                    <h4 id="list-item-1">Pass</h4>
-                    <p style="text-align: left;">A Pass occurs when the quarterback throws or pitches the ball forward.</p>
-                    <p style="text-align: left;">A Pass results in one of the following:</p>
-                <ul style="text-align: left;">
-                    <li>
-                        Complete - Caught by the offensive receiver
-                    </li>
-                    <li>
-                        Incomplete - Dropped/not caught by the offensive receiver
-                    </li>
-                    <li>
-                        Intercepted - Caught by the defensive team in the air (or steal in basketball)
-                    </li>
-                </ul>
-                <p style="text-align: left;">
-                    A pass is always thrown forward. If a ball is thrown directly to the side or backwards, it will not be a pass, but a run instead.</p>
+            <div class="col-7 col-sm-9 col-md-10 px-sm-4 px-md-4 text-justify text-muted bg-light">                        
+               <div class="container">
+                <h4 id="item-1" class="pt-5 border-bottom">Kick Off</h4>
+                <p>
+                    <ol>
+                        <li>Return</li>
+                        <li>Touchback</li>
+                        <li>fair Catch</li>
+                        <li>Out of Bounds</li>
+                    </ol>
                 </p>
-                        
-                    <h4 class="pt-3" id="list-item-2">Complete</h4>
-                    <p style="text-align: left;">
-                        Complete is used on passing plays only; when the ball is thrown forward from the original ball handler. A completion occurs when a pass is caught inbounds by a member of the offensive team.
-                        <br>
-                        Possible Corresponding Play Types:
-                        Pass, Fake Punt and Fake FG
-                        Result: Complete
+               </div>
+
+                <h5 id="item-1-1" class="pt-5 border-bottom">K.O</h5>
+                <div class="container">
+                    <p>
+                        Kickoffs occurs at the start of the game, after half-time and each time a team scores a touchdown or field goal. For a Kickoff, the ball is placed at the kicking team's (-40) yard line.
+                      <br>  KO will be tagged when Team 1 is kicking the ball.
                     </p>
-                    
-                    <h4 class="pt-3" id="list-item-3">Incomplete</h4>
-                    <p>An Incomplete result occurs when a member of the offensive team passes the football forward to another member of the offense, and the receiver does not catch the ball. </p>
-                    <p class="font-weight-bold">Possible Corresponding Play Types:
+                    <p class="font-weight-bold">KO occurs every: <br>
                         <ul>
                             <li>
-                                    Pass, Fake Punt and Fake FG
+                                 After touchdown
+                             </li>
+                            <li>
+                                 After field goal made
+                               </li>
+                            <li>
+                                During the beginning play
                             </li>
                             <li>
-                                Result: Incomplete
+                                And at the second half
                             </li>
                         </ul>
-                        </p>
-                    
-                    <h4 class="pt-3" id="list-item-4">Item 4</h4>
+                       
+                    </p>
+                   </div>
+
+                <h5 id="item-1-2" class="pt-5 border-bottom">K.O, receive</h5>
+                <div class="container">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
-                    <h4 class="pt-3" id="list-item-5">Item 5</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
-                    
-                    <h4 class="pt-3" id="list-item-6">Item 6</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
+                </div>
+
+                <h4 id="item-2" class="pt-5 border-bottom">Run and Pass</h4>
+                <div class="container">
+                    <p>List of Run</p>
+                    <p>
+                        <ul>
+                            <li>Fumble
+                                Fumble, Def TD
+                                Penalty
+                                Rush
+                                Rush, safety
+                                Rush, TD
+                                Safety
+                                TD
+                                Timeout
+                                </li>
+                        </ul>
+                    </p>
+                    <p>List of Pass</p>
+                    <ul>
+                        <li>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalcomplete">
+                                <span title="Click here">
+                                    complete
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalcompletetd">
+                                <span title="Click here">
+                                    complete, TD
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalfumble">
+                                <span title="Click here">
+                                    Fumble
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalfumbledef">
+                                <span title="Click here">
+                                    Fumble, Def TD
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalincomplete">
+                                <span title="Click here">
+                                    Incomplete
+                                </span>
+                            </a>
+                            Interception
+                            Interception, Def TD
+                            Penalty
+                            Sack
+                            Sack, Fumble
+                            Sack, Fumble, Def TD
+                            Sack, Safety
+                            Safety
+                            Scramble
+                            Scramble, TD
+                            TD
+                            Timeout
+
+                        </li>
+                    </ul>
+                </div>
+
+                <h5 id="item-2-1" class="pt-5 border-bottom">Run</h5>
+                <div class="container">
+                    <p>A Run occurs when the ball carrier runs the ball down the field toward the opponent's end zone until he is either pushed out of bounds, tackled, or scores a touchdown.</p>
+                </div>
+                <h5 id="item-2-2" class="pt-5 border-bottom">Pass</h5>
+                <div class="container">
+                    <p>A Pass occurs when the quarterback throws or pitches the ball forward.</p>
+                    <p>
+                        <span class="font-weight-bold">A Pass results in one of the following:</span>
+                        <br>
+                        <ol>
+                            <li>
+                                Complete - Caught by the offensive receiver
+                            </li>
+                            <li>
+                                Incomplete - Dropped/not caught by the offensive receiver
+                            </li>
+                            <li>
+                                Intercepted - Caught by the defensive team in the air (or steal in basketball)
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+                <h4 id="item-3" class="pt-5 border-bottom">Punt</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
+                
+                <h5 id="item-3-1" class="pt-5 border-bottom">Punt</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
+                
+                <h5 id="item-3-2" class="pt-5 border-bottom">Punt, Receive</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
+            </div>
+        </div>
+
+        
+        <!-- Modal Complete -->
+        <div id="modalcomplete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Complete
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       The ball was caught by the receiver
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- End of Modal -->
+
+        <!-- Modal Fumble -->
+        <div id="modalfumble" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Fumble
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A Fumble occurs when a member of the offensive team drops the football, and the defensive team picks up the ball to gain possession. The defense may then advance the ball.
+                            </p>
+                            <p class="lead">If the offensive team recovers the dropped ball, do not credit it as a fumble.  </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                All Play Types
+                            </p>
+                            <p><span class="font-weight-bold">PRO TIP:</span><br>
+                                See the hands of the referee, usually parang hahawi-hawi muna
+                                 yan sa ulap and then ituturo niya yung direction ng end zone dun sa team nakapick ng ball.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+
+        <!-- Modal Complete, TD -->
+        <div id="modalcompletetd" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Complete, TouchDown
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: justify;">
+                            This result is only for passing plays <br>
+                        A <span class="font-weight-bold">Complete, Touchdown</span> occurs when the quarterback on the offensive team throws a pass to the wide receiver. The ball is caught in the end zone or ran into the end zone.
+                        <br><br>
+                        <strong>
+                            Possible Corresponding Play Types:
+                        </strong>
+                        <br>
+                        Pass, Fake Punt and Fake FG
+
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Fumbledef -->
+        <div id="modalfumbledef" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Fumble, Defensive Touchdown
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Fumble, Defensive Touchdown</span> occurs when the offense unintentionally fumbles the football, and the ball is picked up by the defensive team, who then runs the football into the end zone for a touchdown.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                All Play Types
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal incomplete -->
+        <div id="modalincomplete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            incomplete
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                An <span class="font-weight-bold">Incomplete</span> This result is only used on passing plays.
+                                    An Incomplete result occurs when a member of the offensive team passes
+                                     the football forward to another member of the offense, and the
+                                      receiver does not catch the ball.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                All Play Types
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+
     </div>
 
-    <a href="index.html">
-        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-            <span title="Click here to go to top">
-                <i class="fa fa-arrow-up"></i>
-            </span>
-        </button>
-    </a>
-    <footer class="my-5 py-5">
+    <footer>
     </footer>
-    <script>
-        //Get the button
-        let mybutton = document.getElementById("btn-back-to-top");
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-        scrollFunction();
-        };
-        function scrollFunction() {
-        if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-        ) {
-        mybutton.style.display = "block";
-        } else {
-        mybutton.style.display = "none";
-        }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        // mybutton.addEventListener("click", backToTop);
-        // function backToTop() {
-        // document.body.scrollTop = 0;
-        // document.documentElement.scrollTop = 0;
-        
-    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
