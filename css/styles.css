@@ -1,3 +1,7 @@
+#cursorme:hover {
+  cursor: pointer;
+  color: blue;
+}
 .titleafb {
   letter-spacing: 0.1rem;
   word-spacing: 0.1rem;
