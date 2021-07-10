@@ -169,10 +169,12 @@
             </a>
         <p>
             <a class="btn btn-warning" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <span class="titleafb">AFB Pass and Run [chart]</span>
+                <span class="titleafb"><span class="font-weight-bold">O</span>S<span class="font-weight-bold">D</span>K [chart]</span>
             </a>
             <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                KO
+                <span class="titleafb">
+                    OSD<span class="font-weight-bold">K</span>
+                </span>
             </button>
             <a href="pass.html" target="_blank">
                 <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
@@ -184,8 +186,63 @@
             <div class="card card-body mb-2 no-gutters">
                 <table class="table-responsive">
                     <tr>
-                        <td style="width: 60%;">
-                            <img class="text-center" src="img/fb.png" alt="" style="width: 45rem; height: 35rem;">
+                        <td >
+                        
+                        <map name="afb">
+        <!-- <area shape="rect" coords="x,y,x+width,y+height" href="" alt=""> -->
+                            <span title="Click here">
+                                <area shape="rect" coords="55,213,156,245" id="cursorme" data-toggle="modal" data-target="#modalcomplete" alt="">
+                            </span>
+                            <span title="Click here to view Interception definition">
+                                <area shape="rect" coords="195,295,300,304" id="cursorme" data-toggle="modal" data-target="#modalinterception" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="345,292,450,302" id="cursorme" data-toggle="modal" data-target="#modalincomplete" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="2,352,73,370" id="cursorme" data-toggle="modal" data-target="#modalfumble" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="2,407,150,440" id="cursorme" data-toggle="modal" data-target="#modalcompletetd" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="190,400,290,430" id="cursorme" data-toggle="modal" data-target="#modalcomplete" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="140,485,360,510" id="cursorme" data-toggle="modal" data-target="#modalinterceptionfumble" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="402,462,512,481" id="cursorme" data-toggle="modal" data-target="#modalinterception" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="520,405,565,422" id="cursorme" data-toggle="modal" data-target="#modalsack" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="490,282,600,300" id="cursorme" data-toggle="modal" data-target="#modalscramble" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="535,490,670,510" id="cursorme" data-toggle="modal" data-target="#modalsackfumble" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="720,477,772,500" id="cursorme" data-toggle="modal" data-target="#modalsack" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="728,407,783,430" id="cursorme" data-toggle="modal" data-target="#modalrush" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="820,470,900,490" id="cursorme" data-toggle="modal" data-target="#modalrushtd" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="820,210,870,235" id="cursorme" data-toggle="modal" data-target="#modalsack" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="795,355,850,375" id="cursorme" data-toggle="modal" data-target="#modalrush" alt="">
+                            </span>
+                            <span title="Click here to see the definition">
+                                <area shape="rect" coords="990,465,1050,490" id="cursorme" data-toggle="modal" data-target="#modalrush" alt="">
+                            </span>
+                                <img class="text-center" src="img/fbb.png" usemap="#afb" alt="">
+                            </map>
                         </td>
                     </tr>
                 </table>
@@ -212,7 +269,11 @@
                                     </a>
                                     <hr>
                                     <h6 class="text-danger">Is the perspective team on defensive position</h6>
-                                    if yes, then it is called <span class="font-weight-bold">K.O receive</span>.
+                                    if yes, then it is called 
+                                    <a id="cursorme" data-toggle="modal" data-target="#modalko">
+                                        <span title="Click here" class="font-weight-bold">K.O</span>
+                                </a>
+                                    <span class="font-weight-bold">K.O receive</span>.
                                 </div>
                             </div>
                         </div>
@@ -1285,6 +1346,43 @@
             </div>
         </div>
     </div>
+    <!-- Modal Interception, Fumble -->
+    <div id="modalinterceptionfumble" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Interception, Fumble
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <p style="text-align: justify;">
+                            An <span class="font-weight-bold">Interception, Fumble</span> occurs when the offensive quarterback throws the football, and the ball is intercepted. The defensive player then loses control of the football, and the offense regains control of the ball. 
+
+                        </p>
+                        <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                            Pass, Fake Punt and Fake FG
+                        </p>
+                        <p><strong>PRO TIP:</strong>
+                            <br>
+                            not available this time.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal -->
     <!-- Modal title -->
     <div id="modaltitle" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
         <div class="modal-dialog">
