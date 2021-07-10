@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>4_6_scrollspy</title>
+    <title>Types of play</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/afb.png"/>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -18,18 +19,18 @@
                         <a class="navbar-brand text-light" href="#">Play Type</a>
                         <a class="nav-link font-weight-bold" href="#item-1">K.O</a>
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ml-3 my-1" href="#item-1-1">K.O</a>
-                            <a class="nav-link ml-3 my-1" href="#item-1-2">K.O receive</a>
+                            <a class="nav-link ml-2 my-1" href="#item-1-1">K.O</a>
+                            <a class="nav-link ml-2 my-1" href="#item-1-2">K.O receive</a>
                         </nav>
                         <a class="nav-link font-weight-bold" href="#item-2">run & pass</a>
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ml-3 my-1" href="#item-2-1">Run</a>
-                            <a class="nav-link ml-3 my-1" href="#item-2-2">Pass</a>
+                            <a class="nav-link ml-2 my-1" href="#item-2-1">Run</a>
+                            <a class="nav-link ml-2 my-1" href="#item-2-2">Pass</a>
                         </nav>
                         <a class="nav-link font-weight-bold" href="#item-3">Punt</a>
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ml-3 my-1" href="#item-3-1">Punt</a>
-                            <a class="nav-link ml-3 my-1" href="#item-3-2">Punt Receive</a>
+                            <a class="nav-link ml-2 my-1" href="#punt1">Punt</a>
+                            <a class="nav-link ml-2 my-1" href="#item-3-2">Punt Receive</a>
                         </nav>
                     </nav>
                 </nav>
@@ -39,15 +40,34 @@
                 <h4 id="item-1" class="pt-5 border-bottom">Kick Off</h4>
                 <p>
                     <ol>
-                        <li>Return</li>
-                        <li>Touchback</li>
-                        <li>fair Catch</li>
-                        <li>Out of Bounds</li>
+                        <a id="cursorme" data-toggle="modal" data-target="#modalreturn">
+                            <span title="Click here">
+                            <li>Return</li>
+                            </span>
+                        </a>
+                        <a id="cursorme" data-toggle="modal" data-target="#modaltouchback">
+                            <span title="Click here">
+                            <li>Touchback</li>
+                            </span>
+                        </a>
+                        <a id="cursorme" data-toggle="modal" data-target="#modalfaircatch">
+                            <span title="Click here">
+                            <li>fair Catch</li>
+                            </span>
+                        </a>
+                        <a id="cursorme" data-toggle="modal" data-target="#modaloutofbounds">
+                            <span title="Click here">
+                            <li>Out of Bounds</li>
+                            </span>
+                        </a>
                     </ol>
                 </p>
+                <br>
+                    <img src="img/info.svg" alt="">
+                    You can click on each of the play type to see its definition
                </div>
 
-                <h5 id="item-1-1" class="pt-5 border-bottom">K.O</h5>
+                <h5 id="item-1-1" class="pt-4 border-bottom">K.O</h5>
                 <div class="container">
                     <p>
                         Kickoffs occurs at the start of the game, after half-time and each time a team scores a touchdown or field goal. For a Kickoff, the ball is placed at the kicking team's (-40) yard line.
@@ -82,15 +102,52 @@
                     <p>List of Run</p>
                     <p>
                         <ul>
-                            <li>Fumble
-                                Fumble, Def TD
-                                Penalty
-                                Rush
-                                Rush, safety
-                                Rush, TD
-                                Safety
-                                TD
-                                Timeout
+                            <li>
+                                <a id="cursorme" data-toggle="modal" data-target="#modalfumble">
+                                    <span title="Click here">
+                                        Fumble
+                                    </span>
+                                </a>
+                                <a id="cursorme" data-toggle="modal" data-target="#modalfumbledef">
+                                    <span title="Click here">
+                                        Fumble, Def TD
+                                    </span>
+                                </a>
+                                <a id="cursorme" data-toggle="modal" data-target="#modalpenalty">
+                                    <span title="Click here">
+                                        Penalty
+                                    </span>
+                                </a>
+                                <a id="cursorme" data-toggle="modal" data-target="#modalrush">
+                                    <span title="Click here">
+                                        Rush
+                                    </span>
+                                </a>
+                                <a id="cursorme" data-toggle="modal" data-target="#modalrushsafety">
+                                    <span title="Click here">
+                                        Rush, safety
+                                    </span>
+                                </a>
+                                <a id="cursorme" data-toggle="modal" data-target="#modalrushtd">
+                                    <span title="Click here">
+                                        Rush, TD
+                                    </span>
+                                </a>
+                                <a id="cursorme" data-toggle="modal" data-target="#modalsafety">
+                                    <span title="Click here">
+                                        Safety
+                                    </span>
+                                </a>
+                                <a id="cursorme" data-toggle="modal" data-target="#modaltd">
+                                    <span title="Click here">
+                                        TD
+                                    </span>
+                                </a>
+                                <a id="cursorme" data-toggle="modal" data-target="#modaltimeout">
+                                    <span title="Click here">
+                                        Timeout
+                                    </span>
+                                </a>
                                 </li>
                         </ul>
                     </p>
@@ -122,21 +179,73 @@
                                     Incomplete
                                 </span>
                             </a>
-                            Interception
-                            Interception, Def TD
-                            Penalty
-                            Sack
-                            Sack, Fumble
-                            Sack, Fumble, Def TD
-                            Sack, Safety
-                            Safety
-                            Scramble
-                            Scramble, TD
-                            TD
-                            Timeout
-
+                            <a id="cursorme" data-toggle="modal" data-target="#modalinterception">
+                                <span title="Click here">
+                                    Interception
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalinterceptiondef">
+                                <span title="Click here">
+                                    Interception, Def TD
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalpenalty">
+                                <span title="Click here">
+                                    Penalty
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalsack">
+                                <span title="Click here">
+                                    Sack
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalsackfumble">
+                                <span title="Click here">
+                                    Sack, Fumble
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalsackfumbledef">
+                                <span title="Click here">
+                                    Sack, Fumble, Def TD
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalsacksafety">
+                                <span title="Click here">
+                                    Sack, Safety
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalscramble">
+                                <span title="Click here">
+                                    Scramble
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalscrambletd">
+                                <span title="Click here">
+                                    Scramble, TD
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalsafety">
+                                <span title="Click here">
+                                    Safety
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modaltd">
+                                <span title="Click here">
+                                    TD
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modaltimeout">
+                                <span title="Click here">
+                                    Timeout
+                                </span>
+                            </a>
                         </li>
                     </ul>
+                    <br>
+                    <p>
+                        <img src="img/info.svg" alt="">
+                        You can click on each of the play type to see its definition
+                    </p>
                 </div>
 
                 <h5 id="item-2-1" class="pt-5 border-bottom">Run</h5>
@@ -163,16 +272,74 @@
                     </p>
                 </div>
                 <h4 id="item-3" class="pt-5 border-bottom">Punt</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
-                
-                <h5 id="item-3-1" class="pt-5 border-bottom">Punt</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
-                
+                <div class="container">
+                    <h6>Corresponding Play</h6>
+                    <p>
+                        <ol>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalreturn">
+                                <span title="Click here">
+                            <li>
+                                Return
+                            </li>
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modaltouchback">
+                                <span title="Click here">
+                                    <li>Touchback</li>
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalfaircatch">
+                                <span title="Click here">
+                                    <li>Fair Catch</li>
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modaloutofbounds">
+                                <span title="Click here">
+                                    <li>Out of Bounds</li>
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modaldowned">
+                                <span title="Click here">
+                                    <li>Downed</li>
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalblock">
+                                <span title="Click here">
+                                    <li>Block</li>
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalblockdef">
+                                <span title="Click here">
+                                    <li>Blocked, Def. TD</li>
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalscramble">
+                                <span title="Click here">
+                                    <li>Scramble</li>
+                                </span>
+                            </a>
+                            <a id="cursorme" data-toggle="modal" data-target="#modalscrambletd">
+                                <span title="Click here">
+                                    <li>Scramble, TD</li>
+                                </span>
+                            </a>
+                        </ol>
+                    </p>
+                    <p>
+                        <img src="img/info.svg" alt="">
+                        You can click on each of the play type to see its definition
+                    </p>
+                </div>
+                <h5 id="punt1" class="pt-5 border-bottom">Punt</h5>
+                <div class="container">
+                    <p>
+                        A <span class="font-weight-bold">Punt</span> is a kick performed by dropping the ball from the hands and kicking it before it touches the ground. The goal is to move the ball as far as possible toward the opponent's end zone.
+                        <br>Punts are typically used on 4th downs. </br>
+                        <br>Punt will be tagged when Team 1 is punting/kicking the ball. </br>
+                    </p>
+                </div>
                 <h5 id="item-3-2" class="pt-5 border-bottom">Punt, Receive</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum velit ullam eveniet illum praesentium voluptatibus labore quod adipisci, minima magni magnam doloremque delectus iure odit omnis neque natus assumenda numquam fugit nam laborum voluptatum fuga. Quisquam adipisci excepturi deleniti natus assumenda ad harum dolores, nulla itaque atque, cupiditate, doloremque quo laborum facilis aliquid eligendi quasi totam necessitatibus! Explicabo perspiciatis praesentium nostrum eius magnam corporis quod quibusdam ab debitis suscipit deserunt expedita vero minima molestias, amet doloribus laborum, sequi illum doloremque excepturi pariatur vel cum consequatur beatae? Consequatur quam repellendus in aliquid totam, ratione dolores facilis veritatis error quia unde exercitationem eum quo velit suscipit, ab architecto possimus. Necessitatibus omnis non animi minima error voluptatum nostrum quas suscipit velit pariatur. Est ipsum sed aliquam quisquam distinctio voluptate nulla nesciunt ut, dolorum quia, mollitia eligendi quaerat aperiam deleniti accusantium laboriosam, magni cum libero laudantium porro placeat! Perspiciatis fugiat voluptatum dicta assumenda sint.</p>
+                <p>We will tag Punt Receive when Team 1 is receiving the Punt.</p>
             </div>
         </div>
 
@@ -308,6 +475,7 @@
             </div>
         </div>
         <!-- End of Modal -->
+
         <!-- Modal incomplete -->
         <div id="modalincomplete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -330,6 +498,834 @@
                             </p>
                             <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
                                 All Play Types
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Interception -->
+        <div id="modalinterception" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            interception
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                An <span class="font-weight-bold">Interception</span> occurs when the team on defense catches the pass that was 
+                                intended for an offensive player. The defense will then be able to return an interception until they are tackled or go out of bounds, and they will take over possession of the football at that spot.  
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Pass, Fake Punt, Fake FG
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Interception, Def TD-->
+        <div id="modalinterceptiondef" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            interception, Def TD
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                An <span class="font-weight-bold">Interception, Defensive Touchdown</span> occurs when the defensive team
+                                 catches the football intended for the offense and runs the ball into their end zone for a touchdown. 
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Pass, Fake Punt and Fake FG
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Penalty-->
+        <div id="modalpenalty" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Penalty
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Penalty</span> occurs when there is a violation of the rules.
+                                 Which is indicated by a flag and referee hand signals. 
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                All Play Types
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Sack -->
+        <div id="modalsack" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Sack
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Sack</span> occurs when the quarterback is tackled behind the line 
+                                of scrimmage before he can throw or pass the football.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Pass, Fake FG and Fake Punt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Sack, Fumble -->
+        <div id="modalsackfumble" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Sack, Fumble
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                <span class="font-weight-bold">Sack, Fumble</span> occurs when the offensive quarterback is tackled, loses control of 
+                                the football and the defense recovers the ball to gain possession. 
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Pass, Fake FG and Fake Punt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Sack, Fumble Def TD -->
+        <div id="modalsackfumbledef" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Sack, Fumble Def TD
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                <span class="font-weight-bold">Sack, Fumble Def. TD</span> occurs when the quarterback attempts to throw the ball but gets tackled behind the line of scrimmage and loses control of the ball. 
+                                The defensive player picks up the ball and runs it into the end zone for a touchdown.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Pass, Fake FG and Fake Punt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Sack, Safety -->
+        <div id="modalsacksafety" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Sack, Safety
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Sack Safety</span> occurs when the quarterback gets tackled inside his end zone while looking to pass. The defensive team will gain 2 points when they tackle the offense for a safety.
+                                <br>
+                                Remember, the referee will raise their hands over their head together to signal a safety.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Pass and Fake Punt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Scramble -->
+        <div id="modalscramble" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Scramble
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Scramble</span> occurs when a quarterback is trying to throw the ball but ends up running the ball 
+                                either because of defensive pressure or no wide receivers being open.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Pass, Fake FG and Fake Punt
+                            </p>
+                            <h6>PRO TIPS:</h6>
+                            <p class="lead">
+                                The play type will always be pass, and the result will be a scramble.
+                                View the knowledge base for more of the explanation. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal safety -->
+        <div id="modalsafety" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Safety
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                               ...working on this, soon to be publish.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                               
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Scramble, TD -->
+        <div id="modalscrambletd" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Scramble, TD
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Scramble, TD</span> occurs when a quarterback intends to throw the ball,
+                                 but due to pressure from the defense or lack of open players on his team, he ends up running the football into the end zone for a touchdown. 
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Pass, Fake FG and Fake Punt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal TD -->
+        <div id="modaltd" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            TD
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                              ...working on this, soon to be publish.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Timeout -->
+        <div id="modaltimeout" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Timeout
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Timeout</span> is a temporary pause in the game. Each team gets three timeouts per half.
+                                 A timeout can be called by the coach, quarterback or a linebacker. A referee will make the signal below and point in the direction of the team that called the timeout. 
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                All Play Types
+                            </p>
+                            <p class="text-center">
+                                <img src="img/timeout.png" alt="timeout">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal rush -->
+        <div id="modalrush" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Rush
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Rush</span> occurs any time a player runs the football for positive or negative yards.
+                                A Rush does not occur if the ball is passed forward. 
+                            </p>
+                            <p class="lead">
+                                There is a slight difference between rush and sack, although sack can only be applied on behind the scrimmage. QB on sack attempt to pass the ball but already tackled while run rush QB is not attempting to pass the ball.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Run, Fake FG and Fake Punt
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                not available this time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal rush, safety -->
+        <div id="modalrushsafety" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Rush, Safety
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Rush, Safety</span>, occurs when the offensive ball carrier is tackled in his own end zone.
+                                 The defensive team will gain 2 points when they tackle the offensive team for a safety. 
+                            </p>
+                            <p class="lead">
+                                The referee will make a hand signal by holding both hands together over their head to signal a "Safety".
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Run and Fake Punt
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                Watch the referee's hand signals to determine a safety. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal rush, TD -->
+        <div id="modalrushtd" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Rush, TD
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">
+                                    Rush, Touchdown
+                                </span> occurs when an offensive player runs the ball into the end 
+                                zone and scores a touchdown.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Run, Fake FG and Fake Punt
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                Pag kumaway-kaway yung kamay ni ref animoy naghahawi ng ulap sa kalangitan, no good iyon.
+                                <br><span class="font-italic">Don't count as Rush, TD.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal return -->
+        <div id="modalreturn" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Return
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Return</span> occurs when a player from the defensive team catches a kicked ball from 
+                                The offensive team and runs the ball down the field toward the end zone.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                KO, KO Rec, Onside Kick, Punt, Punt Rec, FG* and FG Block*
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                          not available this time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+
+        <!-- Modal touchback -->
+        <div id="modaltouchback" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Touchback
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Touchback</span> occurs when the football is kicked through 
+                                the end zone or the ball is down in the end zone.  
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                KO, KO Rec, Punt and Punt Rec 
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                <ul>
+                                    <li>
+                                        The team receiving the kicked ball will get possession of the ball at their -25 yard line.
+                                    </li>
+                                    <li>
+                                        The referee’s hand will point to the end zone direction from offense team
+                                    </li>
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal faircatch -->
+        <div id="modalfaircatch" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Fair Catch
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Fair Catch</span> occurs when a member of the team that is receiving the kicked ball signals for a fair catch.
+                                Once the player signals for the fair catch, the play is over. The team that kicks the ball is not allowed to touch the person making the fair catch. 
+                            </p>
+                            <p>
+                                <img src="img/info.svg" alt="">  <span class="text-danger">Note:</span> The player making the fair catch has to catch the ball. If he drops the ball, the opposing team may pick it up and regain possession
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Punt, Punt Rec (sometimes KO and KO Rec)
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                If the camera misses where the ball comes down, a good indication of a fair catch is if there is no tackle and nothing happens when the receiving team catches the ball.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Out of Bounds -->
+        <div id="modaloutofbounds" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Out of Bounds
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                This result is for kicking plays only. Out of Bounds occurs when the ball lands outside the white sidelines.
+                            </p>
+                            <p><img src="img/info.svg" alt="details">This will not apply to a FG or FG Block Play Type.</p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Punt, Punt Rec, KO, KO Rec and Onside Kick
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                See the hands of the referee, animoy hinahawi ang mga ulap sa kalangitan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Downed -->
+        <div id="modaldowned" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Downed
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                This result is only for punt plays. <span class="font-weight-bold">Downed</span> occurs when a punt 
+                                lands on the ground and the kicking team picks up or stops the ball before the team that is receiving the punt. The kicking team will try to down the ball as close to the opponent's end zone as possible.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Punt and Punt Rec
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                not available this time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Block -->
+        <div id="modalblock" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Block
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                A <span class="font-weight-bold">Block</span> occurs when the defense stops an extra point, punt or field goal.
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                Extra Pt, Extra Pt Block, FG, FG Block, Punt, and Punt Rec
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                not available this time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal Block Def. TD -->
+        <div id="modalblockdef" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Block, Def. TD
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                                This result is used for kicking plays only. A <span class="font-weight-bold">Blocked, Def. TD</span> occurs when the defense blocks a punt, extra point or field goal attempt and then gains control of the ball and runs the football into the end zone for a touchdown. 
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                FG, FG Block, Punt and Punt Rec
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                not available this time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Modal title -->
+        <div id="modaltitle" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myNormalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            title
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p style="text-align: justify;">
+                               
+                            </p>
+                            <p><span class="font-weight-bold">Possible Corresponding Play Types:</span><br>
+                                
+                            </p>
+                            <p><strong>PRO TIP:</strong>
+                                <br>
+                                not available this time.
                             </p>
                         </div>
                     </div>
