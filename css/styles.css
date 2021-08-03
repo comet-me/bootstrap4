@@ -1,3 +1,9 @@
+#glos:hover {
+  text-decoration: none;
+}
+#glos {
+  color: white;
+}
 #cursorme:hover {
   cursor: pointer;
   color: blue;
