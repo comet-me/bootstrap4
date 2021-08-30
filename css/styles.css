@@ -1,3 +1,7 @@
+.chartc {
+  height: 27rem;
+  width: 100%;
+}
 #glos:hover {
   text-decoration: none;
 }
