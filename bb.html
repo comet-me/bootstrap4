@@ -2,31 +2,338 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basketball PR</title>
+    <meta http-equiv="refresh" content="15">
+    <title>Basketball PR Report</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/clock.png"/>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body> 
-<h2>Hello Buddy</h2>
-    <div class="orange">
-        <p class="user-select-all">
-            Missing Free Throw. A free throw is missing from the video. Stats may be off.
-        </p>
-    </div>
-    <div class="orange">
-        <p class="user-select-all">
-            The camera missed the play at {time}, and the action was not captured.
-            Stats may be off due to this incident.
-        </p>
-        <p class="user-select-all">
-            Stats may be off as the fan in the way of the camera at {timestamp}.
-        </p>
-    </div>
-    <footer>
-    </footer>
+<body>
+   <div id="main-container" class="container">
+    <img class="card-img-top mt-4" src="img/telelogo.png" alt="Card image cap" style="height: 50px; width: 200px;">
+       <h2 class="text-center m-5" style="line-height: 1.5rem; letter-spacing: 1rem; word-spacing: 2rem;">Basketball PR Templates</h2>
+       <small><strong>Legend:</strong><br><span class="text-danger"> Red</span> font - PR usually at the beggining <br>   <span class="text-success">     Green</span> font - not intended at the beggining</small>
+       <hr>
+       <div class="row">
+           <div class="col border-right">
+               <div class="d-flex flex-column text-center">
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt1" class="rounded-right p-2">
+                           <p><code class="text-danger font-weight-bold">There is no tip-off in this film.</code></p>
+                       </div>
+                       <button id="datetime2" type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt" class="rounded-right p-2">
+                           <p><code class="text-danger">We weren’t able to tag the {insert jersey color} stats because the jersey numbers are too hard to see. Some or all Jersey numbers have been tagged as “unknown
+                            athletes. If you have any questions at all, please let us know at 402-817-0063 or
+                            support@hudl.com. <span class="text-muted" id="first"></span></code></p>
+                       </div>
+                       <button id="first2" type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt2" class="rounded-right p-2">
+                           <p><code class="text-danger">We weren’t able to assign jersey numbers to specific players on your roster. If we
+                            weren’t able to tell who it was, we tagged the stat as an “Unknown Athlete.” If you
+                            have any questions, please don’t hesitate to contact us at 402-817-0063 or
+                            support@hudl.com.<span class="text-muted" id="backf"></span></code></p>
+                       </div>
+                       <button id="backf2" type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt3" class="rounded-right p-2">
+                               <p><code class="text-danger">The jerseys for the {jersey color} team are difficult to see. We’ve tagged the game
+                                as best we could. When we could not determine the jersey number, we tagged the
+                                player as an “Unknown Athlete.” If you have any questions at all, please let us
+                                know at 402-817-0063 or support@hudl.com.<span class="text-muted" id="htb"></span></code></p>
+                       </div>
+                       <button id="htb2" type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt8" class="rounded-right p-2">
+                               <p><code class="text-danger">The jerseys for the {jersey color} team are difficult to see. We’ve tagged the game as best we could. When we could not determine the jersey number, we tagged the
+                                player as an “Unknown Athlete.” If you have any questions at all, please let us know at 402-817-0063 or support@hudl.com.<span class="text-muted" id="htb"></span></code></p>
+                       </div>
+                       <button id="htb8" type="button" onclick="CopyToClipboard8('contentt8');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt9" class="rounded-right p-2">
+                               <p><code class="text-danger">Due to the camera angle some stats may be off. Please see our required
+                                recording workflow for more information.<span class="text-muted" id="htb"></span></code></p>
+                       </div>
+                       <button id="htb9" type="button" onclick="CopyToClipboard9('contentt9');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                   </div>
+               </div>
+           </div>
+           <div class="col">
+               <div class="mb-2 d-flex flex-column text-center">
+                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                        <div id="contentt4" class="rounded-right p-2">
+                            <p><code class="text-success">The camera missed the play at {time} and the action was not captured. Stats may
+                                be off due to this incident.<span class="text-muted" id="backflb"></span></code></p>
+                        </div>
+                        <button id="backflb2" type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                    </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt5" class="rounded-right p-2">
+                           <p><code class="text-success">Stats may be off because a {ref/fan/player/obstacle} was in the way of the camera at
+                            {time}.
+                             <span class="text-muted" id="second"></span></code></p>
+                       </div>
+                       <button id="second2" type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt6" class="rounded-right p-2">
+                           <p><code class="text-success">The action was not captured. Stats may be off due to this incident.<span class="text-muted" id="backs"></span></code></p>
+                       </div>
+                       <button id="backs2" type="button" onclick="CopyToClipboard6('contentt6');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt10" class="rounded-right p-2">
+                           <p><code class="text-success">Team scored on themselves. We have tagged the scoring player as an Unknown
+                            Athlete.<span class="text-muted" id="backs"></span></code></p>
+                       </div>
+                       <button id="backs10" type="button" onclick="CopyToClipboard10('contentt10');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt11" class="rounded-right p-2">
+                           <p><code class="text-success">We see multiple athletes with the same jersey number. We have assigned the
+                            second athlete a different jersey number for this game.<span class="text-muted" id="backs"></span></code></p>
+                       </div>
+                       <button id="backs11" type="button" onclick="CopyToClipboard11('contentt11');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt12" class="rounded-right p-2">
+                           <p><code class="text-success">We see multiple athletes with the same jersey number. We have assigned the
+                            second athlete a different jersey number for this game.<span class="text-muted" id="backs"></span></code></p>
+                       </div>
+                       <button id="backs12" type="button" onclick="CopyToClipboard12('contentt12');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="contentt13" class="rounded-right p-2">
+                           <p><code class="text-success">We see multiple athletes with the same jersey number. We have assigned the
+                            second athlete a different jersey number for this game.<span class="text-muted" id="backs"></span></code></p>
+                       </div>
+                       <button id="backs13" type="button" onclick="CopyToClipboard13('contentt13');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom border-bottom">
+                       <div id="contentt7" class="rounded-right p-2">
+                           <p><code class="text-success font-weight-bold">The final score does not match what was submitted. We have reviewed the video
+                            to make sure we have not missed a play. If you have any questions at all, please
+                            let us know at 402-817-0063 or support@hudl.com.
+                             <span class="text-muted"></span></code></p>
+                       </div>
+                       <button id="dateend2" type="button" onclick="CopyToClipboard7('contentt7');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom border-bottom">
+                       
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="romeo m-5 text-center"><h6>Need help?</h6></div>
+       <div class="col-12 text-center mt-5">
+        <div class="btn-group" role="group">
+        <a href="tel:+639081869909" class="btn btn-primary"><i class="fa fa-phone"></i>
+        Call
+        </a>
+        <a href="skype:romeo08099?call" class="btn btn-info"><i class="fa fa-skype"></i>
+        Skype
+        </a>
+        <a href="mailto:meteorites86@gmail.com" class="btn btn-success"><i class="fa fa-envelope-o"></i>
+        Email
+        </a>
+        </div>
+        </div>
+       <footer class="text-center m-5">
+           © Copyright Reserve <span id="futer"></span>
+       </footer>
+       <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        </button>
+   </div>
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+        function scrollFunction() {
+        if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+        ) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+        var dt = new Date();
+        var dt1 = dt.getFullYear();
+            document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("dateend").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("first").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("second").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("backf").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("backs").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("htb").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("backflb").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            document.getElementById("futer").innerHTML = dt1;
+
+        function CopyToClipboard(contentt)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("first2").innerHTML = "copied";
+        }
+        function CopyToClipboard1(contentt1)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt1));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime2").innerHTML = "copied";
+        }
+        function CopyToClipboard2(contentt2)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt2));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("backf2").innerHTML = "copied";
+        }
+        function CopyToClipboard3(contentt3)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt3));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("htb2").innerHTML = "copied" ;
+        }
+        function CopyToClipboard8(contentt8)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt8));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("htb8").innerHTML = "copied" ;
+        }
+        function CopyToClipboard9(contentt9)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt9));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("htb9").innerHTML = "copied" ;
+        }
+        function CopyToClipboard10(contentt10)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt10));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("backs10").innerHTML = "copied" ;
+        }
+        function CopyToClipboard10(contentt11)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt11));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("backs11").innerHTML = "copied" ;
+        }
+        function CopyToClipboard12(contentt12)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt12));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("backs12").innerHTML = "copied" ;
+        }
+        function CopyToClipboard13(contentt13)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt13));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("backs13").innerHTML = "copied" ;
+        }
+        function CopyToClipboard4(contentt4)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt4));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("backflb2").innerHTML = "copied" ;
+        }
+        function CopyToClipboard5(contentt5)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt5));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("second2").innerHTML = "copied";
+        }
+        function CopyToClipboard6(contentt6)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt6));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("backs2").innerHTML = "copied";
+        }
+        function CopyToClipboard7(contentt7)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(contentt7));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("dateend2").innerHTML = "copied";
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
