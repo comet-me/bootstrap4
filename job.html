@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main Page [Teleworkph]</title>
+    <!-- <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="interactive text-center mt-3">
+        <input type="text" id="jTinput" placeholder="Job Title">
+        <button id="jtBtn" onclick="insertJb()">Insert Job Title</button>
+    </div>
+<style>
+    h3 {
+        filter: drop-shadow(0px 2px 3px black);
+    }
+</style>
+<div class="container letter user-select-all">
+    <h3 class="text-muted">Good day!</h3>
+    <p class="text-justify">
+        My name is Romeo Bulalacao Jr. I am very much interested in applying for the <span id="jobTitle">[Job Title]</span> post.
+    </p>
+    <p class="text-justify">
+    I had worked in a corporate company before, and my job responsibilities there were more on technical support. Back then, when I started learning and discovering new things, I discover that I can make my reports 10x faster without compromising accuracy.</p>
+    <p>Since then, I began to love coding and learning new languages. I have so many things that I learned outside this company because I pushed myself to where should I be. My hard work taught me how to use the following applications that we didn’t use in this company: Power BI, MySQL, SAP, Macro (Excel), MS Access, PHP, and other platforms for making a website</p>
+    <p class="text-justify">
+        The most significant experience that I consider also as my strength is that whenever I put my mind to a certain task where I need to learn something, that’s where I become more competitive. I believe 101 percent that I am a teachable person. I always look for innovation for the company as well as my learning curves to support my skill so that I can keep providing the most client needs.
+    </p>
+    <p>
+        If you give me a chance, it will really be a privilege to apply my skills and years of experience and grow with your company.
+    </p>
+    <p>
+        Please see the attached file for my resume. 
+    </p>
+    <p>
+        I am open to having an interview at your most convenient time.
+    </p>
+    <p>
+        Hoping for your consideration,
+    </p>
+    <br>
+    <br>
+    <p>Truly Yours,</p>
+    <br>
+    <br>
+    <p>Romeo Bulalacao Jr.</p>
+    <div class="myphone">
+        <p><i class="fa fa-phone"></i> &nbsp;&nbsp;<span class="fw-bold" style="color: blue !important;">0927 466 2313</span></p>
+    </div>
+</div>
+    <script>
+      function insertJb() {
+            let hT = document.getElementById('jobTitle');
+            let hTi = document.getElementById('jTinput');
+            let jtButton = document.getElementById('jtBtn');
+            hT.innerText = hTi.value;
+            // hT.style.fontSize = '30px';
+            hTi.value = '';
+            hTi.style.visibility = 'hidden';
+            jtButton.style.visibility = 'hidden';
+        }
+    </script>
+
+</body>
+</html>
