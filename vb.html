@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="60">
-    <title>Basketball PR Report</title>
+    <title>Volleyball PR Report</title>
     <link rel="shortcut icon" type="image/jpg" href="img/pr.png"/>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
@@ -21,46 +21,71 @@
            <div class="col border-right">
                <div class="d-flex flex-column text-center">
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt1" class="rounded-right p-2">
-                           <p><code class="text-danger font-weight-bold">I can’t read the jersey number for [action] at [enter time]. They marked as an
-                            unknown athlete.
-                            </code></p>
+                       <div id="content1" class="rounded-right p-2">
+                            <p>
+                                <code class="text-danger font-weight-bold">
+                                    I can’t read the jersey number for [action] at [enter time]. They marked as an
+                                    unknown athlete.
+                                </code>
+                            </p>
                        </div>
-                       <button id="datetime2" type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime1" type="button" onclick="CopyToClipboard1('content1');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt" class="rounded-right p-2">
-                           <p><code class="text-danger">Jersey numbers are hard to read due to video quality. Some or all jersey numbers
-                            will be tagged as Unknown Athletes.
-                             <span class="text-muted" id="first"></span></code></p>
+                       <div id="content2" class="rounded-right p-2">
+                            <p>
+                                <code class="text-danger">
+                                    Jersey numbers are hard to read due to video quality. Some or all jersey numbers
+                                    will be tagged as Unknown Athletes.
+                                    <span class="text-muted" id="left2"></span>
+                                </code>
+                            </p>
                        </div>
-                       <button id="first2" type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime2" type="button" onclick="CopyToClipboard2('content2');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt2" class="rounded-right p-2">
-                           <p><code class="text-danger">I was unable to determine the jersey number for the athlete who [action] at [enter
-                            time]. I marked them as Unknown Athlete in this match.
-                            <span class="text-muted" id="backf"></span></code></p>
+                       <div id="content3" class="rounded-right p-2">
+                            <p>
+                                <code class="text-danger">
+                                    I was unable to determine the jersey number for the athlete who [action] at [enter
+                                    time]. I marked them as Unknown Athlete in this match.
+                                    <span class="text-muted" id="left3"></span>
+                                </code>
+                            </p>
                        </div>
-                       <button id="backf2" type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime3" type="button" onclick="CopyToClipboard3('content3');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt3" class="rounded-right p-2">
-                               <p><code class="text-danger">Stats may be inaccurate due to missing video at [enter time].<span class="text-muted" id="htb"></span></code></p>
+                       <div id="content4" class="rounded-right p-2">
+                            <p>
+                                <code class="text-danger">
+                                    Stats may be inaccurate due to missing video at [enter time].
+                                    <span class="text-muted" id="left4"></span>
+                                </code>
+                            </p>
                        </div>
-                       <button id="htb2" type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime4" type="button" onclick="CopyToClipboard4('content4');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt8" class="rounded-right p-2">
-                               <p><code class="text-danger">The first few rallies are missing in the film. Stats will be off for this match.<span class="text-muted" id="htb"></span></code></p>
+                       <div id="content5" class="rounded-right p-2">
+                            <p>
+                               <code class="text-danger">
+                                    The first few rallies are missing in the film. Stats will be off for this match.
+                                    <span class="text-muted" id="left5"></span>
+                               </code></p>
                        </div>
-                       <button id="htb8" type="button" onclick="CopyToClipboard8('contentt8');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime5" type="button" onclick="CopyToClipboard5('content5');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt9" class="rounded-right p-2">
-                               <p><code class="text-success">The referee signaled a replay<span class="text-muted" id="htb"></span></code></p>
+                       <div id="content6" class="rounded-right p-2">
+                            <p>
+                                <code class="text-success">
+                                    The referee signaled a replay
+                                    <span class="text-muted" id="left6"></span>
+                                </code>
+                            </p>
                        </div>
-                       <button id="htb9" type="button" onclick="CopyToClipboard9('contentt9');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime6" type="button" onclick="CopyToClipboard6('content6');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
                    </div>
@@ -69,62 +94,99 @@
            <div class="col">
                <div class="mb-2 d-flex flex-column text-center">
                     <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                        <div id="contentt4" class="rounded-right p-2">
-                            <p><code class="text-success">The final score tagged doesn’t match the scoreboard. We’ve double-checked to
-                                make sure we didn’t miss a play or rally.<span class="text-muted" id="backflb"></span></code></p>
+                        <div id="content101" class="rounded-right p-2">
+                            <p>
+                                <code class="text-success">
+                                    The final score tagged doesn’t match the scoreboard. We’ve double-checked to
+                                    make sure we didn’t miss a play or rally.
+                                    <span class="text-muted" id="right101"></span>
+                                </code>
+                            </p>
                         </div>
-                        <button id="backflb2" type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                        <button id="datetime101" type="button" onclick="CopyToClipboard101('content101');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                     </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt5" class="rounded-right p-2">
-                           <p><code class="text-success">The scoreboard operator did not update the scoreboard at the end of the rally
-                             <span class="text-muted" id="second"></span></code></p>
+                       <div id="content102" class="rounded-right p-2">
+                           <p>
+                              <code class="text-success">
+                                The scoreboard operator did not update the scoreboard at the end of the rally.
+                                <span class="text-muted" id="right102"></span>
+                              </code>
+                            </p>
                        </div>
-                       <button id="second2" type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime102" type="button" onclick="CopyToClipboard102('content102');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt6" class="rounded-right p-2">
-                           <p><code class="text-success">The scoreboard operator randomly changes the score.<span class="text-muted" id="backs"></span></code></p>
+                       <div id="content103" class="rounded-right p-2">
+                           <p>
+                                <code class="text-success">
+                                    The scoreboard operator randomly changes the score.
+                                    <span class="text-muted" id="right103"></span>
+                                </code>
+                           </p>
                        </div>
-                       <button id="backs2" type="button" onclick="CopyToClipboard6('contentt6');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime103" type="button" onclick="CopyToClipboard103('content103');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt10" class="rounded-right p-2">
-                           <p><code class="text-success">Unfortunately due to the camera angle we can’t tag either team’s attack location.
-                            Check out our required recording workflow for more information.<span class="text-muted" id="backs"></span></code></p>
+                       <div id="content104" class="rounded-right p-2">
+                           <p>
+                            <code class="text-success">
+                                Unfortunately due to the camera angle we can’t tag either team’s attack location.
+                                Check out our required recording workflow for more information.
+                                <span class="text-muted" id="right104"></span>
+                            </code>
+                           </p>
                        </div>
-                       <button id="backs10" type="button" onclick="CopyToClipboard10('contentt10');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime104" type="button" onclick="CopyToClipboard104('content104');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt11" class="rounded-right p-2">
-                           <p><code class="text-success">Due to the angle of the camera, we can’t see every moment of the game. Some
-                            moments may be off or missed. Check out our required recording workflow for
-                            more information.
-                            <span class="text-muted" id="backs"></span></code></p>
+                       <div id="content105" class="rounded-right p-2">
+                           <p>
+                                <code class="text-success">
+                                    Due to the angle of the camera, we can’t see every moment of the game. Some
+                                    moments may be off or missed. Check out our required recording workflow for
+                                    more information.
+                                    <span class="text-muted" id="right105"></span>
+                                </code>
+                            </p>
                        </div>
-                       <button id="backs11" type="button" onclick="CopyToClipboard11('contentt11');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime105" type="button" onclick="CopyToClipboard105('content105');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt12" class="rounded-right p-2">
-                           <p><code class="text-success">Stats may be missing due to [obstacle: fan/pole/fence/person] blocking the
-                            camera at [enter time].<span class="text-muted" id="backs"></span></code></p>
+                       <div id="content106" class="rounded-right p-2">
+                           <p>
+                               <code class="text-success">
+                                Stats may be missing due to [obstacle: fan/pole/fence/person] blocking the
+                                camera at [enter time].
+                                  <span class="text-muted" id="right106"></span>
+                               </code>
+                            </p>
                        </div>
-                       <button id="backs12" type="button" onclick="CopyToClipboard12('contentt12');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime106" type="button" onclick="CopyToClipboard106('content106');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
-                       <div id="contentt13" class="rounded-right p-2">
-                           <p><code class="text-success">The coach note said that the team in [jersey color] served first. We saw the team in
-                            [opponent jersey color] served first.<span class="text-muted" id="backs"></span></code></p>
+                       <div id="content107" class="rounded-right p-2">
+                            <p>
+                                <code class="text-success">
+                                    The coach note said that the team in [jersey color] served first. We saw the team in
+                                    [opponent jersey color] served first.
+                                    <span class="text-muted" id="right7"></span>
+                                </code>
+                            </p>
                        </div>
-                       <button id="backs13" type="button" onclick="CopyToClipboard13('contentt13');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime107" type="button" onclick="CopyToClipboard107('content107');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom border-bottom">
-                       <div id="contentt7" class="rounded-right p-2">
-                           <p><code class="text-success font-weight-bold">The Assist submission said there were [number of sets] played. We found that
-                            there were [number of sets] played.
-                             <span class="text-muted"></span></code></p>
+                       <div id="content108" class="rounded-right p-2">
+                            <p>
+                                <code class="text-success font-weight-bold">
+                                    The Assist submission said there were [number of sets] played. We found that
+                                    there were [number of sets] played.
+                                  <span class="text-muted" id="right8"></span>
+                                </code>
+                            </p>
                        </div>
-                       <button id="dateend2" type="button" onclick="CopyToClipboard7('contentt7');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime108" type="button" onclick="CopyToClipboard7('content108');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom border-bottom">
                        
@@ -175,159 +237,147 @@
         function backToTop() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        // When the user click on the copy button
         }
-        var dt = new Date();
-        var dt1 = dt.getFullYear();
-            document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("dateend").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("first").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("second").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("backf").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("backs").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("htb").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("backflb").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+(("0"+dt.getDate()).slice(-2))+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-            document.getElementById("futer").innerHTML = dt1;
-
-        function CopyToClipboard(contentt)
+        function CopyToClipboard1(content1)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt));
+        r.selectNode(document.getElementById(content1));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("first2").innerHTML = "copied";
+        document.getElementById("datetime1").innerHTML = "copied";
         }
-        function CopyToClipboard1(contentt1)
+        function CopyToClipboard2(content2)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt1));
+        r.selectNode(document.getElementById(content2));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
         document.getElementById("datetime2").innerHTML = "copied";
         }
-        function CopyToClipboard2(contentt2)
+        function CopyToClipboard3(content3)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt2));
+        r.selectNode(document.getElementById(content3));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("backf2").innerHTML = "copied";
+        document.getElementById("datetime3").innerHTML = "copied";
         }
-        function CopyToClipboard3(contentt3)
+        function CopyToClipboard4(content4)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt3));
+        r.selectNode(document.getElementById(content4));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("htb2").innerHTML = "copied" ;
+        document.getElementById("datetime4").innerHTML = "copied" ;
         }
-        function CopyToClipboard8(contentt8)
+        function CopyToClipboard5(content5)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt8));
+        r.selectNode(document.getElementById(content5));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("htb8").innerHTML = "copied" ;
+        document.getElementById("datetime5").innerHTML = "copied" ;
         }
-        function CopyToClipboard9(contentt9)
+        function CopyToClipboard6(content6)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt9));
+        r.selectNode(document.getElementById(content6));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("htb9").innerHTML = "copied" ;
+        document.getElementById("datetime6").innerHTML = "copied" ;
         }
-        function CopyToClipboard10(contentt10)
+        function CopyToClipboard101(content101)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt10));
+        r.selectNode(document.getElementById(content101));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("backs10").innerHTML = "copied" ;
+        document.getElementById("datetime101").innerHTML = "copied" ;
         }
-        function CopyToClipboard10(contentt11)
+        function CopyToClipboard102(content102)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt11));
+        r.selectNode(document.getElementById(content102));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("backs11").innerHTML = "copied" ;
+        document.getElementById("datetime102").innerHTML = "copied" ;
         }
-        function CopyToClipboard12(contentt12)
+        function CopyToClipboard103(content103)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt12));
+        r.selectNode(document.getElementById(content103));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("backs12").innerHTML = "copied" ;
+        document.getElementById("datetime103").innerHTML = "copied" ;
         }
-        function CopyToClipboard13(contentt13)
+        function CopyToClipboard104(content104)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt13));
+        r.selectNode(document.getElementById(content104));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("backs13").innerHTML = "copied" ;
+        document.getElementById("datetime104").innerHTML = "copied" ;
         }
-        function CopyToClipboard4(contentt4)
+        function CopyToClipboard105(content105)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt4));
+        r.selectNode(document.getElementById(content105));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("backflb2").innerHTML = "copied" ;
+        document.getElementById("datetime105").innerHTML = "copied" ;
         }
-        function CopyToClipboard5(contentt5)
+        function CopyToClipboard106(content106)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt5));
+        r.selectNode(document.getElementById(content106));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("second2").innerHTML = "copied";
+        document.getElementById("datetime106").innerHTML = "copied";
         }
-        function CopyToClipboard6(contentt6)
+        function CopyToClipboard107(content107)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt6));
+        r.selectNode(document.getElementById(content107));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("backs2").innerHTML = "copied";
+        document.getElementById("datetime107").innerHTML = "copied";
         }
-        function CopyToClipboard7(contentt7)
+        function CopyToClipboard7(content108)
         {
         var r = document.createRange();
-        r.selectNode(document.getElementById(contentt7));
+        r.selectNode(document.getElementById(content108));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        document.getElementById("dateend2").innerHTML = "copied";
+        document.getElementById("datetime108").innerHTML = "copied";
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
