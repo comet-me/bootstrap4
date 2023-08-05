@@ -23,9 +23,10 @@
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
                        <div id="content1" class="rounded-right p-2">
                             <p>
-                                <code class="text-danger font-weight-bold">
-                                    I can’t read the jersey number for [action] at [enter time]. They marked as an
-                                    unknown athlete.
+                                <code class="text-danger">
+                                    Due to the camera angle some moments could not be tagged.
+                                    Please see our required recording workflow for more information.
+
                                 </code>
                             </p>
                        </div>
@@ -35,8 +36,7 @@
                        <div id="content2" class="rounded-right p-2">
                             <p>
                                 <code class="text-danger">
-                                    Jersey numbers are hard to read due to video quality. Some or all jersey numbers
-                                    will be tagged as Unknown Athletes.
+                                    Due to the camera angle, we were unable to tag the attack locations for this match.
                                     <span class="text-muted" id="left2"></span>
                                 </code>
                             </p>
@@ -47,8 +47,9 @@
                        <div id="content3" class="rounded-right p-2">
                             <p>
                                 <code class="text-danger">
-                                    I was unable to determine the jersey number for the athlete who [action] at [enter
-                                    time]. I marked them as Unknown Athlete in this match.
+                                    The camera angle doesn't capture the full court.
+                                    Some stats might be incorrect for moments we could not tag.
+                                    Please see our required recording workflow for more information.
                                     <span class="text-muted" id="left3"></span>
                                 </code>
                             </p>
@@ -59,7 +60,9 @@
                        <div id="content4" class="rounded-right p-2">
                             <p>
                                 <code class="text-danger">
-                                    Stats may be inaccurate due to missing video at [enter time].
+                                    The game was filmed with multiple breaks.
+                                    Due to the missing video we may have missed some moments.
+                                    To ensure the best breakdown, please only stop recording between periods and during timeouts.
                                     <span class="text-muted" id="left4"></span>
                                 </code>
                             </p>
@@ -79,8 +82,9 @@
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
                        <div id="content6" class="rounded-right p-2">
                             <p>
-                                <code class="text-success">
-                                    The referee signaled a replay
+                                <code class="text-danger">
+                                    A few minutes are missing at the start of this period.
+                                    Due to missing video stats might be incorrect.
                                     <span class="text-muted" id="left6"></span>
                                 </code>
                             </p>
@@ -88,17 +92,120 @@
                        <button id="datetime6" type="button" onclick="CopyToClipboard6('content6');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                    <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                       <div id="content7" class="rounded-right p-2">
+                            <p>
+                                <code class="text-danger">
+                                    The video was recorded at an angle in which we cannot tag shot locations.
+                                    <span class="text-muted" id="left7"></span>
+                                </code>
+                            </p>
+                       </div>
+                       <button id="datetime7" type="button" onclick="CopyToClipboard7('content7');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content8" class="rounded-right p-2">
+                        <p>
+                            <code class="text-danger">
+                                We weren’t able to tag the [insert jersey color] team’s player stats because the jersey numbers are too hard to see.
+                                Some or all Jersey numbers have been tagged as “unknown athletes.”
+                                <span class="text-muted" id="left8"></span>
+                            </code>
+                        </p>
+                   </div>
+                   <button id="datetime8" type="button" onclick="CopyToClipboard8('content8');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content9" class="rounded-right p-2">
+                        <p>
+                            <code class="text-danger">
+                                We weren’t able to tag every player’s stats because some of the jerseys didn’t have numbers printed on them.
+                                <span class="text-muted" id="left9"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime9" type="button" onclick="CopyToClipboard9('content9');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content10" class="rounded-right p-2">
+                        <p>
+                            <code class="text-danger">
+                                We currently cannot tag 3-digit numbers in Assist.
+                                We have tagged the 3-digit numbers with their second and third digit.
+                                <span class="text-muted" id="left10"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime10" type="button" onclick="CopyToClipboard10('content10');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content11" class="rounded-right p-2">
+                        <p>
+                            <code class="text-danger">
+                                We see multiple athletes with the same jersey number mention number.
+                                We have assigned the second athlete as unknown for this game.
+                                <span class="text-muted" id="left11"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime11" type="button" onclick="CopyToClipboard11('content11');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content12" class="rounded-right p-2">
+                        <p>
+                            <code class="text-danger">
+                                The Assist submission information does not match who served first.
+                                <span class="text-muted" id="left12"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime12" type="button" onclick="CopyToClipboard12('content12');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content13" class="rounded-right p-2">
+                        <p>
+                            <code class="text-danger">
+                                The amount of sets played in this match does not match the amount of sets selected in the Assist submission.
+                                <span class="text-muted" id="left13"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime13" type="button" onclick="CopyToClipboard13('content13');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content14" class="rounded-right p-2">
+                        <p>
+                            <code class="text-danger">
+                                The attack line is difficult to recognize.
+                                We were unable to tag attack locations for this match.
+                                <span class="text-muted" id="left14"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime14" type="button" onclick="CopyToClipboard14('content14');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content15" class="rounded-right p-2">
+                        <p>
+                            <code class="text-danger">
+                                The set began with a score of [score-score].
+                                The final score tagged may not match.
+                                <span class="text-muted" id="left15"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime15" type="button" onclick="CopyToClipboard15('content15');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                </div>
            </div>
+
            <div class="col">
                <div class="mb-2 d-flex flex-column text-center">
                     <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
                         <div id="content101" class="rounded-right p-2">
                             <p>
                                 <code class="text-success">
-                                    The final score tagged doesn’t match the scoreboard. We’ve double-checked to
-                                    make sure we didn’t miss a play or rally.
+                                    The final score does not match what was submitted.
+                                    We have reviewed the video to make sure we have not missed a play.
                                     <span class="text-muted" id="right101"></span>
                                 </code>
                             </p>
@@ -109,7 +216,9 @@
                        <div id="content102" class="rounded-right p-2">
                            <p>
                               <code class="text-success">
-                                The scoreboard operator did not update the scoreboard at the end of the rally.
+                                The camera person stops filming before the game ends.
+                                We were not able to tag the end of the game.
+                                End game stats may be off due to this incident.
                                 <span class="text-muted" id="right102"></span>
                               </code>
                             </p>
@@ -120,7 +229,7 @@
                        <div id="content103" class="rounded-right p-2">
                            <p>
                                 <code class="text-success">
-                                    The scoreboard operator randomly changes the score.
+                                    There is a video cut in the film. Stats may be off due to this incident.
                                     <span class="text-muted" id="right103"></span>
                                 </code>
                            </p>
@@ -131,8 +240,7 @@
                        <div id="content104" class="rounded-right p-2">
                            <p>
                             <code class="text-success">
-                                Unfortunately due to the camera angle we can’t tag either team’s attack location.
-                                Check out our required recording workflow for more information.
+                                The camera missed the play. Stats may be off due to this incident.
                                 <span class="text-muted" id="right104"></span>
                             </code>
                            </p>
@@ -143,9 +251,7 @@
                        <div id="content105" class="rounded-right p-2">
                            <p>
                                 <code class="text-success">
-                                    Due to the angle of the camera, we can’t see every moment of the game. Some
-                                    moments may be off or missed. Check out our required recording workflow for
-                                    more information.
+                                    Stats may be off due to video getting blurred
                                     <span class="text-muted" id="right105"></span>
                                 </code>
                             </p>
@@ -156,8 +262,7 @@
                        <div id="content106" class="rounded-right p-2">
                            <p>
                                <code class="text-success">
-                                Stats may be missing due to [obstacle: fan/pole/fence/person] blocking the
-                                camera at [enter time].
+                                Could not determine the type of penalty. The referee signal was not recorded.
                                   <span class="text-muted" id="right106"></span>
                                </code>
                             </p>
@@ -168,28 +273,85 @@
                        <div id="content107" class="rounded-right p-2">
                             <p>
                                 <code class="text-success">
-                                    The coach note said that the team in [jersey color] served first. We saw the team in
-                                    [opponent jersey color] served first.
+                                    We weren’t able to identify the jersey number for this player.
+                                    We have tagged them as Unknown Athlete.
                                     <span class="text-muted" id="right7"></span>
                                 </code>
                             </p>
                        </div>
                        <button id="datetime107" type="button" onclick="CopyToClipboard107('content107');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
-                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom border-bottom">
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
                        <div id="content108" class="rounded-right p-2">
                             <p>
-                                <code class="text-success font-weight-bold">
-                                    The Assist submission said there were [number of sets] played. We found that
-                                    there were [number of sets] played.
+                                <code class="text-success">
+                                    We are unable to determine the jersey number for the libero.
+                                    We have tagged the player as an 'unknown athlete'
                                   <span class="text-muted" id="right8"></span>
                                 </code>
                             </p>
                        </div>
-                       <button id="datetime108" type="button" onclick="CopyToClipboard7('content108');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                       <button id="datetime108" type="button" onclick="CopyToClipboard108('content108');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
-                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom border-bottom">
-                       
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content109" class="rounded-right p-2">
+                        <p>
+                            <code class="text-success">
+                                We see jersey numbers #0 and #00 playing.
+                                We are unable to tag both athletes with 0s.
+                                We have tagged #0 as #0. We have tagged #00 as #99.
+                              <span class="text-muted" id="right9"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime109" type="button" onclick="CopyToClipboard109('content109');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content110" class="rounded-right p-2">
+                        <p>
+                            <code class="text-success">
+                                We see multiple athletes with the same jersey number.
+                                We have assigned the second athlete a different jersey number for this game.
+                              <span class="text-muted" id="right10"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime110" type="button" onclick="CopyToClipboard110('content110');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content111" class="rounded-right p-2">
+                        <p>
+                            <code class="text-success">
+                                The scoreboard operator wrongly updated the scoreboard.
+                                Stats may be off due to this incident.
+                              <span class="text-muted" id="right11"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime111" type="button" onclick="CopyToClipboard111('content111');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content112" class="rounded-right p-2">
+                        <p>
+                            <code class="text-success">
+                                The scoreboard operator randomly updated the scoreboard.
+                                Stats may be off due to this incident.
+                              <span class="text-muted" id="right12"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime112" type="button" onclick="CopyToClipboard112('content112');return false;" class="btn btn-outline-primary ml-2">Copy</button>
+                   </div>
+                   <div class="start d-inline-flex align-items-center justify-content-between border-bottom">
+                    <div id="content113" class="rounded-right p-2">
+                        <p>
+                            <code class="text-success">
+                                The referee signaled a replay
+                              <span class="text-muted" id="right13"></span>
+                            </code>
+                        </p>
+                    </div>
+                    <button id="datetime113" type="button" onclick="CopyToClipboard113('content113');return false;" class="btn btn-outline-primary ml-2">Copy</button>
                    </div>
                </div>
            </div>
@@ -299,6 +461,96 @@
         window.getSelection().removeAllRanges();
         document.getElementById("datetime6").innerHTML = "copied" ;
         }
+        function CopyToClipboard7(content7)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content7));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime7").innerHTML = "copied" ;
+        }
+        function CopyToClipboard8(content8)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content8));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime8").innerHTML = "copied" ;
+        }
+        function CopyToClipboard9(content9)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content9));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime9").innerHTML = "copied" ;
+        }
+        function CopyToClipboard10(content10)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content10));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime10").innerHTML = "copied" ;
+        }
+        function CopyToClipboard11(content11)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content11));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime11").innerHTML = "copied" ;
+        }
+        function CopyToClipboard12(content12)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content12));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime12").innerHTML = "copied" ;
+        }
+        function CopyToClipboard13(content13)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content13));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime13").innerHTML = "copied" ;
+        }
+        function CopyToClipboard14(content14)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content14));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime14").innerHTML = "copied" ;
+        }
+        function CopyToClipboard15(content15)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content15));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime15").innerHTML = "copied" ;
+        }
         function CopyToClipboard101(content101)
         {
         var r = document.createRange();
@@ -369,7 +621,7 @@
         window.getSelection().removeAllRanges();
         document.getElementById("datetime107").innerHTML = "copied";
         }
-        function CopyToClipboard7(content108)
+        function CopyToClipboard108(content108)
         {
         var r = document.createRange();
         r.selectNode(document.getElementById(content108));
@@ -378,6 +630,56 @@
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
         document.getElementById("datetime108").innerHTML = "copied";
+        }
+        function CopyToClipboard109(content109)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content109));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime109").innerHTML = "copied";
+        }
+        function CopyToClipboard110(content110)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content110));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime110").innerHTML = "copied";
+        }
+        function CopyToClipboard111(content111)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content111));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime111").innerHTML = "copied";
+        }
+        function CopyToClipboard112(content112)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content112));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime112").innerHTML = "copied";
+        }
+        function CopyToClipboard113(content113)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(content113));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        document.getElementById("datetime113").innerHTML = "copied";
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
